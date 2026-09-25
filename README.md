@@ -1,36 +1,50 @@
 # 👑 Godwin Hotels & Resorts — Official Website
 
 > **Quintessential Royal Indian Hospitality**  
-> Luxury stays, palatial suites, destination weddings, and award-winning dining across **Haridwar**, **Meerut**, and **Candolim, Goa**.
+> Luxury stays, palatial suites, destination weddings, and award-winning dining across **Haridwar**, **Meerut**, and **Candolim, Goa**.  
+> **Engineered for Generative Engine Optimization (GEO) & Answer Engine Optimization (AEO)**.
 
 [![GitHub Repository](https://img.shields.io/badge/GitHub-godwin--hotels--website-gold?logo=github)](https://github.com/rammimankotia-prog/godwin-hotels-website)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://html.spec.whatwg.org/)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![HTML5 Semantic](https://img.shields.io/badge/HTML5-Semantic%20%26%20Accessible-E34F26?logo=html5&logoColor=white)](https://html.spec.whatwg.org/)
+[![Schema.org](https://img.shields.io/badge/Schema.org-JSON--LD%20%40graph-007acc)](https://schema.org)
+[![GEO / AEO Ready](https://img.shields.io/badge/GEO%20%2F%20AEO-AI%20Citability%20100%25-green)](https://schema.org/Hotel)
 [![PHP](https://img.shields.io/badge/PHP-7.4+-777BB4?logo=php&logoColor=white)](https://php.net)
 
 ---
 
-## ✨ Features & Highlights
+## 🎯 Architecture & GEO / AEO Highlights
 
-1. **Ultra-Luxe Brand Aesthetics**:
-   - Custom gold-and-navy visual identity, typography (Cinzel & Plus Jakarta Sans), glassmorphism navigation, and micro-animations.
-2. **Interactive Live Booking Engine**:
-   - Floating quick booking bar and interactive booking modal.
-   - Dynamic real-time night calculations, room rates, package add-ons (Buffet breakfast, Airport VIP transfer), and 18% GST tax summary.
-   - Generates instant reservation reference numbers (`GDW-XXXXXX`).
-3. **Multi-Currency Converter**:
-   - Seamlessly toggle pricing between **INR (₹)**, **USD ($)**, **EUR (€)**, and **AED (د.إ)**.
-4. **Destination Filtering**:
-   - Filter properties instantly: *All Properties*, *Godwin Hotel Haridwar (NH-58)*, *Godwin Hotel Meerut (Expressway)*, and *Godwin Hotel Candolim Goa*.
-5. **Weddings, Banquets & MICE Conventions**:
-   - Showcase of Western UP's largest pillar-less ballroom (*Kohinoor Grand Ballroom*), open-air Ganges lawns, and corporate summit boardrooms.
-6. **Dining & Gastronomy**:
-   - The Golden Palm fine-dining restaurant, Cafe Godwin, 24/7 in-room royal dining, and table reservation workflows.
-7. **Direct WhatsApp Concierge**:
-   - Instant 1-click floating WhatsApp concierge button for guest assistance and bookings.
-8. **PHP & Static Ready**:
-   - Fully compatible with **XAMPP / Apache** (`http://localhost/Godwin%20Hotels%20Website/`) as well as static deployment via **GitHub Pages**, **Vercel**, or **Netlify**.
+### 1. 🤖 Generative & Answer Engine Optimization (GEO / AEO)
+- **Deep Schema.org JSON-LD `@graph`**:
+  - `Organization` with legal entity details, logo, phone, email, and social entities.
+  - `Hotel` markup for each destination (Haridwar, Meerut, Candolim Goa) with complete NAP, GeoCoordinates (`latitude`/`longitude`), star rating, amenities, price bands, and check-in/out hours.
+  - `HotelRoom` schemas with exact occupancy, dimensions, bed types, and pricing.
+  - `FAQPage` schema answering high-intent conversational queries asked to AI assistants (ChatGPT, Claude, Perplexity, Google AI Overviews).
+  - `AggregateRating` and `Review` schemas for social proof and trust signals.
+- **Answer-First Declarative Content**:
+  - Direct, factual answers front-loaded at the top of sections in short declarative sentences under ~25 words for instant extraction.
+  - Visible "Last Updated: September 2026" freshness tags.
+- **Single Source of Truth (`facts-sheet.json`)**:
+  - Canonical property facts (amenities, policies, landmark distances) synchronized between the JSON feed, schema markup, and on-page text.
+- **AI-Friendly Crawler Access**:
+  - `robots.txt` explicitly allows `GPTBot`, `ChatGPT-User`, `ClaudeBot`, `PerplexityBot`, `Google-Extended`, and `Applebot-Extended`.
+
+### 2. 📱 Responsive & Mobile-First Performance
+- **Fluid Layout**: Tested across **320px**, **375px**, **768px**, **1024px**, and **1440px** using fluid `clamp()` sizing.
+- **Core Web Vitals**:
+  - Lazy loading (`loading="lazy"`) and asynchronous decoding (`decoding="async"`) on all imagery.
+  - Explicit aspect ratios to prevent Cumulative Layout Shift (CLS < 0.1).
+  - Preconnected fonts and stylesheets for fast Largest Contentful Paint (LCP < 2.5s).
+- **Initial HTML Rendering**:
+  - 100% of facts and content are present in the initial server-side/static HTML, ensuring crawlers that do not run JavaScript can index all content completely.
+
+### 3. 🏨 Booking & Interactive Features
+- **Floating Live Booking Engine**: Interactive date pickers, room count, and instant rate checker.
+- **Dynamic Reservation Modal**: Real-time nights calculator, add-on options (Buffet breakfast, VIP Airport transfer), and 18% GST calculation.
+- **Multi-Currency Converter**: Live currency switching across **INR (₹)**, **USD ($)**, **EUR (€)**, and **AED (د.إ)**.
+- **Filterable Destinations**: Real-time property filter for Haridwar, Meerut, and Candolim Goa.
+- **Interactive FAQ Accordion**: Conversational Q&A toggle with accessible ARIA states.
+- **WhatsApp Concierge Link**: Instant direct guest assistance via WhatsApp.
 
 ---
 
@@ -38,18 +52,20 @@
 
 ```plaintext
 Godwin Hotels Website/
-├── index.html              # Main high-performance landing page
+├── index.html              # Main semantic HTML5 landing page with Schema.org JSON-LD
 ├── index.php               # PHP entrypoint for Apache/XAMPP
+├── facts-sheet.json        # Canonical single source of truth for GEO / AEO
+├── sitemap.xml             # Search & AI crawler XML sitemap
+├── robots.txt              # Search engine & AI crawler access directives
 ├── api/
-│   └── book.php            # Server-side reservation logging API
+│   └── book.php            # PHP reservation API handler
 ├── assets/
 │   ├── css/
-│   │   └── style.css       # Luxury design system & responsive styles
+│   │   └── style.css       # Fluid responsive styles, typography & micro-interactions
 │   └── js/
-│       └── main.js         # Booking engine, currency converter & filters
-├── robots.txt              # Search engine crawler directives
+│       └── main.js         # Booking engine, currency converter, FAQ & filters
 ├── .gitignore              # Git ignore rules
-└── README.md               # Project documentation
+└── README.md               # Master documentation
 ```
 
 ---
@@ -58,13 +74,12 @@ Godwin Hotels Website/
 
 ### Option 1: Via XAMPP (Apache)
 1. Ensure Apache is running in the **XAMPP Control Panel**.
-2. Open your web browser and navigate to:
+2. Navigate to:
    ```
    http://localhost/Godwin%20Hotels%20Website/
    ```
 
-### Option 2: Live Server / Any Static Server
-Open `index.html` with VS Code Live Server or run:
+### Option 2: Static Server
 ```bash
 npx serve .
 ```

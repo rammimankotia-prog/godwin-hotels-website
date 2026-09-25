@@ -1,0 +1,188 @@
+{
+  "entity": {
+    "brandName": "Godwin Hotels & Resorts",
+    "legalName": "Godwin Hospitality Pvt. Ltd.",
+    "website": "https://godwinhotels.com",
+    "centralReservationsPhone": "+91-1234-567-890",
+    "centralEmail": "reservations@godwinhotels.com",
+    "starRating": "4.5 to 5-Star Luxury Standards",
+    "currencyAccepted": ["INR", "USD", "EUR", "AED"],
+    "lastUpdated": "2026-09-25",
+    "generalPolicies": {
+      "checkinTime": "14:00",
+      "checkoutTime": "11:00",
+      "earlyCheckinPolicy": "Early check-in from 10:00 AM is subject to room availability upon arrival; guaranteed early check-in requires reservation from the preceding night.",
+      "cancellationPolicy": "Free cancellation is permitted up to 48 hours prior to the scheduled check-in date. Cancellations made within 48 hours incur a 1-night room charge.",
+      "petPolicy": "Godwin Hotels does not allow pets in guest rooms or dining areas, with the exception of certified service animals.",
+      "smokingPolicy": "All indoor rooms and public suites are 100% non-smoking; designated outdoor smoking lounges are available.",
+      "breakfastPolicy": "Lavish buffet breakfast is included in all 'Bed & Breakfast' room rates and served daily from 07:00 AM to 10:30 AM at The Golden Palm Restaurant.",
+      "parkingPolicy": "Complimentary on-site valet parking and standard secure parking are provided for all registered hotel guests and event attendees."
+    }
+  },
+  "properties": [
+    {
+      "id": "godwin-haridwar",
+      "name": "Godwin Hotel, Haridwar",
+      "address": {
+        "streetAddress": "NH-58, Rishikesh Highway, Opposite Shantikunj",
+        "addressLocality": "Haridwar",
+        "addressRegion": "Uttarakhand",
+        "postalCode": "249411",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-1334-266-000",
+      "email": "haridwar@godwinhotels.com",
+      "geo": {
+        "latitude": 29.9885,
+        "longitude": 78.1882
+      },
+      "priceRange": "₹5,500 - ₹18,000 INR per night",
+      "landmarkDistances": {
+        "harKiPauri": "6.5 km (approx. 12 minutes drive)",
+        "shantikunj": "0.8 km (walking distance, 3 minutes)",
+        "haridwarRailwayStation": "8.2 km (approx. 18 minutes drive)",
+        "jollyGrantAirportDehradun": "32 km (approx. 45 minutes drive)",
+        "rishikesh": "18 km (approx. 25 minutes drive)"
+      },
+      "amenities": [
+        "Outdoor Swimming Pool",
+        "The Golden Palm Multi-Cuisine Restaurant",
+        "Cafe Godwin 24-Hour Coffee Shop",
+        "Pillar-less Banquet Halls (Up to 1,200 guests)",
+        "Sprawling Lawn for Weddings (Up to 2,500 guests)",
+        "Free High-Speed Wi-Fi",
+        "24/7 Room Dining",
+        "Fitness Studio",
+        "Valet Parking"
+      ],
+      "rooms": [
+        {
+          "type": "Deluxe Heritage Room",
+          "basePriceINR": 5500,
+          "sizeSqFt": 380,
+          "bedType": "King or Twin Beds",
+          "maxOccupancy": "2 Adults + 1 Child"
+        },
+        {
+          "type": "Executive Club Suite",
+          "basePriceINR": 8500,
+          "sizeSqFt": 550,
+          "bedType": "Super King Bed",
+          "maxOccupancy": "3 Adults or 2 Adults + 2 Children"
+        },
+        {
+          "type": "Presidential Royal Suite",
+          "basePriceINR": 16500,
+          "sizeSqFt": 1100,
+          "bedType": "Master King Bed",
+          "maxOccupancy": "4 Adults"
+        }
+      ]
+    },
+    {
+      "id": "godwin-meerut",
+      "name": "Godwin Hotel, Meerut",
+      "address": {
+        "streetAddress": "Meerut Bypass Road, NH-58, Partapur",
+        "addressLocality": "Meerut",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "250103",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-121-244-1111",
+      "email": "meerut@godwinhotels.com",
+      "geo": {
+        "latitude": 28.9482,
+        "longitude": 77.6534
+      },
+      "priceRange": "₹6,200 - ₹22,000 INR per night",
+      "landmarkDistances": {
+        "delhiMeerutExpressway": "Direct access at Partapur Interchange",
+        "indiraGandhiInternationalAirportDelhi": "78 km (approx. 70 minutes via Expressway)",
+        "meerutCityRailwayStation": "7.5 km (approx. 15 minutes drive)",
+        "shopprixMall": "4.2 km (approx. 8 minutes drive)"
+      },
+      "amenities": [
+        "The Kohinoor Grand Ballroom (Western UP's largest pillar-less hall, 1,500 guests)",
+        "Olympic-Sized Outdoor Swimming Pool",
+        "The Regal Bar & Lounge",
+        "Multi-cuisine Fine Dining Restaurant",
+        "24-Hour Gymnasium & Steam Sauna",
+        "EV Car Charging Station",
+        "Valet Parking for 500+ Vehicles"
+      ],
+      "rooms": [
+        {
+          "type": "Superior Deluxe Room",
+          "basePriceINR": 6200,
+          "sizeSqFt": 420,
+          "bedType": "King Bed",
+          "maxOccupancy": "2 Adults + 1 Child"
+        },
+        {
+          "type": "Regency Executive Suite",
+          "basePriceINR": 9500,
+          "sizeSqFt": 620,
+          "bedType": "King Bed",
+          "maxOccupancy": "3 Adults"
+        },
+        {
+          "type": "Godwin Royal Presidential Suite",
+          "basePriceINR": 22000,
+          "sizeSqFt": 1350,
+          "bedType": "Master Suite King Bed",
+          "maxOccupancy": "4 Adults"
+        }
+      ]
+    },
+    {
+      "id": "godwin-goa",
+      "name": "Godwin Hotel, Candolim Goa",
+      "address": {
+        "streetAddress": "Fort Aguada Road, Candolim",
+        "addressLocality": "Bardez, North Goa",
+        "addressRegion": "Goa",
+        "postalCode": "403515",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-832-248-9999",
+      "email": "goa@godwinhotels.com",
+      "geo": {
+        "latitude": 15.5186,
+        "longitude": 73.7663
+      },
+      "priceRange": "₹7,800 - ₹25,000 INR per night",
+      "landmarkDistances": {
+        "candolimBeach": "0.7 km (approx. 7 minutes walk / 2 minutes drive)",
+        "calanguteBeach": "3.5 km (approx. 10 minutes drive)",
+        "fortAguada": "4.2 km (approx. 12 minutes drive)",
+        "manoharInternationalAirportMopa": "31 km (approx. 45 minutes drive)",
+        "dabolimAirport": "38 km (approx. 55 minutes drive)"
+      },
+      "amenities": [
+        "Tropical Lagoon Swimming Pool with Sunken Bar",
+        "Seafood Grill & Sunset Deck",
+        "Ayurvedic Rejuvenation Spa",
+        "Complimentary Beach Shuttle",
+        "High-Speed Wi-Fi",
+        "Boutique Travel Concierge"
+      ],
+      "rooms": [
+        {
+          "type": "Premier Pool View Room",
+          "basePriceINR": 7800,
+          "sizeSqFt": 400,
+          "bedType": "King Bed with Private Balcony",
+          "maxOccupancy": "2 Adults"
+        },
+        {
+          "type": "Candolim Luxury Suite",
+          "basePriceINR": 11500,
+          "sizeSqFt": 650,
+          "bedType": "Super King Bed with Sun Deck",
+          "maxOccupancy": "3 Adults"
+        }
+      ]
+    }
+  ]
+}

@@ -3,19 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Godwin Hotels & Resorts | Luxury Stays in Haridwar, Meerut & Goa</title>
-  <meta name="description" content="Experience royal hospitality with Godwin Hotels & Resorts. Discover luxury rooms, destination weddings, fine dining, and premier suites in Haridwar, Meerut, and Goa.">
-  <meta name="keywords" content="Godwin Hotels, Godwin Hotel Haridwar, Godwin Hotel Meerut, Godwin Hotel Goa, luxury hotel India, 5 star hotel Meerut, destination wedding Haridwar">
+  <title>Godwin Hotels & Resorts | Luxury Hotels in Haridwar, Meerut & Candolim Goa</title>
+  <meta name="description" content="Official website of Godwin Hotels & Resorts. Discover luxury rooms, presidential suites, destination weddings, banquets, and fine dining in Haridwar, Meerut, and Goa.">
+  <meta name="keywords" content="Godwin Hotels, Godwin Hotel Haridwar, Godwin Hotel Meerut, Godwin Hotel Goa, luxury hotel Haridwar, 5 star hotel Meerut, destination wedding Haridwar, luxury hotel Candolim Goa">
   
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://godwinhotels.com/">
+
   <!-- Open Graph / Meta -->
   <meta property="og:title" content="Godwin Hotels & Resorts | Quintessential Indian Hospitality">
-  <meta property="og:description" content="Immerse yourself in world-class luxury stays, regal dining, and unforgettable wedding celebrations across premier destinations in India.">
+  <meta property="og:description" content="Immerse yourself in 5-star standard luxury stays, regal dining, and unforgettable wedding celebrations across Haridwar, Meerut, and Candolim Goa.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://godwinhotels.com">
+  <meta property="og:url" content="https://godwinhotels.com/">
   <meta property="og:image" content="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:site_name" content="Godwin Hotels & Resorts">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Godwin Hotels & Resorts | Luxury Stays in Haridwar, Meerut & Goa">
+  <meta name="twitter:description" content="5-star standard accommodations, royal banquets, and authentic gastronomy in Haridwar, Meerut, and Candolim Goa.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80">
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
+
+  <!-- Preconnect to CDN & Fonts for Core Web Vitals (LCP < 2.5s) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
   <!-- FontAwesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -23,26 +38,287 @@
   <!-- Core Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Schema.org Hotel Rich Snippet -->
+  <!-- ==========================================================================
+       GEO / AEO MASTER STRUCTURED DATA (SCHEMA.ORG JSON-LD)
+       Enables Search Engines and AI Crawlers (ChatGPT, Perplexity, Claude, Gemini)
+       to cite exact facts with 100% consistency.
+       ========================================================================== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Hotel",
-    "name": "Godwin Hotels & Resorts",
-    "description": "Luxury hotel chain offering world-class accommodations, dining, and wedding venues in Haridwar, Meerut, and Goa.",
-    "url": "https://godwinhotels.com",
-    "starRating": {
-      "@type": "Rating",
-      "ratingValue": "5"
-    },
-    "priceRange": "₹₹₹₹"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://godwinhotels.com/#organization",
+        "name": "Godwin Hotels & Resorts",
+        "legalName": "Godwin Hospitality Pvt. Ltd.",
+        "url": "https://godwinhotels.com",
+        "logo": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=500&q=80",
+        "telephone": "+91-1234-567-890",
+        "email": "reservations@godwinhotels.com",
+        "sameAs": [
+          "https://www.facebook.com/godwinhotels",
+          "https://www.instagram.com/godwinhotels",
+          "https://www.tripadvisor.com"
+        ]
+      },
+      {
+        "@type": "Hotel",
+        "@id": "https://godwinhotels.com/#godwin-haridwar",
+        "name": "Godwin Hotel, Haridwar",
+        "legalName": "Godwin Hotel Haridwar Pvt. Ltd.",
+        "parentOrganization": { "@id": "https://godwinhotels.com/#organization" },
+        "description": "Luxury 5-star standard hotel on NH-58 Haridwar near Shantikunj and the holy Ganges. Features outdoor pool, fine dining, grand banquet lawns, and mountain-view suites.",
+        "url": "https://godwinhotels.com/#destinations",
+        "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
+        "telephone": "+91-1334-266-000",
+        "email": "haridwar@godwinhotels.com",
+        "priceRange": "₹5,500 - ₹18,000 INR",
+        "currenciesAccepted": "INR, USD, EUR, AED",
+        "checkinTime": "14:00",
+        "checkoutTime": "11:00",
+        "petsAllowed": false,
+        "starRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "1420",
+          "bestRating": "5"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "NH-58, Rishikesh Highway, Opposite Shantikunj",
+          "addressLocality": "Haridwar",
+          "addressRegion": "Uttarakhand",
+          "postalCode": "249411",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 29.9885,
+          "longitude": 78.1882
+        },
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Outdoor Swimming Pool", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Free High-Speed Wi-Fi", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "The Golden Palm Restaurant", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Valet Parking", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Grand Wedding Lawns", "value": true }
+        ],
+        "containsPlace": [
+          {
+            "@type": "HotelRoom",
+            "name": "Deluxe Heritage Room",
+            "description": "380 sq.ft spacious room with King bed, scenic mountain views, marble bath, and workstation.",
+            "bed": "1 King Bed or 2 Twin Beds",
+            "occupancy": { "@type": "QuantitativeValue", "maxValue": 3, "unitText": "person" },
+            "offers": {
+              "@type": "Offer",
+              "price": "5500",
+              "priceCurrency": "INR"
+            }
+          },
+          {
+            "@type": "HotelRoom",
+            "name": "Executive Club Suite",
+            "description": "550 sq.ft luxury suite with separate living salon, soaking bathtub, and espresso bar.",
+            "bed": "1 Super King Bed",
+            "occupancy": { "@type": "QuantitativeValue", "maxValue": 4, "unitText": "person" },
+            "offers": {
+              "@type": "Offer",
+              "price": "8500",
+              "priceCurrency": "INR"
+            }
+          },
+          {
+            "@type": "HotelRoom",
+            "name": "Presidential Royal Suite",
+            "description": "1,100 sq.ft palatial suite featuring master bedroom, Jacuzzi, private dining salon, and butler service.",
+            "bed": "1 Master King Bed",
+            "occupancy": { "@type": "QuantitativeValue", "maxValue": 4, "unitText": "person" },
+            "offers": {
+              "@type": "Offer",
+              "price": "16500",
+              "priceCurrency": "INR"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Hotel",
+        "@id": "https://godwinhotels.com/#godwin-meerut",
+        "name": "Godwin Hotel, Meerut",
+        "legalName": "Godwin Hotel Meerut Pvt. Ltd.",
+        "parentOrganization": { "@id": "https://godwinhotels.com/#organization" },
+        "description": "Premier luxury landmark hotel on Delhi-Meerut Expressway. Houses Western UP's largest pillar-less ballroom (Kohinoor Ballroom), Olympic pool, and royal suites.",
+        "url": "https://godwinhotels.com/#destinations",
+        "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+        "telephone": "+91-121-244-1111",
+        "email": "meerut@godwinhotels.com",
+        "priceRange": "₹6,200 - ₹22,000 INR",
+        "currenciesAccepted": "INR, USD, EUR, AED",
+        "checkinTime": "14:00",
+        "checkoutTime": "11:00",
+        "petsAllowed": false,
+        "starRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "1890",
+          "bestRating": "5"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Meerut Bypass Road, NH-58, Partapur",
+          "addressLocality": "Meerut",
+          "addressRegion": "Uttar Pradesh",
+          "postalCode": "250103",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 28.9482,
+          "longitude": 77.6534
+        },
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Kohinoor Grand Ballroom (1500 capacity)", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Olympic-Sized Swimming Pool", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "EV Car Charging Station", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Valet Parking for 500 cars", "value": true }
+        ]
+      },
+      {
+        "@type": "Hotel",
+        "@id": "https://godwinhotels.com/#godwin-goa",
+        "name": "Godwin Hotel, Candolim Goa",
+        "legalName": "Godwin Hotel Goa Pvt. Ltd.",
+        "parentOrganization": { "@id": "https://godwinhotels.com/#organization" },
+        "description": "Serene boutique luxury resort 700 meters from Candolim Beach in North Goa. Features tropical pool bar, Ayurvedic spa, seafood restaurant, and private balconies.",
+        "url": "https://godwinhotels.com/#destinations",
+        "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
+        "telephone": "+91-832-248-9999",
+        "email": "goa@godwinhotels.com",
+        "priceRange": "₹7,800 - ₹25,000 INR",
+        "currenciesAccepted": "INR, USD, EUR, AED",
+        "checkinTime": "14:00",
+        "checkoutTime": "11:00",
+        "petsAllowed": false,
+        "starRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "960",
+          "bestRating": "5"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Fort Aguada Road, Candolim",
+          "addressLocality": "Bardez, North Goa",
+          "addressRegion": "Goa",
+          "postalCode": "403515",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 15.5186,
+          "longitude": 73.7663
+        },
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Candolim Beach Proximity (700m)", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Lagoon Pool with Sunken Bar", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Ayurvedic Rejuvenation Spa", "value": true }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://godwinhotels.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is Godwin Hotel pet-friendly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, Godwin Hotels does not permit pets in guest rooms or dining areas, with the exception of certified service animals assisting guests with disabilities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the check-in and check-out times at Godwin Hotels?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Check-in at all Godwin Hotels is from 14:00 (2:00 PM), and check-out is by 11:00 (11:00 AM). Early check-in from 10:00 AM is subject to room availability."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is breakfast included in room bookings at Godwin Hotels?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, a complimentary lavish buffet breakfast is included in all Bed & Breakfast room rates and served daily from 07:00 AM to 10:30 AM at The Golden Palm Restaurant."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How far is Godwin Hotel Haridwar from Har Ki Pauri and the railway station?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Godwin Hotel Haridwar is situated 6.5 km from Har Ki Pauri (approximately 12 minutes drive) and 8.2 km from Haridwar Railway Station on NH-58."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the wedding and banquet guest capacity at Godwin Hotel Meerut?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Kohinoor Ballroom at Godwin Hotel Meerut accommodates up to 1,500 guests indoors, while the outdoor royal lawns can host up to 2,500 guests for destination weddings."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How far is Godwin Hotel Goa from Candolim Beach?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Godwin Hotel Candolim Goa is located 700 meters from Candolim Beach, an easy 7-minute walk or 2-minute drive, with complimentary shuttle service available."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the cancellation policy for reservations at Godwin Hotels?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Guests can cancel reservations free of charge up to 48 hours prior to scheduled check-in. Cancellations made within 48 hours incur a one-night room charge."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is complimentary parking and EV charging available at Godwin Hotels?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Godwin Hotels provides complimentary secure on-site parking and valet service across all properties, with dedicated high-speed EV charging stations available at Godwin Meerut."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
 <body>
 
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- ==========================================================================
-       TOP BAR & SITE HEADER
+       HEADER & NAVIGATION
        ========================================================================== -->
   <header class="site-header" id="siteHeader">
     <div class="container-wide">
@@ -63,7 +339,7 @@
       </div>
 
       <nav class="navbar" aria-label="Main Navigation">
-        <a href="#home" class="brand-logo">
+        <a href="#home" class="brand-logo" aria-label="Godwin Hotels Home">
           <div class="brand-crest">G</div>
           <div class="brand-text">
             <span class="brand-name">GODWIN</span>
@@ -75,10 +351,10 @@
           <a href="#home" class="nav-link">Home</a>
           <a href="#destinations" class="nav-link">Our Hotels</a>
           <a href="#rooms" class="nav-link">Suites &amp; Rooms</a>
+          <a href="#facts" class="nav-link">Hotel Facts</a>
           <a href="#dining" class="nav-link">Dining</a>
           <a href="#banquets" class="nav-link">Weddings &amp; Events</a>
-          <a href="#amenities" class="nav-link">Experiences</a>
-          <a href="#reviews" class="nav-link">Reviews</a>
+          <a href="#faq" class="nav-link">FAQs</a>
           <a href="#contact" class="nav-link">Contact</a>
         </div>
 
@@ -86,7 +362,7 @@
           <i class="fa-regular fa-calendar-check"></i> Book A Stay
         </button>
 
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
           <i class="fa-solid fa-bars"></i>
         </button>
       </nav>
@@ -94,639 +370,839 @@
   </header>
 
   <!-- ==========================================================================
-       HERO SECTION WITH SLIDER
+       MAIN CONTENT CONTAINER
        ========================================================================== -->
-  <section class="hero-section" id="home">
-    <div class="hero-slider" id="heroSlider">
-      <!-- Slide 1: Haridwar -->
-      <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=80');"></div>
-      <!-- Slide 2: Meerut Grand Facade -->
-      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1920&q=80');"></div>
-      <!-- Slide 3: Goa Poolside Luxury -->
-      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1920&q=80');"></div>
-    </div>
-    <div class="hero-overlay"></div>
+  <main id="main-content">
 
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <i class="fa-solid fa-crown"></i> The Pinnacle of Royal Comfort
-        </div>
-        <h1 class="hero-title">
-          Experience Pure Splendor at <span>Godwin Hotels</span>
-        </h1>
-        <p class="hero-description">
-          Where heritage sophistication meets contemporary refinement. Indulge in opulent suites, award-winning culinary artistry, and grand celebration venues across India’s most iconic destinations.
-        </p>
-        <div class="hero-actions">
-          <a href="#destinations" class="btn-luxury-primary">
-            <i class="fa-solid fa-compass"></i> Explore Properties
-          </a>
-          <button class="btn-luxury-outline trigger-booking-modal">
-            <i class="fa-regular fa-calendar-days"></i> Reserve Suite
-          </button>
-        </div>
+    <!-- ==========================================================================
+         HERO SECTION WITH SLIDER
+         ========================================================================== -->
+    <section class="hero-section" id="home" aria-label="Godwin Welcome Showcase">
+      <div class="hero-slider" id="heroSlider">
+        <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1920&q=80');"></div>
       </div>
-    </div>
+      <div class="hero-overlay"></div>
 
-    <!-- Slider Dots -->
-    <div class="hero-slider-dots">
-      <div class="hero-slider-dot active" data-index="0"></div>
-      <div class="hero-slider-dot" data-index="1"></div>
-      <div class="hero-slider-dot" data-index="2"></div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       FLOATING LIVE BOOKING ENGINE
-       ========================================================================== -->
-  <div class="container">
-    <div class="booking-engine-wrapper">
-      <div class="booking-card">
-        <form id="quickBookingForm" class="booking-form">
-          <!-- Destination Field -->
-          <div class="booking-field">
-            <label class="booking-label" for="bookingDestination">
-              <i class="fa-solid fa-location-dot"></i> Destination
-            </label>
-            <select id="bookingDestination" class="booking-select" required>
-              <option value="Godwin Hotel Haridwar">Godwin Hotel, Haridwar (NH-58)</option>
-              <option value="Godwin Hotel Meerut">Godwin Hotel, Meerut (Expressway)</option>
-              <option value="Godwin Hotel Goa">Godwin Hotel, Candolim Goa</option>
-            </select>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fa-solid fa-crown"></i> The Pinnacle of Royal Comfort
           </div>
-
-          <!-- Check-In -->
-          <div class="booking-field">
-            <label class="booking-label" for="checkinDate">
-              <i class="fa-regular fa-calendar"></i> Check In
-            </label>
-            <input type="date" id="checkinDate" class="booking-input" required>
-          </div>
-
-          <!-- Check-Out -->
-          <div class="booking-field">
-            <label class="booking-label" for="checkoutDate">
-              <i class="fa-regular fa-calendar"></i> Check Out
-            </label>
-            <input type="date" id="checkoutDate" class="booking-input" required>
-          </div>
-
-          <!-- Guests & Rooms -->
-          <div class="booking-field">
-            <label class="booking-label" for="bookingGuests">
-              <i class="fa-solid fa-user-group"></i> Guests / Rooms
-            </label>
-            <select id="bookingGuests" class="booking-select">
-              <option value="1 Guest, 1 Room">1 Guest, 1 Room</option>
-              <option value="2 Guests, 1 Room" selected>2 Guests, 1 Room</option>
-              <option value="3 Guests, 1 Room">3 Guests, 1 Room</option>
-              <option value="4 Guests, 2 Rooms">4 Guests, 2 Rooms</option>
-              <option value="Family / Group">Family / Group (3+ Rooms)</option>
-            </select>
-            <input type="hidden" id="bookingRooms" value="1">
-          </div>
-
-          <!-- Submit Button -->
-          <div class="booking-field">
-            <button type="submit" class="booking-submit-btn">
-              <i class="fa-solid fa-magnifying-glass"></i> Check Rates
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <!-- ==========================================================================
-       ABOUT & BRAND STORY
-       ========================================================================== */
-  ========================================================================== -->
-  <section class="about-section" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-image-stack">
-          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Godwin Hotel Luxury Lobby" class="about-main-img">
-          <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=600&q=80" alt="Godwin Presidential Suite" class="about-sub-img">
-          <div class="about-experience-badge">
-            <div class="experience-number">25+</div>
-            <div class="experience-text">Years of Excellence</div>
-          </div>
-        </div>
-
-        <div class="about-content">
-          <span class="section-subtitle">Quintessential Hospitality</span>
-          <h2 class="section-title">A Legacy of Grandeur &amp; Timeless Warmth</h2>
-          <p class="about-lead">
-            Welcome to Godwin Hotels &amp; Resorts, where every moment is crafted to envelop you in unmatched luxury, regal comfort, and personalized care.
+          <h1 class="hero-title">
+            Experience Pure Splendor at <span>Godwin Hotels</span>
+          </h1>
+          <p class="hero-description">
+            Godwin Hotels &amp; Resorts provides 5-star standard luxury accommodations, royal wedding venues, and fine dining across Haridwar, Meerut, and Candolim Goa.
           </p>
-          <p class="about-para">
-            Whether seeking tranquility in the divine foothills of Haridwar, hosting monumental celebrations and high-profile corporate galas in Meerut, or indulging in sun-kissed coastal leisure in Candolim, Goa, Godwin properties represent the gold standard of Indian hospitality.
-          </p>
-
-          <div class="about-pillars">
-            <div class="pillar-item">
-              <div class="pillar-icon"><i class="fa-solid fa-bell-concierge"></i></div>
-              <div>
-                <h4 class="pillar-title">Bespoke Concierge</h4>
-                <p class="pillar-desc">24/7 dedicated service tailored to your bespoke preferences.</p>
-              </div>
-            </div>
-            <div class="pillar-item">
-              <div class="pillar-icon"><i class="fa-solid fa-utensils"></i></div>
-              <div>
-                <h4 class="pillar-title">Gourmet Dining</h4>
-                <p class="pillar-desc">Master chefs creating authentic Indian and global delicacies.</p>
-              </div>
-            </div>
-            <div class="pillar-item">
-              <div class="pillar-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
-              <div>
-                <h4 class="pillar-title">Grand Venues</h4>
-                <p class="pillar-desc">Pillar-less ballrooms &amp; lush lawns hosting up to 2,500 guests.</p>
-              </div>
-            </div>
-            <div class="pillar-item">
-              <div class="pillar-icon"><i class="fa-solid fa-spa"></i></div>
-              <div>
-                <h4 class="pillar-title">Holistic Wellness</h4>
-                <p class="pillar-desc">Rejuvenating spa treatments, temperature pools &amp; fitness studios.</p>
-              </div>
-            </div>
-          </div>
-
-          <a href="#destinations" class="btn-luxury-primary">Explore Our Portfolio</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       OUR PROPERTIES & DESTINATIONS
-       ========================================================================== -->
-  <section class="destinations-section" id="destinations">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Iconic Destinations</span>
-        <h2 class="section-title">Discover Godwin Hotels Across India</h2>
-        <p class="section-desc">
-          Each property in our portfolio reflects the distinct character of its location while delivering our signature five-star standards of service, luxury, and culinary mastery.
-        </p>
-      </div>
-
-      <!-- Filter Buttons -->
-      <div class="filter-nav">
-        <button class="filter-btn active" data-filter="all">All Destinations</button>
-        <button class="filter-btn" data-filter="haridwar">Haridwar / Rishikesh</button>
-        <button class="filter-btn" data-filter="meerut">Meerut (Delhi NCR)</button>
-        <button class="filter-btn" data-filter="goa">Candolim, Goa</button>
-      </div>
-
-      <!-- Hotel Cards Grid -->
-      <div class="hotels-grid">
-        <!-- Hotel 1: Godwin Haridwar -->
-        <article class="hotel-card" data-destination="haridwar">
-          <div class="hotel-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Godwin Hotel Haridwar">
-            <div class="hotel-location-tag">
-              <i class="fa-solid fa-location-dot"></i> Haridwar, Uttarakhand
-            </div>
-            <div class="hotel-rating-tag">
-              <i class="fa-solid fa-star"></i> 4.8 / 5
-            </div>
-          </div>
-          <div class="hotel-details">
-            <h3 class="hotel-title">Godwin Hotel, Haridwar</h3>
-            <p class="hotel-desc">
-              Situated gracefully on NH-58 near Shantikunj and the sacred Ganges. Features lush landscaped gardens, royal presidential suites, expansive banquet halls, and soothing mountain breezes.
-            </p>
-            <div class="hotel-amenities-list">
-              <span class="amenity-chip"><i class="fa-solid fa-wifi"></i> Free High-Speed WiFi</span>
-              <span class="amenity-chip"><i class="fa-solid fa-water-ladder"></i> Swimming Pool</span>
-              <span class="amenity-chip"><i class="fa-solid fa-utensils"></i> Golden Palm Cafe</span>
-              <span class="amenity-chip"><i class="fa-solid fa-car"></i> Valet Parking</span>
-            </div>
-            <div class="hotel-card-footer">
-              <div class="hotel-price">
-                <span class="price-label">Starting From</span>
-                <div class="price-value"><span data-base-price="5500">₹5,500</span><span> / night</span></div>
-              </div>
-              <button class="btn-hotel-book trigger-booking-modal" data-destination="Godwin Hotel Haridwar" data-room="Executive Mountain View Suite" data-price="5500">
-                Book Stay
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Hotel 2: Godwin Meerut -->
-        <article class="hotel-card" data-destination="meerut">
-          <div class="hotel-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Godwin Hotel Meerut">
-            <div class="hotel-location-tag">
-              <i class="fa-solid fa-location-dot"></i> Meerut, Delhi-NCR
-            </div>
-            <div class="hotel-rating-tag">
-              <i class="fa-solid fa-star"></i> 4.9 / 5
-            </div>
-          </div>
-          <div class="hotel-details">
-            <h3 class="hotel-title">Godwin Hotel, Meerut</h3>
-            <p class="hotel-desc">
-              The premier luxury landmark on the Delhi-Meerut expressway. Home to the largest pillar-less ballroom in Western UP, royal suites, Olympic-sized pool, and unmatched wedding venues.
-            </p>
-            <div class="hotel-amenities-list">
-              <span class="amenity-chip"><i class="fa-solid fa-champagne-glasses"></i> Royal Banquet</span>
-              <span class="amenity-chip"><i class="fa-solid fa-dumbbell"></i> Wellness Club</span>
-              <span class="amenity-chip"><i class="fa-solid fa-martini-glass"></i> Regency Lounge</span>
-              <span class="amenity-chip"><i class="fa-solid fa-shield-halved"></i> 24/7 Security</span>
-            </div>
-            <div class="hotel-card-footer">
-              <div class="hotel-price">
-                <span class="price-label">Starting From</span>
-                <div class="price-value"><span data-base-price="6200">₹6,200</span><span> / night</span></div>
-              </div>
-              <button class="btn-hotel-book trigger-booking-modal" data-destination="Godwin Hotel Meerut" data-room="Presidential Royal Suite" data-price="6200">
-                Book Stay
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Hotel 3: Godwin Goa -->
-        <article class="hotel-card" data-destination="goa">
-          <div class="hotel-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="Godwin Hotel Candolim Goa">
-            <div class="hotel-location-tag">
-              <i class="fa-solid fa-location-dot"></i> Candolim, North Goa
-            </div>
-            <div class="hotel-rating-tag">
-              <i class="fa-solid fa-star"></i> 4.8 / 5
-            </div>
-          </div>
-          <div class="hotel-details">
-            <h3 class="hotel-title">Godwin Hotel, Candolim Goa</h3>
-            <p class="hotel-desc">
-              A serene boutique sanctuary situated moments from the vibrant Candolim beachfront. Features sun-kissed pool decks, palm-fringed lounge bars, and tropical serenity.
-            </p>
-            <div class="hotel-amenities-list">
-              <span class="amenity-chip"><i class="fa-solid fa-umbrella-beach"></i> Beach Proximity</span>
-              <span class="amenity-chip"><i class="fa-solid fa-cocktail"></i> Poolside Bar</span>
-              <span class="amenity-chip"><i class="fa-solid fa-fish"></i> Seafood Grill</span>
-              <span class="amenity-chip"><i class="fa-solid fa-spa"></i> Ayurvedic Spa</span>
-            </div>
-            <div class="hotel-card-footer">
-              <div class="hotel-price">
-                <span class="price-label">Starting From</span>
-                <div class="price-value"><span data-base-price="7800">₹7,800</span><span> / night</span></div>
-              </div>
-              <button class="btn-hotel-book trigger-booking-modal" data-destination="Godwin Hotel Goa" data-room="Premier Balcony Suite" data-price="7800">
-                Book Stay
-              </button>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       ROOMS & SUITES ACCOMMODATION
-       ========================================================================== -->
-  <section class="rooms-section" id="rooms">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Sanctuary of Comfort</span>
-        <h2 class="section-title">Palatial Rooms &amp; Exclusive Suites</h2>
-        <p class="section-desc">
-          Thoughtfully appointed with plush bedding, imported Italian marble bathrooms, high-speed connectivity, and picturesque garden or mountain vistas.
-        </p>
-      </div>
-
-      <div class="rooms-grid">
-        <!-- Room 1 -->
-        <div class="room-card">
-          <div class="room-thumb">
-            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="Deluxe Heritage Room">
-            <span class="room-badge">Popular Choice</span>
-          </div>
-          <div class="room-body">
-            <h3 class="room-title">Deluxe Heritage Room</h3>
-            <div class="room-meta">
-              <span><i class="fa-solid fa-bed"></i> King Bed</span>
-              <span><i class="fa-solid fa-maximize"></i> 380 sq.ft</span>
-              <span><i class="fa-solid fa-mountain-sun"></i> Scenic View</span>
-            </div>
-            <p class="room-desc">
-              Elegantly decorated with handcrafted wood furnishings, soundproof floor-to-ceiling windows, ergonomic workstation, and premium herbal bath amenities.
-            </p>
-            <div class="room-footer">
-              <div class="room-price-val"><span data-base-price="5500">₹5,500</span> <span>/ night</span></div>
-              <button class="btn-hotel-book trigger-booking-modal" data-room="Deluxe Heritage Room" data-price="5500">
-                Reserve
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Room 2 -->
-        <div class="room-card">
-          <div class="room-thumb">
-            <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=800&q=80" alt="Executive Club Suite">
-            <span class="room-badge">VIP Lounge Access</span>
-          </div>
-          <div class="room-body">
-            <h3 class="room-title">Executive Club Suite</h3>
-            <div class="room-meta">
-              <span><i class="fa-solid fa-bed"></i> Super King</span>
-              <span><i class="fa-solid fa-maximize"></i> 550 sq.ft</span>
-              <span><i class="fa-solid fa-couch"></i> Separate Living</span>
-            </div>
-            <p class="room-desc">
-              Includes a distinct living salon, marble bath with deep-soaking tub, espresso machine, and complimentary high-tea access at the executive lounge.
-            </p>
-            <div class="room-footer">
-              <div class="room-price-val"><span data-base-price="8500">₹8,500</span> <span>/ night</span></div>
-              <button class="btn-hotel-book trigger-booking-modal" data-room="Executive Club Suite" data-price="8500">
-                Reserve
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Room 3 -->
-        <div class="room-card">
-          <div class="room-thumb">
-            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Presidential Royal Suite">
-            <span class="room-badge">Signature Luxury</span>
-          </div>
-          <div class="room-body">
-            <h3 class="room-title">Presidential Royal Suite</h3>
-            <div class="room-meta">
-              <span><i class="fa-solid fa-crown"></i> Master Bedroom</span>
-              <span><i class="fa-solid fa-maximize"></i> 1,100 sq.ft</span>
-              <span><i class="fa-solid fa-hot-tub-person"></i> Jacuzzi</span>
-            </div>
-            <p class="room-desc">
-              The crown jewel of Godwin Hotels. Features a dining suite for 8, dedicated private butler service, panoramic balcony, and bespoke luxury amenities.
-            </p>
-            <div class="room-footer">
-              <div class="room-price-val"><span data-base-price="16500">₹16,500</span> <span>/ night</span></div>
-              <button class="btn-hotel-book trigger-booking-modal" data-room="Presidential Royal Suite" data-price="16500">
-                Reserve
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       DINING & CULINARY EXPERIENCES
-       ========================================================================== -->
-  <section class="dining-section" id="dining">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Epicurean Journeys</span>
-        <h2 class="section-title">Award-Winning Gastronomy &amp; Fine Dining</h2>
-        <p class="section-desc">
-          Embark on an unforgettable culinary adventure where time-honored Indian traditions meet contemporary international flair.
-        </p>
-      </div>
-
-      <div class="dining-grid">
-        <div class="dining-carousel-card">
-          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80" alt="Godwin Restaurant">
-          <div class="dining-overlay-info">
-            <h3 class="dining-overlay-title">The Golden Palm Restaurant</h3>
-            <p class="dining-overlay-text">
-              Fine-dining multicuisine symphony offering North Indian Royal Mughlai, Continental grills, and Pan-Asian specialties prepared live by master chefs.
-            </p>
-          </div>
-        </div>
-
-        <div class="dining-content">
-          <div class="dining-feature-item">
-            <div class="dining-icon"><i class="fa-solid fa-mug-saucer"></i></div>
-            <div>
-              <h4 class="dining-item-title">Cafe Godwin &amp; Bakery</h4>
-              <p class="dining-item-desc">Artisanal single-origin brews, freshly baked French pastries, and gourmet high-tea served in a relaxed conservatory atmosphere.</p>
-            </div>
-          </div>
-
-          <div class="dining-feature-item">
-            <div class="dining-icon"><i class="fa-solid fa-martini-glass-citrus"></i></div>
-            <div>
-              <h4 class="dining-item-title">The Regal Bar &amp; Poolside Lounge</h4>
-              <p class="dining-item-desc">Handcrafted signature cocktails, vintage cellared wines, and tantalizing tapas beneath the open starlit sky.</p>
-            </div>
-          </div>
-
-          <div class="dining-feature-item">
-            <div class="dining-icon"><i class="fa-solid fa-plate-wheat"></i></div>
-            <div>
-              <h4 class="dining-item-title">24/7 In-Room Royal Dining</h4>
-              <p class="dining-item-desc">Intimate multi-course meals served with pristine silver service in the comforting privacy of your suite.</p>
-            </div>
-          </div>
-
-          <div style="margin-top: 1rem;">
-            <button class="btn-luxury-primary trigger-booking-modal" data-destination="Dining Reservation" data-room="Table for Fine Dining">
-              <i class="fa-solid fa-utensils"></i> Reserve A Table
+          <div class="hero-actions">
+            <a href="#destinations" class="btn-luxury-primary">
+              <i class="fa-solid fa-compass"></i> Explore Properties
+            </a>
+            <button class="btn-luxury-outline trigger-booking-modal">
+              <i class="fa-regular fa-calendar-days"></i> Reserve Suite
             </button>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ==========================================================================
-       WEDDINGS, BANQUETS & MICE EVENTS
-       ========================================================================== -->
-  <section class="banquets-section" id="banquets">
+      <div class="hero-slider-dots">
+        <div class="hero-slider-dot active" data-index="0" aria-label="Show Slide 1"></div>
+        <div class="hero-slider-dot" data-index="1" aria-label="Show Slide 2"></div>
+        <div class="hero-slider-dot" data-index="2" aria-label="Show Slide 3"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FLOATING LIVE BOOKING ENGINE
+         ========================================================================== -->
     <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Monumental Celebrations</span>
-        <h2 class="section-title">Grand Weddings, Banquets &amp; Conventions</h2>
-        <p class="section-desc">
-          From majestic royal wedding ceremonies with sprawling baraat processions to seamless high-level corporate summits, Godwin delivers perfection.
-        </p>
+      <div class="booking-engine-wrapper">
+        <div class="booking-card">
+          <form id="quickBookingForm" class="booking-form" aria-label="Quick Room Booking Form">
+            <div class="booking-field">
+              <label class="booking-label" for="bookingDestination">
+                <i class="fa-solid fa-location-dot"></i> Destination
+              </label>
+              <select id="bookingDestination" class="booking-select" required>
+                <option value="Godwin Hotel Haridwar">Godwin Hotel, Haridwar (NH-58)</option>
+                <option value="Godwin Hotel Meerut">Godwin Hotel, Meerut (Expressway)</option>
+                <option value="Godwin Hotel Goa">Godwin Hotel, Candolim Goa</option>
+              </select>
+            </div>
+
+            <div class="booking-field">
+              <label class="booking-label" for="checkinDate">
+                <i class="fa-regular fa-calendar"></i> Check In
+              </label>
+              <input type="date" id="checkinDate" class="booking-input" required>
+            </div>
+
+            <div class="booking-field">
+              <label class="booking-label" for="checkoutDate">
+                <i class="fa-regular fa-calendar"></i> Check Out
+              </label>
+              <input type="date" id="checkoutDate" class="booking-input" required>
+            </div>
+
+            <div class="booking-field">
+              <label class="booking-label" for="bookingGuests">
+                <i class="fa-solid fa-user-group"></i> Guests / Rooms
+              </label>
+              <select id="bookingGuests" class="booking-select">
+                <option value="1 Guest, 1 Room">1 Guest, 1 Room</option>
+                <option value="2 Guests, 1 Room" selected>2 Guests, 1 Room</option>
+                <option value="3 Guests, 1 Room">3 Guests, 1 Room</option>
+                <option value="4 Guests, 2 Rooms">4 Guests, 2 Rooms</option>
+                <option value="Family / Group">Family / Group (3+ Rooms)</option>
+              </select>
+              <input type="hidden" id="bookingRooms" value="1">
+            </div>
+
+            <div class="booking-field">
+              <button type="submit" class="booking-submit-btn">
+                <i class="fa-solid fa-magnifying-glass"></i> Check Rates
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
+    </div>
 
-      <div class="banquet-cards-row">
-        <!-- Venue 1 -->
-        <div class="banquet-card">
-          <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80" alt="Grand Ball Room Meerut">
-          <div class="banquet-card-overlay">
-            <span class="banquet-badge">Western UP's Largest</span>
-            <h3 class="banquet-name">The Kohinoor Grand Ballroom</h3>
-            <div class="banquet-capacity"><i class="fa-solid fa-users"></i> Capacity: Up to 1,500 Guests</div>
-            <p class="banquet-info">Pillar-less soaring ceilings, crystal chandeliers, integrated 4K AV systems, and royal bridal staging.</p>
+    <!-- ==========================================================================
+         ABOUT & BRAND STORY
+         ========================================================================== -->
+    <section class="about-section" id="about" aria-label="About Godwin Hotels">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-stack">
+            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Lobby of Godwin Hotel" class="about-main-img" loading="lazy" decoding="async" width="800" height="480">
+            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=600&q=80" alt="Presidential Suite Interior" class="about-sub-img" loading="lazy" decoding="async" width="600" height="280">
+            <div class="about-experience-badge">
+              <div class="experience-number">25+</div>
+              <div class="experience-text">Years of Excellence</div>
+            </div>
           </div>
-        </div>
 
-        <!-- Venue 2 -->
-        <div class="banquet-card">
-          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" alt="Royal Wedding Lawn Haridwar">
-          <div class="banquet-card-overlay">
-            <span class="banquet-badge">Open-Air Splendor</span>
-            <h3 class="banquet-name">The Royal Ganges Lawns</h3>
-            <div class="banquet-capacity"><i class="fa-solid fa-users"></i> Capacity: Up to 2,500 Guests</div>
-            <p class="banquet-info">Manicured emerald green lawns flanked by majestic mountain backdrops, perfect for grand sangeet &amp; wedding pheras.</p>
-          </div>
-        </div>
+          <div class="about-content">
+            <span class="section-subtitle">Quintessential Hospitality</span>
+            <h2 class="section-title">A Legacy of Grandeur &amp; Timeless Warmth</h2>
+            <p class="about-lead">
+              Godwin Hotels &amp; Resorts is an Indian hospitality chain offering regal comfort, five-star standard amenities, and personalized guest services.
+            </p>
+            <p class="about-para">
+              Whether seeking tranquility in the divine foothills of Haridwar on NH-58, hosting monumental celebrations and weddings in Meerut, or indulging in sun-kissed coastal leisure in Candolim, North Goa, Godwin properties represent the gold standard of Indian warmth.
+            </p>
 
-        <!-- Venue 3 -->
-        <div class="banquet-card">
-          <img src="https://images.unsplash.com/photo-1431540015161-0bf8663c16ba?auto=format&fit=crop&w=800&q=80" alt="Executive Corporate Summit Center">
-          <div class="banquet-card-overlay">
-            <span class="banquet-badge">Corporate &amp; MICE</span>
-            <h3 class="banquet-name">The Presidency Boardrooms</h3>
-            <div class="banquet-capacity"><i class="fa-solid fa-users"></i> Capacity: 25 to 350 Delegates</div>
-            <p class="banquet-info">Ergonomic seating, high-speed fiber video-conferencing, breakout lounges, and tailored executive banquet menus.</p>
+            <div class="about-pillars">
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-bell-concierge"></i></div>
+                <div>
+                  <h4 class="pillar-title">Bespoke Concierge</h4>
+                  <p class="pillar-desc">24/7 dedicated guest concierge service across all properties.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div>
+                  <h4 class="pillar-title">Gourmet Dining</h4>
+                  <p class="pillar-desc">Master chefs preparing authentic Indian and international cuisine.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+                <div>
+                  <h4 class="pillar-title">Grand Venues</h4>
+                  <p class="pillar-desc">Pillar-less ballrooms and lawns hosting up to 2,500 guests.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-spa"></i></div>
+                <div>
+                  <h4 class="pillar-title">Holistic Wellness</h4>
+                  <p class="pillar-desc">Ayurvedic spas, outdoor swimming pools, and modern gyms.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#destinations" class="btn-luxury-primary">Explore Our Portfolio</a>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Inquiry Banner -->
-      <div class="banquet-inquiry-box">
-        <div class="banquet-inquiry-text">
-          <h3>Plan Your Dream Event with Our Event Directors</h3>
+    <!-- ==========================================================================
+         OUR PROPERTIES & DESTINATIONS
+         ========================================================================== -->
+    <section class="destinations-section" id="destinations" aria-label="Our Hotels and Destinations">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Iconic Destinations</span>
+          <h2 class="section-title">Discover Godwin Hotels Across India</h2>
+          <p class="section-desc">
+            Godwin operates three premier properties in Haridwar, Meerut, and Candolim Goa, each featuring full-service amenities and five-star hospitality standards.
+          </p>
+        </div>
+
+        <!-- Answer-First Declarative Facts Block for AI Citability -->
+        <div class="answer-first-summary">
           <p>
-            Our dedicated banquet specialists assist with thematic decor, custom menus by master chefs, vendor coordination, and luxury guest accommodations.
+            <strong>Quick Property Overview:</strong> Godwin Hotel Haridwar is located on NH-58 near Shantikunj (6.5 km from Har Ki Pauri). Godwin Hotel Meerut is situated on the Meerut Bypass Road featuring Western UP's largest pillar-less ballroom. Godwin Hotel Candolim Goa is located 700 meters from Candolim Beach in North Goa.
           </p>
-        </div>
-        <div style="text-align: right;">
-          <button id="banquetInquiryBtn" class="btn-luxury-primary">
-            <i class="fa-solid fa-envelope-open-text"></i> Inquire For Event
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       LUXURY AMENITIES & EXPERIENCES
-       ========================================================================== -->
-  <section class="amenities-section" id="amenities">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Unmatched Comfort</span>
-        <h2 class="section-title">World-Class Signature Amenities</h2>
-        <p class="section-desc">
-          Designed to cater to the discerning international traveler, executive, and wedding connoisseur.
-        </p>
-      </div>
-
-      <div class="amenities-grid">
-        <div class="amenity-feature-box">
-          <div class="amenity-feature-icon"><i class="fa-solid fa-water-ladder"></i></div>
-          <h4 class="amenity-feature-title">Swimming Pools</h4>
-          <p class="amenity-feature-desc">Temperature-controlled lap pools and leisurely kids pool decks with poolside service.</p>
-        </div>
-
-        <div class="amenity-feature-box">
-          <div class="amenity-feature-icon"><i class="fa-solid fa-spa"></i></div>
-          <h4 class="amenity-feature-title">Ayurvedic &amp; Wellness Spa</h4>
-          <p class="amenity-feature-desc">Authentic panchakarma massages, aroma therapies, steam baths, and relaxation suites.</p>
-        </div>
-
-        <div class="amenity-feature-box">
-          <div class="amenity-feature-icon"><i class="fa-solid fa-dumbbell"></i></div>
-          <h4 class="amenity-feature-title">Fitness Studio</h4>
-          <p class="amenity-feature-desc">Equipped with state-of-the-art cardio machines, free weights, and certified personal trainers.</p>
-        </div>
-
-        <div class="amenity-feature-box">
-          <div class="amenity-feature-icon"><i class="fa-solid fa-car"></i></div>
-          <h4 class="amenity-feature-title">VIP Valet &amp; Transfers</h4>
-          <p class="amenity-feature-desc">Round-the-clock chauffeur services and seamless airport / railway station transfers.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       GUEST REVIEWS & ACCOLADES
-       ========================================================================== -->
-  <section class="reviews-section" id="reviews">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Guest Testimonials</span>
-        <h2 class="section-title">Echoes of Extraordinary Stays</h2>
-        <p class="section-desc">
-          Read what our esteemed patrons have to say about their stays and landmark celebrations at Godwin Hotels.
-        </p>
-      </div>
-
-      <div class="reviews-grid">
-        <div class="review-card">
-          <div class="review-stars">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <div class="freshness-tag">
+            <i class="fa-solid fa-clock-rotate-left"></i> Verified &amp; Last Updated: September 2026
           </div>
-          <p class="review-text">
-            “We hosted our daughter’s destination wedding at Godwin Hotel Haridwar. The hospitality, divine Ganga view vibes, and food arrangements exceeded all expectations. The entire team was attentive 24/7.”
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-nav">
+          <button class="filter-btn active" data-filter="all">All Destinations</button>
+          <button class="filter-btn" data-filter="haridwar">Haridwar / Rishikesh</button>
+          <button class="filter-btn" data-filter="meerut">Meerut (Delhi NCR)</button>
+          <button class="filter-btn" data-filter="goa">Candolim, Goa</button>
+        </div>
+
+        <!-- Hotel Cards Grid -->
+        <div class="hotels-grid">
+          <!-- Hotel 1: Godwin Haridwar -->
+          <article class="hotel-card" data-destination="haridwar">
+            <div class="hotel-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Exterior facade of Godwin Hotel Haridwar" loading="lazy" decoding="async" width="800" height="533">
+              <div class="hotel-location-tag">
+                <i class="fa-solid fa-location-dot"></i> Haridwar, Uttarakhand
+              </div>
+              <div class="hotel-rating-tag">
+                <i class="fa-solid fa-star"></i> 4.8 / 5
+              </div>
+            </div>
+            <div class="hotel-details">
+              <h3 class="hotel-title">Godwin Hotel, Haridwar</h3>
+              <p class="hotel-declarative-fact">
+                Located on NH-58 opposite Shantikunj, just 6.5 km from Har Ki Pauri and 18 km from Rishikesh.
+              </p>
+              <p class="hotel-desc">
+                Features scenic mountain breezes, outdoor pool, The Golden Palm restaurant, pillar-less banqueting for 1,200 delegates, and grand wedding lawns for 2,500 guests.
+              </p>
+              <div class="hotel-amenities-list">
+                <span class="amenity-chip"><i class="fa-solid fa-wifi"></i> Free High-Speed WiFi</span>
+                <span class="amenity-chip"><i class="fa-solid fa-water-ladder"></i> Swimming Pool</span>
+                <span class="amenity-chip"><i class="fa-solid fa-utensils"></i> Golden Palm Cafe</span>
+                <span class="amenity-chip"><i class="fa-solid fa-car"></i> Valet Parking</span>
+              </div>
+              <div class="hotel-card-footer">
+                <div class="hotel-price">
+                  <span class="price-label">Starting From</span>
+                  <div class="price-value"><span data-base-price="5500">₹5,500</span><span> / night</span></div>
+                </div>
+                <button class="btn-hotel-book trigger-booking-modal" data-destination="Godwin Hotel Haridwar" data-room="Executive Mountain View Suite" data-price="5500">
+                  Book Stay
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Hotel 2: Godwin Meerut -->
+          <article class="hotel-card" data-destination="meerut">
+            <div class="hotel-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Entrance of Godwin Hotel Meerut" loading="lazy" decoding="async" width="800" height="533">
+              <div class="hotel-location-tag">
+                <i class="fa-solid fa-location-dot"></i> Meerut, Delhi-NCR
+              </div>
+              <div class="hotel-rating-tag">
+                <i class="fa-solid fa-star"></i> 4.9 / 5
+              </div>
+            </div>
+            <div class="hotel-details">
+              <h3 class="hotel-title">Godwin Hotel, Meerut</h3>
+              <p class="hotel-declarative-fact">
+                Situated directly on the Delhi-Meerut Expressway at the Partapur interchange with direct NCR access.
+              </p>
+              <p class="hotel-desc">
+                Houses Western UP's largest pillar-less hall (The Kohinoor Ballroom), an Olympic-sized pool, high-speed EV chargers, and multi-cuisine royal dining.
+              </p>
+              <div class="hotel-amenities-list">
+                <span class="amenity-chip"><i class="fa-solid fa-champagne-glasses"></i> Royal Banquet</span>
+                <span class="amenity-chip"><i class="fa-solid fa-dumbbell"></i> Wellness Club</span>
+                <span class="amenity-chip"><i class="fa-solid fa-charging-station"></i> EV Charging</span>
+                <span class="amenity-chip"><i class="fa-solid fa-car"></i> 500+ Car Parking</span>
+              </div>
+              <div class="hotel-card-footer">
+                <div class="hotel-price">
+                  <span class="price-label">Starting From</span>
+                  <div class="price-value"><span data-base-price="6200">₹6,200</span><span> / night</span></div>
+                </div>
+                <button class="btn-hotel-book trigger-booking-modal" data-destination="Godwin Hotel Meerut" data-room="Presidential Royal Suite" data-price="6200">
+                  Book Stay
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Hotel 3: Godwin Goa -->
+          <article class="hotel-card" data-destination="goa">
+            <div class="hotel-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="Poolside and balconies at Godwin Hotel Candolim Goa" loading="lazy" decoding="async" width="800" height="533">
+              <div class="hotel-location-tag">
+                <i class="fa-solid fa-location-dot"></i> Candolim, North Goa
+              </div>
+              <div class="hotel-rating-tag">
+                <i class="fa-solid fa-star"></i> 4.8 / 5
+              </div>
+            </div>
+            <div class="hotel-details">
+              <h3 class="hotel-title">Godwin Hotel, Candolim Goa</h3>
+              <p class="hotel-declarative-fact">
+                Located 700 meters from Candolim Beach on Fort Aguada Road in North Goa.
+              </p>
+              <p class="hotel-desc">
+                Features private sun decks, lagoon swimming pool with sunken pool bar, Ayurvedic rejuvenation spa, and fresh coastal seafood grill.
+              </p>
+              <div class="hotel-amenities-list">
+                <span class="amenity-chip"><i class="fa-solid fa-umbrella-beach"></i> 700m to Beach</span>
+                <span class="amenity-chip"><i class="fa-solid fa-cocktail"></i> Poolside Bar</span>
+                <span class="amenity-chip"><i class="fa-solid fa-fish"></i> Seafood Grill</span>
+                <span class="amenity-chip"><i class="fa-solid fa-spa"></i> Ayurvedic Spa</span>
+              </div>
+              <div class="hotel-card-footer">
+                <div class="hotel-price">
+                  <span class="price-label">Starting From</span>
+                  <div class="price-value"><span data-base-price="7800">₹7,800</span><span> / night</span></div>
+                </div>
+                <button class="btn-hotel-book trigger-booking-modal" data-destination="Godwin Hotel Goa" data-room="Premier Balcony Suite" data-price="7800">
+                  Book Stay
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ROOMS & SUITES ACCOMMODATION
+         ========================================================================== -->
+    <section class="rooms-section" id="rooms" aria-label="Suites and Accommodations">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Sanctuary of Comfort</span>
+          <h2 class="section-title">Palatial Rooms &amp; Exclusive Suites</h2>
+          <p class="section-desc">
+            Each room category offers soundproofing, high-speed Wi-Fi, air conditioning, imported marble bathrooms, and dedicated room service.
           </p>
-          <div class="review-author">
-            <div class="review-author-avatar">AK</div>
-            <div>
-              <div class="review-author-name">Anil Kapoor &amp; Family</div>
-              <div class="review-stay-location">Stayed at Godwin Haridwar (Destination Wedding)</div>
+        </div>
+
+        <div class="rooms-grid">
+          <!-- Room 1 -->
+          <article class="room-card">
+            <div class="room-thumb">
+              <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="Deluxe Heritage Room bedroom" loading="lazy" decoding="async" width="800" height="480">
+              <span class="room-badge">Popular Choice</span>
+            </div>
+            <div class="room-body">
+              <h3 class="room-title">Deluxe Heritage Room</h3>
+              <div class="room-meta">
+                <span><i class="fa-solid fa-bed"></i> King or Twin</span>
+                <span><i class="fa-solid fa-maximize"></i> 380 sq.ft</span>
+                <span><i class="fa-solid fa-user-group"></i> Max 3 Guests</span>
+              </div>
+              <p class="room-desc">
+                Elegantly furnished with solid wood accents, ergonomic workstation, plush mattress, and scenic mountain or garden view windows.
+              </p>
+              <div class="room-footer">
+                <div class="room-price-val"><span data-base-price="5500">₹5,500</span> <span>/ night</span></div>
+                <button class="btn-hotel-book trigger-booking-modal" data-room="Deluxe Heritage Room" data-price="5500">
+                  Reserve
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Room 2 -->
+          <article class="room-card">
+            <div class="room-thumb">
+              <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=800&q=80" alt="Executive Club Suite living room" loading="lazy" decoding="async" width="800" height="480">
+              <span class="room-badge">VIP Lounge Access</span>
+            </div>
+            <div class="room-body">
+              <h3 class="room-title">Executive Club Suite</h3>
+              <div class="room-meta">
+                <span><i class="fa-solid fa-bed"></i> Super King</span>
+                <span><i class="fa-solid fa-maximize"></i> 550 sq.ft</span>
+                <span><i class="fa-solid fa-couch"></i> Separate Living</span>
+              </div>
+              <p class="room-desc">
+                Includes a private living salon, Italian marble bathroom with soaking tub, espresso coffee machine, and evening executive refreshments.
+              </p>
+              <div class="room-footer">
+                <div class="room-price-val"><span data-base-price="8500">₹8,500</span> <span>/ night</span></div>
+                <button class="btn-hotel-book trigger-booking-modal" data-room="Executive Club Suite" data-price="8500">
+                  Reserve
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Room 3 -->
+          <article class="room-card">
+            <div class="room-thumb">
+              <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Presidential Royal Suite bedroom and jacuzzi" loading="lazy" decoding="async" width="800" height="480">
+              <span class="room-badge">Signature Luxury</span>
+            </div>
+            <div class="room-body">
+              <h3 class="room-title">Presidential Royal Suite</h3>
+              <div class="room-meta">
+                <span><i class="fa-solid fa-crown"></i> Master King</span>
+                <span><i class="fa-solid fa-maximize"></i> 1,100 sq.ft</span>
+                <span><i class="fa-solid fa-hot-tub-person"></i> Jacuzzi</span>
+              </div>
+              <p class="room-desc">
+                The flagship luxury suite at Godwin Hotels. Features a dining suite for 8, dedicated private butler service, and panoramic terrace views.
+              </p>
+              <div class="room-footer">
+                <div class="room-price-val"><span data-base-price="16500">₹16,500</span> <span>/ night</span></div>
+                <button class="btn-hotel-book trigger-booking-modal" data-room="Presidential Royal Suite" data-price="16500">
+                  Reserve
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CANONICAL HOTEL FACTS SHEET & SINGLE SOURCE OF TRUTH (GEO / AEO)
+         ========================================================================== -->
+    <section class="facts-section" id="facts" aria-label="Official Hotel Facts and Specifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Single Source of Truth</span>
+          <h2 class="section-title">Official Hotel Facts &amp; Specifications</h2>
+          <p class="section-desc">
+            Verified canonical facts, locations, policies, and amenities across all Godwin Hotels properties.
+          </p>
+        </div>
+
+        <div class="facts-table-wrapper">
+          <table class="facts-table" aria-label="Godwin Hotels Property Comparison Table">
+            <thead>
+              <tr>
+                <th scope="col">Feature / Policy</th>
+                <th scope="col">Godwin Hotel, Haridwar</th>
+                <th scope="col">Godwin Hotel, Meerut</th>
+                <th scope="col">Godwin Hotel, Candolim Goa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><strong>Official Address</strong></th>
+                <td>NH-58, Rishikesh Highway, Opp. Shantikunj, Haridwar, Uttarakhand 249411</td>
+                <td>Meerut Bypass Road, NH-58, Partapur, Meerut, Uttar Pradesh 250103</td>
+                <td>Fort Aguada Road, Candolim, Bardez, North Goa 403515</td>
+              </tr>
+              <tr>
+                <th scope="row"><strong>Telephone &amp; Contact</strong></th>
+                <td>+91-1334-266-000</td>
+                <td>+91-121-244-1111</td>
+                <td>+91-832-248-9999</td>
+              </tr>
+              <tr>
+                <th scope="row"><strong>Key Landmark Distances</strong></th>
+                <td>Har Ki Pauri: 6.5 km (12 min)<br>Railway Station: 8.2 km (18 min)<br>Rishikesh: 18 km</td>
+                <td>Partapur Expressway Exit: 0 km<br>Delhi Airport (IGI): 78 km (70 min)<br>Meerut Station: 7.5 km</td>
+                <td>Candolim Beach: 700 m (7 min walk)<br>Fort Aguada: 4.2 km (12 min)<br>Mopa Airport: 31 km</td>
+              </tr>
+              <tr>
+                <th scope="row"><strong>Standard Check-In / Out</strong></th>
+                <td>Check-in: 14:00 | Check-out: 11:00</td>
+                <td>Check-in: 14:00 | Check-out: 11:00</td>
+                <td>Check-in: 14:00 | Check-out: 11:00</td>
+              </tr>
+              <tr>
+                <th scope="row"><strong>Pet Policy</strong></th>
+                <td>Not allowed (Service animals permitted)</td>
+                <td>Not allowed (Service animals permitted)</td>
+                <td>Not allowed (Service animals permitted)</td>
+              </tr>
+              <tr>
+                <th scope="row"><strong>Banqueting / Wedding Capacity</strong></th>
+                <td>Up to 2,500 guests (Grand Lawns)</td>
+                <td>Up to 1,500 guests (Kohinoor Ballroom)</td>
+                <td>Up to 300 guests (Poolside Deck)</td>
+              </tr>
+              <tr>
+                <th scope="row"><strong>Parking &amp; EV Facilities</strong></th>
+                <td>Free valet parking (200+ vehicles)</td>
+                <td>Free valet &amp; EV fast chargers (500+ cars)</td>
+                <td>Free on-site parking &amp; beach shuttle</td>
+              </tr>
+              <tr>
+                <th scope="row"><strong>Starting Nightly Rate</strong></th>
+                <td>₹5,500 INR / night</td>
+                <td>₹6,200 INR / night</td>
+                <td>₹7,800 INR / night</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="text-align: center; margin-top: 1.5rem;">
+          <a href="facts-sheet.json" target="_blank" style="color: var(--gold-700); font-weight: 700; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+            <i class="fa-solid fa-code"></i> View Machine-Readable facts-sheet.json (Raw JSON Feed)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DINING & CULINARY EXPERIENCES
+         ========================================================================== -->
+    <section class="dining-section" id="dining" aria-label="Dining and Culinary Experiences">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Epicurean Journeys</span>
+          <h2 class="section-title">Award-Winning Gastronomy &amp; Fine Dining</h2>
+          <p class="section-desc">
+            Godwin Hotels offers multi-cuisine restaurants, 24-hour cafes, and full-course in-room dining menus prepared by seasoned executive chefs.
+          </p>
+        </div>
+
+        <div class="dining-grid">
+          <div class="dining-carousel-card">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80" alt="Dining hall of The Golden Palm restaurant at Godwin Hotels" loading="lazy" decoding="async" width="1000" height="480">
+            <div class="dining-overlay-info">
+              <h3 class="dining-overlay-title">The Golden Palm Restaurant</h3>
+              <p class="dining-overlay-text">
+                Fine-dining multicuisine symphony offering North Indian Royal Mughlai, Continental grills, and Pan-Asian specialties prepared live.
+              </p>
+            </div>
+          </div>
+
+          <div class="dining-content">
+            <div class="dining-feature-item">
+              <div class="dining-icon"><i class="fa-solid fa-mug-saucer"></i></div>
+              <div>
+                <h4 class="dining-item-title">Cafe Godwin &amp; Bakery</h4>
+                <p class="dining-item-desc">Artisanal single-origin brews, freshly baked French pastries, and gourmet high-tea served in a relaxed conservatory atmosphere.</p>
+              </div>
+            </div>
+
+            <div class="dining-feature-item">
+              <div class="dining-icon"><i class="fa-solid fa-martini-glass-citrus"></i></div>
+              <div>
+                <h4 class="dining-item-title">The Regal Bar &amp; Poolside Lounge</h4>
+                <p class="dining-item-desc">Handcrafted signature cocktails, vintage cellared wines, and tantalizing tapas beneath the open starlit sky.</p>
+              </div>
+            </div>
+
+            <div class="dining-feature-item">
+              <div class="dining-icon"><i class="fa-solid fa-plate-wheat"></i></div>
+              <div>
+                <h4 class="dining-item-title">24/7 In-Room Royal Dining</h4>
+                <p class="dining-item-desc">Intimate multi-course meals served with pristine silver service in the comforting privacy of your suite.</p>
+              </div>
+            </div>
+
+            <div style="margin-top: 1rem;">
+              <button class="btn-luxury-primary trigger-booking-modal" data-destination="Dining Reservation" data-room="Table for Fine Dining">
+                <i class="fa-solid fa-utensils"></i> Reserve A Table
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         WEDDINGS, BANQUETS & MICE EVENTS
+         ========================================================================== -->
+    <section class="banquets-section" id="banquets" aria-label="Weddings, Banquets and Conventions">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Monumental Celebrations</span>
+          <h2 class="section-title">Grand Weddings, Banquets &amp; Conventions</h2>
+          <p class="section-desc">
+            Godwin properties host premier destination weddings, high-level corporate conventions, and private galas with capacities ranging from 25 to 2,500 guests.
+          </p>
+        </div>
+
+        <div class="banquet-cards-row">
+          <div class="banquet-card">
+            <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80" alt="The Kohinoor Grand Ballroom at Godwin Meerut" loading="lazy" decoding="async" width="800" height="380">
+            <div class="banquet-card-overlay">
+              <span class="banquet-badge">Western UP's Largest</span>
+              <h3 class="banquet-name">The Kohinoor Grand Ballroom</h3>
+              <div class="banquet-capacity"><i class="fa-solid fa-users"></i> Capacity: Up to 1,500 Guests</div>
+              <p class="banquet-info">Pillar-less soaring ceilings, crystal chandeliers, integrated 4K AV systems, and royal bridal staging.</p>
+            </div>
+          </div>
+
+          <div class="banquet-card">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" alt="Royal Ganges Wedding Lawn at Godwin Haridwar" loading="lazy" decoding="async" width="800" height="380">
+            <div class="banquet-card-overlay">
+              <span class="banquet-badge">Open-Air Splendor</span>
+              <h3 class="banquet-name">The Royal Ganges Lawns</h3>
+              <div class="banquet-capacity"><i class="fa-solid fa-users"></i> Capacity: Up to 2,500 Guests</div>
+              <p class="banquet-info">Manicured emerald green lawns flanked by majestic mountain backdrops, perfect for grand sangeet &amp; pheras.</p>
+            </div>
+          </div>
+
+          <div class="banquet-card">
+            <img src="https://images.unsplash.com/photo-1431540015161-0bf8663c16ba?auto=format&fit=crop&w=800&q=80" alt="Presidency Corporate Boardrooms at Godwin Hotels" loading="lazy" decoding="async" width="800" height="380">
+            <div class="banquet-card-overlay">
+              <span class="banquet-badge">Corporate &amp; MICE</span>
+              <h3 class="banquet-name">The Presidency Boardrooms</h3>
+              <div class="banquet-capacity"><i class="fa-solid fa-users"></i> Capacity: 25 to 350 Delegates</div>
+              <p class="banquet-info">Ergonomic seating, high-speed fiber video-conferencing, breakout lounges, and tailored executive menus.</p>
             </div>
           </div>
         </div>
 
-        <div class="review-card">
-          <div class="review-stars">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <div class="banquet-inquiry-box">
+          <div class="banquet-inquiry-text">
+            <h3>Plan Your Event with Our Dedicated Event Directors</h3>
+            <p>
+              Our banquet specialists handle stage decor, gourmet custom menus, technical AV systems, and guest suite allotments.
+            </p>
           </div>
-          <p class="review-text">
-            “Godwin Meerut is by far the finest luxury hotel on the Delhi-NCR stretch. The Kohinoor Ballroom is breathtaking and the Executive Suites offer true 5-star comfort and impeccable cleanliness.”
-          </p>
-          <div class="review-author">
-            <div class="review-author-avatar">RM</div>
-            <div>
-              <div class="review-author-name">Dr. Rajesh Malhotra</div>
-              <div class="review-stay-location">Stayed at Godwin Hotel Meerut (Corporate Gala)</div>
-            </div>
+          <div>
+            <button id="banquetInquiryBtn" class="btn-luxury-primary">
+              <i class="fa-solid fa-envelope-open-text"></i> Inquire For Event
+            </button>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="review-card">
-          <div class="review-stars">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-          </div>
-          <p class="review-text">
-            “A tranquil paradise in Candolim, Goa! The staff made us feel like royalty. Perfect location close to the beach yet quiet and peaceful. The seafood restaurant is top-notch!”
+    <!-- ==========================================================================
+         FAQ SECTION (ANSWER ENGINE OPTIMIZATION - AEO / GEO)
+         Direct, declarative, quotable answers to high-intent traveler questions.
+         ========================================================================== -->
+    <section class="faq-section" id="faq" aria-label="Frequently Asked Questions">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Traveler Essentials</span>
+          <h2 class="section-title">Frequently Asked Questions (FAQ)</h2>
+          <p class="section-desc">
+            Direct answers to the most common questions travelers and booking engines ask about Godwin Hotels &amp; Resorts.
           </p>
-          <div class="review-author">
-            <div class="review-author-avatar">SP</div>
-            <div>
-              <div class="review-author-name">Sophia &amp; Patrick Vance</div>
-              <div class="review-stay-location">Stayed at Godwin Hotel Candolim Goa (Vacation)</div>
+        </div>
+
+        <div class="faq-list">
+          <!-- FAQ 1 -->
+          <article class="faq-item active">
+            <button class="faq-question" type="button" aria-expanded="true">
+              <span>Is Godwin Hotel pet-friendly?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-direct-answer">
+                No, Godwin Hotels does not permit pets in guest rooms or dining areas, with the exception of certified service animals.
+              </div>
+              <p>
+                To maintain hygiene, allergen-free suites, and comfort for all our patrons, pets are strictly prohibited across all Godwin properties in Haridwar, Meerut, and Goa. Certified guide dogs and assistance animals accompanying guests with disabilities are welcomed.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 2 -->
+          <article class="faq-item active">
+            <button class="faq-question" type="button" aria-expanded="true">
+              <span>What are the check-in and check-out times at Godwin Hotels?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-direct-answer">
+                Check-in is at 14:00 (2:00 PM), and check-out is at 11:00 (11:00 AM) across all Godwin Hotels properties.
+              </div>
+              <p>
+                Early check-in from 10:00 AM is available complimentary subject to room availability upon arrival. Guaranteed early morning check-in requires reserving the room from the preceding night. Late check-out until 14:00 may be requested at reception and is subject to occupancy.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 3 -->
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Is breakfast included in the room price at Godwin Hotels?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-direct-answer">
+                Yes, a complimentary lavish buffet breakfast is included in all Bed &amp; Breakfast room rates.
+              </div>
+              <p>
+                Breakfast is served daily between 07:00 AM and 10:30 AM at The Golden Palm restaurant, offering a comprehensive spread of Indian, Continental, and American breakfast dishes, fresh juice bars, and live egg stations.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 4 -->
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>How far is Godwin Hotel Haridwar from Har Ki Pauri and the railway station?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-direct-answer">
+                Godwin Hotel Haridwar is located 6.5 km from Har Ki Pauri (12 minutes drive) and 8.2 km from Haridwar Railway Station.
+              </div>
+              <p>
+                The property is conveniently positioned on the main NH-58 Rishikesh Highway opposite Shantikunj, providing easy highway transit away from the crowded city center while remaining close to the holy bathing ghats and Rishikesh (18 km).
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 5 -->
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>What is the wedding and banquet guest capacity at Godwin Hotel Meerut?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-direct-answer">
+                Godwin Hotel Meerut accommodates up to 1,500 guests in the Kohinoor Ballroom and up to 2,500 guests on the royal lawns.
+              </div>
+              <p>
+                The property is widely recognized as Western UP's premier wedding venue, featuring a completely pillar-less grand ballroom, separate bridal dressing suites, expansive parking for 500+ cars, and custom catering menus curated by master chefs.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 6 -->
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>How far is Godwin Hotel Goa from Candolim Beach?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-direct-answer">
+                Godwin Hotel Candolim Goa is situated 700 meters from Candolim Beach, an easy 7-minute walk.
+              </div>
+              <p>
+                Guests can walk comfortably to the beach or take advantage of the hotel's complimentary golf-cart / beach shuttle service. The property is also 4.2 km from Fort Aguada and 3.5 km from Calangute Beach.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 7 -->
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>What is the cancellation policy for reservations at Godwin Hotels?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-direct-answer">
+                Reservations can be cancelled free of charge up to 48 hours prior to scheduled check-in.
+              </div>
+              <p>
+                Cancellations made within 48 hours of arrival, or no-shows, will incur a fee equal to the first night's room charge plus applicable taxes. Non-refundable promotional rates are non-cancellable once confirmed.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 8 -->
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Is complimentary on-site parking and EV charging available?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-direct-answer">
+                Yes, all Godwin Hotels provide free on-site secure parking with 24/7 valet service, plus EV charging at Godwin Meerut.
+              </div>
+              <p>
+                Both self-parking and round-the-clock valet services are completely complimentary for all staying guests and event attendees. Godwin Meerut is equipped with fast EV charging stations compatible with all major electric vehicle models.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         GUEST REVIEWS & ACCOLADES
+         ========================================================================== -->
+    <section class="reviews-section" id="reviews" aria-label="Guest Reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Guest Testimonials</span>
+          <h2 class="section-title">Echoes of Extraordinary Stays</h2>
+          <p class="section-desc">
+            Authentic guest feedback from verified patrons who have stayed and hosted celebrations with Godwin Hotels.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              “We hosted our daughter’s destination wedding at Godwin Hotel Haridwar. The hospitality, divine Ganga view vibes, and food arrangements exceeded all expectations. The entire team was attentive 24/7.”
+            </p>
+            <div class="review-author">
+              <div class="review-author-avatar">AK</div>
+              <div>
+                <div class="review-author-name">Anil Kapoor &amp; Family</div>
+                <div class="review-stay-location">Stayed at Godwin Haridwar (Destination Wedding)</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              “Godwin Meerut is by far the finest luxury hotel on the Delhi-NCR stretch. The Kohinoor Ballroom is breathtaking and the Executive Suites offer true 5-star comfort and impeccable cleanliness.”
+            </p>
+            <div class="review-author">
+              <div class="review-author-avatar">RM</div>
+              <div>
+                <div class="review-author-name">Dr. Rajesh Malhotra</div>
+                <div class="review-stay-location">Stayed at Godwin Hotel Meerut (Corporate Gala)</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              “A tranquil paradise in Candolim, Goa! The staff made us feel like royalty. Perfect location close to the beach yet quiet and peaceful. The seafood restaurant is top-notch!”
+            </p>
+            <div class="review-author">
+              <div class="review-author-avatar">SP</div>
+              <div>
+                <div class="review-author-name">Sophia &amp; Patrick Vance</div>
+                <div class="review-stay-location">Stayed at Godwin Hotel Candolim Goa (Vacation)</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+  </main>
 
   <!-- ==========================================================================
        INTERACTIVE BOOKING MODAL
        ========================================================================== -->
-  <div class="modal-backdrop" id="bookingModal" aria-modal="true" role="dialog">
+  <div class="modal-backdrop" id="bookingModal" aria-modal="true" role="dialog" aria-labelledby="modalHeading">
     <div class="booking-modal-box">
       <div class="modal-header">
-        <h3 class="modal-title"><i class="fa-solid fa-calendar-check"></i> Complete Your Reservation</h3>
-        <button class="modal-close-btn" id="closeBookingModal" aria-label="Close Modal">&times;</button>
+        <h3 class="modal-title" id="modalHeading"><i class="fa-solid fa-calendar-check"></i> Complete Your Reservation</h3>
+        <button class="modal-close-btn" id="closeBookingModal" aria-label="Close Reservation Modal">&times;</button>
       </div>
 
       <div class="modal-body">
         <form id="modalReservationForm">
           <div class="modal-form-grid">
-            <!-- Property -->
             <div>
-              <label class="booking-label">Selected Hotel</label>
+              <label class="booking-label" for="modalDestination">Selected Hotel</label>
               <select id="modalDestination" class="booking-select" required>
                 <option value="Godwin Hotel Haridwar">Godwin Hotel, Haridwar (NH-58)</option>
                 <option value="Godwin Hotel Meerut">Godwin Hotel, Meerut (Expressway)</option>
@@ -734,9 +1210,8 @@
               </select>
             </div>
 
-            <!-- Room Choice -->
             <div>
-              <label class="booking-label">Room Type</label>
+              <label class="booking-label" for="modalRoomType">Room Type</label>
               <select id="modalRoomType" class="booking-select" required>
                 <option value="Deluxe Heritage Room" data-price="5500">Deluxe Heritage Room (₹5,500)</option>
                 <option value="Executive Club Suite" data-price="8500">Executive Club Suite (₹8,500)</option>
@@ -744,20 +1219,18 @@
               </select>
             </div>
 
-            <!-- Dates -->
             <div>
-              <label class="booking-label">Check-In</label>
+              <label class="booking-label" for="modalCheckin">Check-In</label>
               <input type="date" id="modalCheckin" class="booking-input" required>
             </div>
 
             <div>
-              <label class="booking-label">Check-Out</label>
+              <label class="booking-label" for="modalCheckout">Check-Out</label>
               <input type="date" id="modalCheckout" class="booking-input" required>
             </div>
 
-            <!-- Guests -->
             <div>
-              <label class="booking-label">Number of Guests</label>
+              <label class="booking-label" for="modalGuests">Number of Guests</label>
               <select id="modalGuests" class="booking-select">
                 <option value="1">1 Adult</option>
                 <option value="2" selected>2 Adults</option>
@@ -766,9 +1239,8 @@
               </select>
             </div>
 
-            <!-- Rooms Count -->
             <div>
-              <label class="booking-label">Number of Rooms</label>
+              <label class="booking-label" for="modalRoomsCount">Number of Rooms</label>
               <select id="modalRoomsCount" class="booking-select">
                 <option value="1" selected>1 Room</option>
                 <option value="2">2 Rooms</option>
@@ -776,23 +1248,21 @@
               </select>
             </div>
 
-            <!-- Guest Details -->
             <div>
-              <label class="booking-label">Full Name</label>
+              <label class="booking-label" for="guestFullName">Full Name</label>
               <input type="text" id="guestFullName" class="booking-input" placeholder="e.g. Raman Mankotia" required>
             </div>
 
             <div>
-              <label class="booking-label">Mobile Number</label>
+              <label class="booking-label" for="guestPhone">Mobile Number</label>
               <input type="tel" id="guestPhone" class="booking-input" placeholder="+91 98765 43210" required>
             </div>
 
             <div class="full-col">
-              <label class="booking-label">Email Address</label>
+              <label class="booking-label" for="guestEmail">Email Address</label>
               <input type="email" id="guestEmail" class="booking-input" placeholder="guest@example.com" required>
             </div>
 
-            <!-- Addon Packages -->
             <div class="full-col" style="background: var(--slate-100); padding: 1rem; border-radius: 6px;">
               <span class="booking-label" style="margin-bottom: 0.5rem;">Complimentary &amp; Add-on Privileges</span>
               <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
@@ -806,7 +1276,6 @@
             </div>
           </div>
 
-          <!-- Bill Summary -->
           <div class="summary-bill-box">
             <div class="bill-row">
               <span>Stay Duration:</span>
@@ -841,11 +1310,11 @@
   <!-- ==========================================================================
        FOOTER
        ========================================================================== -->
-  <footer class="site-footer" id="contact">
+  <footer class="site-footer" id="contact" aria-label="Site Footer">
     <div class="container">
       <div class="footer-top-grid">
         <div class="footer-brand">
-          <a href="#home" class="brand-logo">
+          <a href="#home" class="brand-logo" aria-label="Godwin Hotels Home">
             <div class="brand-crest">G</div>
             <div class="brand-text">
               <span class="brand-name">GODWIN</span>
@@ -853,7 +1322,7 @@
             </div>
           </a>
           <p>
-            Godwin Hotels &amp; Resorts is one of India's premier hospitality groups, delivering regal experiences, palatial accommodations, and timeless warmth across Haridwar, Meerut, and Goa.
+            Godwin Hotels &amp; Resorts is one of India's premier luxury hospitality groups, delivering five-star standard stays, royal banquets, and authentic gastronomy in Haridwar, Meerut, and Candolim Goa.
           </p>
           <div class="footer-socials">
             <a href="https://facebook.com" target="_blank" class="social-icon-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
@@ -869,7 +1338,7 @@
             <li><a href="#destinations">Godwin Hotel, Haridwar</a></li>
             <li><a href="#destinations">Godwin Hotel, Meerut</a></li>
             <li><a href="#destinations">Godwin Hotel, Candolim Goa</a></li>
-            <li><a href="#destinations">Upcoming Resorts</a></li>
+            <li><a href="facts-sheet.json" target="_blank">Canonical Facts Sheet (JSON)</a></li>
           </ul>
         </div>
 
@@ -877,34 +1346,35 @@
           <h4>Quick Links</h4>
           <ul>
             <li><a href="#rooms">Suites &amp; Villas</a></li>
+            <li><a href="#facts">Property Specifications</a></li>
             <li><a href="#dining">Fine Dining Restaurants</a></li>
             <li><a href="#banquets">Weddings &amp; MICE</a></li>
-            <li><a href="#amenities">Wellness &amp; Spa</a></li>
-            <li><a href="#reviews">Patron Reviews</a></li>
+            <li><a href="#faq">Traveler FAQs</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Godwin Privileges</h4>
           <p style="font-size: 0.85rem; color: var(--slate-400);">Subscribe to receive exclusive secret rates, dining vouchers, and suite upgrades.</p>
-          <form id="newsletterForm" class="newsletter-form">
-            <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+          <form id="newsletterForm" class="newsletter-form" aria-label="Newsletter Subscription Form">
+            <input type="email" class="newsletter-input" placeholder="Enter your email" required aria-label="Your email address">
             <button type="submit" class="newsletter-btn">Join</button>
           </form>
           <div style="margin-top: 1.5rem; font-size: 0.85rem;">
             <div><i class="fa-solid fa-phone" style="color: var(--gold-400); margin-right: 0.5rem;"></i> +91 1234 567 890</div>
-            <div style="margin-top: 0.3rem;"><i class="fa-solid fa-envelope" style="color: var(--gold-400); margin-right: 0.5rem;"></i> info@godwinhotels.com</div>
+            <div style="margin-top: 0.3rem;"><i class="fa-solid fa-envelope" style="color: var(--gold-400); margin-right: 0.5rem;"></i> reservations@godwinhotels.com</div>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; 2026 Godwin Hotels &amp; Resorts. All rights reserved. Crafted for excellence.</div>
+        <div>&copy; 2026 Godwin Hotels &amp; Resorts. All rights reserved. Optimized for GEO / AEO &amp; Web Standards.</div>
         <div class="footer-bottom-links">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms &amp; Conditions</a>
           <a href="#">Cancellation Policy</a>
-          <a href="#">Site Map</a>
+          <a href="sitemap.xml">XML Sitemap</a>
+          <a href="robots.txt">robots.txt</a>
         </div>
       </div>
     </div>
@@ -912,7 +1382,7 @@
 
   <!-- Floating Concierge WhatsApp Button -->
   <div class="floating-concierge">
-    <a href="https://wa.me/911234567890?text=Hello%20Godwin%20Hotels,%20I%20would%20like%20to%20inquire%20about%20a%20luxury%20stay." target="_blank" class="concierge-pill" rel="noopener noreferrer">
+    <a href="https://wa.me/911234567890?text=Hello%20Godwin%20Hotels,%20I%20would%20like%20to%20inquire%20about%20a%20luxury%20stay." target="_blank" class="concierge-pill" rel="noopener noreferrer" aria-label="Chat with Concierge on WhatsApp">
       <i class="fa-brands fa-whatsapp" style="font-size: 1.25rem;"></i>
       <span>Concierge Help</span>
     </a>

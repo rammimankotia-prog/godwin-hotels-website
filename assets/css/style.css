@@ -1,6 +1,7 @@
 /* ==========================================================================
    GODWIN HOTELS & RESORTS - OFFICIAL STYLESHEET
    Ultra-Luxury Hospitality Design System
+   Optimized for Responsive Layouts & AI / Machine Citability (GEO / AEO)
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
@@ -28,12 +29,13 @@
   --ivory-white: #faf8f5;
   --slate-100: #f1f5f9;
   --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
   --slate-400: #94a3b8;
   --slate-500: #64748b;
   --slate-600: #475569;
   --slate-800: #1e293b;
 
-  /* Typography */
+  /* Fluid Typography Variables */
   --font-heading: 'Cinzel', serif;
   --font-serif: 'Playfair Display', serif;
   --font-sans: 'Plus Jakarta Sans', sans-serif;
@@ -75,6 +77,24 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Accessibility: Skip Link */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 1rem;
+  background: var(--gold-500);
+  color: var(--navy-950);
+  padding: 0.75rem 1.25rem;
+  font-weight: 700;
+  z-index: 9999;
+  border-radius: 4px;
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -98,21 +118,23 @@ button, input, select, textarea {
 
 /* Container */
 .container {
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 clamp(1rem, 3vw, 2rem);
 }
 
 .container-wide {
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 clamp(1rem, 3vw, 2rem);
 }
 
 /* Section Header Utility */
 .section-header {
   text-align: center;
-  max-width: 760px;
+  max-width: 780px;
   margin: 0 auto 3.5rem auto;
 }
 
@@ -121,7 +143,7 @@ button, input, select, textarea {
   align-items: center;
   gap: 0.6rem;
   font-family: var(--font-sans);
-  font-size: 0.825rem;
+  font-size: clamp(0.75rem, 1.2vw, 0.85rem);
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--gold-600);
@@ -140,7 +162,7 @@ button, input, select, textarea {
 
 .section-title {
   font-family: var(--font-heading);
-  font-size: 2.5rem;
+  font-size: clamp(1.85rem, 4vw, 2.6rem);
   font-weight: 700;
   color: var(--navy-900);
   line-height: 1.25;
@@ -148,9 +170,45 @@ button, input, select, textarea {
 }
 
 .section-desc {
-  font-size: 1.05rem;
+  font-size: clamp(0.95rem, 1.5vw, 1.08rem);
   color: var(--slate-600);
   line-height: 1.7;
+}
+
+/* GEO/AEO Citability: Answer-First Lead Paragraph */
+.answer-first-summary {
+  background: var(--gold-50);
+  border-left: 4px solid var(--gold-500);
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+  margin: 1.5rem auto 2.5rem;
+  max-width: 860px;
+  text-align: left;
+}
+
+.answer-first-summary p {
+  font-size: clamp(0.92rem, 1.4vw, 1.02rem);
+  color: var(--slate-800);
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.answer-first-summary strong {
+  color: var(--navy-900);
+}
+
+.freshness-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: var(--slate-500);
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.freshness-tag i {
+  color: var(--gold-600);
 }
 
 /* ==========================================================================
@@ -163,13 +221,13 @@ button, input, select, textarea {
   right: 0;
   z-index: 1000;
   transition: var(--transition-normal);
-  background: linear-gradient(180deg, rgba(6, 10, 18, 0.85) 0%, rgba(6, 10, 18, 0.2) 80%, transparent 100%);
+  background: linear-gradient(180deg, rgba(6, 10, 18, 0.88) 0%, rgba(6, 10, 18, 0.2) 80%, transparent 100%);
 }
 
 .site-header.scrolled {
-  background: rgba(12, 20, 36, 0.95);
+  background: rgba(12, 20, 36, 0.96);
   backdrop-filter: blur(16px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid rgba(197, 168, 105, 0.2);
 }
 
@@ -192,6 +250,7 @@ button, input, select, textarea {
   display: flex;
   gap: 1.5rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .top-bar-links a {
@@ -207,7 +266,7 @@ button, input, select, textarea {
 
 .currency-lang-toggle {
   display: flex;
-  gap: 1rem;
+  gap: 0.85rem;
   align-items: center;
 }
 
@@ -215,9 +274,9 @@ button, input, select, textarea {
   background: transparent;
   color: var(--slate-200);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 2px 8px;
+  padding: 3px 8px;
   border-radius: 4px;
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   cursor: pointer;
   outline: none;
 }
@@ -231,7 +290,7 @@ button, input, select, textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 0.85rem 0;
 }
 
 .brand-logo {
@@ -262,7 +321,7 @@ button, input, select, textarea {
 
 .brand-name {
   font-family: var(--font-heading);
-  font-size: 1.45rem;
+  font-size: clamp(1.2rem, 2.2vw, 1.5rem);
   font-weight: 700;
   letter-spacing: 0.12em;
   color: var(--pure-white);
@@ -280,13 +339,13 @@ button, input, select, textarea {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.75rem;
 }
 
 .nav-link {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.88);
   letter-spacing: 0.04em;
   position: relative;
   padding: 0.25rem 0;
@@ -315,10 +374,10 @@ button, input, select, textarea {
   background: linear-gradient(135deg, var(--gold-400) 0%, var(--gold-600) 100%);
   color: var(--navy-950);
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 0.75rem 1.6rem;
+  padding: 0.7rem 1.4rem;
   border-radius: 4px;
   border: 1px solid var(--gold-300);
   box-shadow: 0 4px 15px rgba(197, 168, 105, 0.35);
@@ -342,6 +401,7 @@ button, input, select, textarea {
   color: var(--pure-white);
   font-size: 1.5rem;
   cursor: pointer;
+  padding: 0.4rem;
 }
 
 /* ==========================================================================
@@ -377,7 +437,7 @@ button, input, select, textarea {
   transition: opacity 1.2s ease-in-out, transform 8s ease-out;
   background-size: cover;
   background-position: center;
-  transform: scale(1.08);
+  transform: scale(1.06);
 }
 
 .hero-slide.active {
@@ -392,7 +452,7 @@ button, input, select, textarea {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at center, rgba(12, 20, 36, 0.4) 0%, rgba(6, 10, 18, 0.85) 100%);
+  background: radial-gradient(circle at center, rgba(12, 20, 36, 0.45) 0%, rgba(6, 10, 18, 0.88) 100%);
   z-index: 2;
 }
 
@@ -401,7 +461,7 @@ button, input, select, textarea {
   z-index: 10;
   text-align: center;
   color: var(--pure-white);
-  max-width: 900px;
+  max-width: 920px;
   padding: 8rem 1.5rem 6rem;
   margin: 0 auto;
 }
@@ -415,7 +475,7 @@ button, input, select, textarea {
   border: 1px solid rgba(197, 168, 105, 0.4);
   border-radius: 50px;
   color: var(--gold-300);
-  font-size: 0.82rem;
+  font-size: clamp(0.72rem, 1.2vw, 0.82rem);
   letter-spacing: 0.18em;
   text-transform: uppercase;
   font-weight: 600;
@@ -425,25 +485,25 @@ button, input, select, textarea {
 
 .hero-title {
   font-family: var(--font-heading);
-  font-size: clamp(2.6rem, 5.5vw, 4.8rem);
+  font-size: clamp(2.3rem, 5.2vw, 4.4rem);
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: 0.02em;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.25rem;
   text-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
 }
 
 .hero-title span {
-  background: linear-gradient(135deg, #fff 30%, var(--gold-300) 100%);
+  background: linear-gradient(135deg, #ffffff 40%, var(--gold-300) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .hero-description {
-  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  font-size: clamp(1rem, 1.7vw, 1.22rem);
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.88);
-  max-width: 720px;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 740px;
   margin: 0 auto 2.5rem;
   line-height: 1.7;
 }
@@ -459,10 +519,10 @@ button, input, select, textarea {
   background: linear-gradient(135deg, var(--gold-400), var(--gold-600));
   color: var(--navy-950);
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 1rem 2.2rem;
+  padding: 0.95rem 2rem;
   border-radius: 4px;
   border: 1px solid var(--gold-300);
   box-shadow: 0 10px 25px rgba(197, 168, 105, 0.35);
@@ -484,10 +544,10 @@ button, input, select, textarea {
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.4);
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 1rem 2.2rem;
+  padding: 0.95rem 2rem;
   border-radius: 4px;
   backdrop-filter: blur(8px);
   display: inline-flex;
@@ -545,12 +605,12 @@ button, input, select, textarea {
   border-radius: var(--border-radius-md);
   box-shadow: 0 20px 50px rgba(12, 20, 36, 0.15);
   border: 1px solid rgba(197, 168, 105, 0.3);
-  padding: 1.5rem 2rem;
+  padding: clamp(1rem, 2.5vw, 1.75rem) clamp(1rem, 3vw, 2rem);
 }
 
 .booking-form {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr 1.2fr;
+  grid-template-columns: 1.5fr 1fr 1fr 1.1fr 1.2fr;
   gap: 1.25rem;
   align-items: flex-end;
 }
@@ -579,13 +639,13 @@ button, input, select, textarea {
 .booking-input,
 .booking-select {
   width: 100%;
-  padding: 0.8rem 1rem;
+  padding: 0.78rem 0.95rem;
   border: 1px solid var(--slate-200);
   border-radius: var(--border-radius-sm);
   background-color: var(--slate-100);
   color: var(--navy-900);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   transition: var(--transition-fast);
   outline: none;
 }
@@ -602,7 +662,7 @@ button, input, select, textarea {
   background: linear-gradient(135deg, var(--navy-900), var(--navy-800));
   color: var(--gold-400);
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 0.85rem 1rem;
@@ -628,14 +688,14 @@ button, input, select, textarea {
    ABOUT / BRAND STORY SECTION
    ========================================================================== */
 .about-section {
-  padding: 5rem 0;
+  padding: clamp(3.5rem, 6vw, 5.5rem) 0;
   background-color: var(--ivory-white);
 }
 
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4.5rem;
+  gap: clamp(2rem, 5vw, 4.5rem);
   align-items: center;
 }
 
@@ -701,7 +761,7 @@ button, input, select, textarea {
 }
 
 .about-lead {
-  font-size: 1.15rem;
+  font-size: clamp(1.02rem, 1.6vw, 1.15rem);
   color: var(--slate-800);
   font-weight: 500;
   margin-bottom: 1.2rem;
@@ -756,7 +816,7 @@ button, input, select, textarea {
    PROPERTIES DESTINATION SHOWCASE
    ========================================================================== */
 .destinations-section {
-  padding: 6rem 0;
+  padding: clamp(3.5rem, 6vw, 6rem) 0;
   background-color: var(--pure-white);
 }
 
@@ -791,7 +851,7 @@ button, input, select, textarea {
 .hotels-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: clamp(1.5rem, 3vw, 2.25rem);
 }
 
 .hotel-card {
@@ -873,15 +933,27 @@ button, input, select, textarea {
 
 .hotel-title {
   font-family: var(--font-heading);
-  font-size: 1.45rem;
+  font-size: clamp(1.25rem, 2vw, 1.45rem);
   font-weight: 700;
   color: var(--navy-900);
   margin-bottom: 0.5rem;
   line-height: 1.3;
 }
 
+.hotel-declarative-fact {
+  font-size: 0.88rem;
+  color: var(--navy-900);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  background: var(--gold-50);
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  border-left: 3px solid var(--gold-500);
+}
+
 .hotel-desc {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--slate-600);
   margin-bottom: 1.25rem;
   line-height: 1.6;
@@ -962,10 +1034,10 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
-   ACCOMMODATIONS & SUITES CAROUSEL / HIGHLIGHT
+   ACCOMMODATIONS & SUITES
    ========================================================================== */
 .rooms-section {
-  padding: 6rem 0;
+  padding: clamp(3.5rem, 6vw, 6rem) 0;
   background-color: var(--navy-900);
   color: var(--pure-white);
   position: relative;
@@ -982,7 +1054,7 @@ button, input, select, textarea {
 .rooms-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: clamp(1.5rem, 3vw, 2.25rem);
 }
 
 .room-card {
@@ -1040,7 +1112,7 @@ button, input, select, textarea {
 
 .room-title {
   font-family: var(--font-heading);
-  font-size: 1.35rem;
+  font-size: clamp(1.15rem, 1.8vw, 1.35rem);
   font-weight: 700;
   color: #fff;
   margin-bottom: 0.5rem;
@@ -1048,10 +1120,11 @@ button, input, select, textarea {
 
 .room-meta {
   display: flex;
-  gap: 1.25rem;
+  gap: 1rem;
   font-size: 0.8rem;
   color: var(--gold-300);
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .room-meta span {
@@ -1090,17 +1163,148 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
+   CANONICAL FACTS SHEET & ENTITY DIRECTORY SECTION
+   ========================================================================== */
+.facts-section {
+  padding: clamp(3.5rem, 6vw, 6rem) 0;
+  background-color: var(--slate-100);
+  border-top: 1px solid var(--slate-200);
+  border-bottom: 1px solid var(--slate-200);
+}
+
+.facts-table-wrapper {
+  background: #ffffff;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--slate-200);
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+
+.facts-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.facts-table th {
+  background: var(--navy-900);
+  color: var(--gold-400);
+  padding: 1rem 1.25rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.facts-table td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--slate-200);
+  color: var(--slate-700);
+  vertical-align: top;
+}
+
+.facts-table tr:last-child td {
+  border-bottom: none;
+}
+
+.facts-table tr:hover {
+  background-color: var(--gold-50);
+}
+
+.facts-table strong {
+  color: var(--navy-900);
+}
+
+/* ==========================================================================
+   FAQ SECTION (AEO / GEO CONVERSATIONAL ANSWERS)
+   ========================================================================== */
+.faq-section {
+  padding: clamp(3.5rem, 6vw, 6rem) 0;
+  background-color: #ffffff;
+}
+
+.faq-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.faq-item {
+  background: var(--ivory-white);
+  border: 1px solid var(--slate-200);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  transition: var(--transition-fast);
+}
+
+.faq-item:hover {
+  border-color: var(--gold-400);
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 1.35rem 1.5rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+  font-weight: 700;
+  color: var(--navy-900);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-question i {
+  color: var(--gold-600);
+  transition: transform var(--transition-fast);
+  font-size: 0.95rem;
+}
+
+.faq-item.active .faq-question i {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  display: none;
+  color: var(--slate-600);
+  line-height: 1.75;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* Direct declarative answer callout for AI parsing */
+.faq-direct-answer {
+  font-weight: 700;
+  color: var(--navy-900);
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--slate-200);
+}
+
+/* ==========================================================================
    DINING & CULINARY EXPERIENCES
    ========================================================================== */
 .dining-section {
-  padding: 6rem 0;
+  padding: clamp(3.5rem, 6vw, 6rem) 0;
   background-color: var(--ivory-white);
 }
 
 .dining-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: clamp(2rem, 4vw, 3.5rem);
   align-items: center;
 }
 
@@ -1193,7 +1397,7 @@ button, input, select, textarea {
    BANQUETS, WEDDINGS & MICE
    ========================================================================== */
 .banquets-section {
-  padding: 6rem 0;
+  padding: clamp(3.5rem, 6vw, 6rem) 0;
   background: linear-gradient(135deg, var(--navy-950) 0%, var(--navy-900) 100%);
   color: #fff;
   position: relative;
@@ -1211,7 +1415,7 @@ button, input, select, textarea {
 .banquet-cards-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: clamp(1.5rem, 3vw, 2.25rem);
   margin-bottom: 3.5rem;
 }
 
@@ -1222,7 +1426,6 @@ button, input, select, textarea {
   height: 380px;
   box-shadow: var(--shadow-lg);
   border: 1px solid rgba(197, 168, 105, 0.25);
-  group: hover;
 }
 
 .banquet-card img {
@@ -1287,7 +1490,7 @@ button, input, select, textarea {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(197, 168, 105, 0.3);
   border-radius: var(--border-radius-md);
-  padding: 2.5rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
   backdrop-filter: blur(12px);
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -1297,7 +1500,7 @@ button, input, select, textarea {
 
 .banquet-inquiry-text h3 {
   font-family: var(--font-heading);
-  font-size: 1.8rem;
+  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
   color: var(--gold-300);
   margin-bottom: 0.75rem;
 }
@@ -1308,10 +1511,10 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
-   EXPERIENCES & AMENITIES
+   AMENITIES
    ========================================================================== */
 .amenities-section {
-  padding: 6rem 0;
+  padding: clamp(3.5rem, 6vw, 6rem) 0;
   background-color: var(--pure-white);
 }
 
@@ -1371,10 +1574,10 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
-   TESTIMONIALS & REVIEWS
+   REVIEWS & TESTIMONIALS
    ========================================================================== */
 .reviews-section {
-  padding: 6rem 0;
+  padding: clamp(3.5rem, 6vw, 6rem) 0;
   background-color: var(--gold-50);
 }
 
@@ -1446,7 +1649,7 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
-   INSTANT BOOKING & RESERVATION MODAL
+   BOOKING MODAL
    ========================================================================== */
 .modal-backdrop {
   position: fixed;
@@ -1457,7 +1660,7 @@ button, input, select, textarea {
   display: none;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 .modal-backdrop.open {
@@ -1491,7 +1694,7 @@ button, input, select, textarea {
 .modal-header {
   background: var(--navy-900);
   color: #fff;
-  padding: 1.5rem 2rem;
+  padding: 1.25rem 1.75rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1500,7 +1703,7 @@ button, input, select, textarea {
 
 .modal-title {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: var(--gold-300);
 }
 
@@ -1510,6 +1713,7 @@ button, input, select, textarea {
   color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
+  padding: 0.25rem;
   transition: var(--transition-fast);
 }
 
@@ -1518,7 +1722,7 @@ button, input, select, textarea {
 }
 
 .modal-body {
-  padding: 2rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
 }
 
 .modal-form-grid {
@@ -1563,14 +1767,14 @@ button, input, select, textarea {
 .site-footer {
   background-color: var(--navy-950);
   color: var(--slate-300);
-  padding: 5rem 0 2rem;
+  padding: clamp(3.5rem, 6vw, 5rem) 0 2rem;
   border-top: 2px solid var(--gold-600);
 }
 
 .footer-top-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1.5fr;
-  gap: 3.5rem;
+  gap: 3rem;
   margin-bottom: 4rem;
 }
 
@@ -1696,6 +1900,7 @@ button, input, select, textarea {
 .footer-bottom-links {
   display: flex;
   gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .footer-bottom-links a:hover {
@@ -1703,12 +1908,12 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
-   FLOATING CONCIERGE / WHATSAPP BADGE
+   CONCIERGE / WHATSAPP BADGE
    ========================================================================== */
 .floating-concierge {
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: clamp(1rem, 3vw, 2rem);
+  right: clamp(1rem, 3vw, 2rem);
   z-index: 999;
   display: flex;
   flex-direction: column;
@@ -1737,7 +1942,7 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
-   RESPONSIVE DESIGN
+   FLUID RESPONSIVE BREAKPOINTS (320px, 375px, 768px, 1024px, 1440px)
    ========================================================================== */
 @media (max-width: 1024px) {
   .hotels-grid,
@@ -1792,6 +1997,7 @@ button, input, select, textarea {
     padding: 2rem;
     gap: 1.5rem;
     border-bottom: 2px solid var(--gold-500);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
 
   .hotels-grid,
@@ -1824,10 +2030,51 @@ button, input, select, textarea {
 
   .about-main-img {
     width: 100%;
-    height: 350px;
+    height: 320px;
   }
 
   .about-sub-img {
     display: none;
+  }
+
+  .banquet-inquiry-box {
+    text-align: center;
+  }
+
+  .banquet-inquiry-box div:last-child {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-luxury-primary,
+  .btn-luxury-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .brand-crest {
+    width: 36px;
+    height: 36px;
+    font-size: 1.15rem;
+  }
+
+  .brand-name {
+    font-size: 1.15rem;
+  }
+
+  .about-pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .facts-table th,
+  .facts-table td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.8rem;
   }
 }
