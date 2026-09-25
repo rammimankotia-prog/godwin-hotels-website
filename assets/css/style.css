@@ -147,10 +147,67 @@ ul { list-style: none; }
 }
 .top-bar-contacts a:hover { color: var(--gold-300); }
 .top-bar-contacts i { color: var(--gold-500); font-size: 0.72rem; }
-.top-bar-phone { display: inline-flex; align-items: center; gap: 0.55rem; }
-.top-bar-phone a { color: rgba(255,255,255,0.7); font-size: 0.78rem; font-weight: 500; display: inline-flex; align-items: center; gap: 0.35rem; transition: color 0.2s, transform 0.2s; }
-.top-bar-phone a:hover { color: var(--gold-300); }
-.top-bar-phone a.top-wa:hover { color: #25D366; }
+
+.top-contact-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.top-phone-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(200, 146, 46, 0.12);
+  border: 1px solid rgba(200, 146, 46, 0.35);
+  color: #fff !important;
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 0.28rem 0.8rem;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.top-phone-badge i {
+  color: var(--gold-400) !important;
+  font-size: 0.72rem;
+}
+.top-phone-badge:hover {
+  background: rgba(200, 146, 46, 0.25);
+  border-color: var(--gold-400);
+  color: var(--gold-200) !important;
+  transform: translateY(-1px);
+}
+.top-wa-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(37, 211, 102, 0.14);
+  border: 1px solid rgba(37, 211, 102, 0.4);
+  color: #25D366 !important;
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 0.28rem 0.8rem;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.top-wa-badge i {
+  color: #25D366 !important;
+  font-size: 0.82rem;
+}
+.top-wa-badge:hover {
+  background: #25D366;
+  color: #fff !important;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+  transform: translateY(-1px);
+}
+.top-wa-badge:hover i {
+  color: #fff !important;
+}
 
 .currency-select {
   background: transparent; border: 1px solid rgba(200,146,46,0.3);
