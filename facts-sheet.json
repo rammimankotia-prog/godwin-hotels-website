@@ -4,7 +4,7 @@
     "legalName": "Godwin Hospitality Group",
     "website": "https://godwinhotels.com",
     "centralReservationsPhone": "+91-88600-81994",
-    "centralEmail": "reservations@godwinhotels.com",
+    "centralEmail": "book@godwinhotels.com",
     "starRating": "Boutique Luxury Standards",
     "currencyAccepted": ["INR", "USD", "EUR", "AED"],
     "lastUpdated": "2026-09-25",
@@ -33,7 +33,7 @@
         "addressCountry": "IN"
       },
       "telephone": "+91-88600-81994",
-      "email": "grand@godwinhotels.com",
+      "email": "book@godwinhotels.com",
       "geo": {
         "latitude": 28.6437,
         "longitude": 77.2155
@@ -94,7 +94,7 @@
         "addressCountry": "IN"
       },
       "telephone": "+91-88600-81994",
-      "email": "deluxe@godwinhotels.com",
+      "email": "book@godwinhotels.com",
       "geo": {
         "latitude": 28.6436,
         "longitude": 77.2154

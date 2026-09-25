@@ -86,4 +86,4 @@ npx serve .
 
 - **Repository**: [https://github.com/rammimankotia-prog/godwin-hotels-website](https://github.com/rammimankotia-prog/godwin-hotels-website)
 - **Direct Reservations**: +91 88600 81994 / +91 11 2355 5777
-- **Central Email**: reservations@godwinhotels.com
+- **Central Email**: book@godwinhotels.com
