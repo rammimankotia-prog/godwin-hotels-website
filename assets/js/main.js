@@ -201,7 +201,7 @@ function initBookingEngine() {
     modalCheckout.min = formatDate(tomorrow);
   }
 
-  function openModal(destination = 'Haridwar', roomType = 'Deluxe Room', basePrice = 5500) {
+  function openModal(destination = 'Hotel Grand Godwin, New Delhi', roomType = 'Deluxe Room', basePrice = 2800) {
     if (!modal) return;
     modal.classList.add('open');
     document.body.style.overflow = 'hidden';
@@ -246,7 +246,7 @@ function initBookingEngine() {
       if (document.getElementById('modalGuests')) document.getElementById('modalGuests').value = guests;
       if (document.getElementById('modalRoomsCount')) document.getElementById('modalRoomsCount').value = rooms;
 
-      openModal(dest, 'Deluxe Room', 5500);
+      openModal(dest, 'Deluxe Room', 2800);
     });
   }
 
@@ -254,9 +254,9 @@ function initBookingEngine() {
   bookTriggers.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      const dest = btn.getAttribute('data-destination') || 'Haridwar';
-      const room = btn.getAttribute('data-room') || 'Deluxe Heritage Room';
-      const price = parseFloat(btn.getAttribute('data-price') || '5500');
+      const dest = btn.getAttribute('data-destination') || 'Hotel Grand Godwin, New Delhi';
+      const room = btn.getAttribute('data-room') || 'Deluxe Room';
+      const price = parseFloat(btn.getAttribute('data-price') || '2800');
       openModal(dest, room, price);
     });
   });
@@ -274,7 +274,7 @@ function initBookingEngine() {
       nights = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) || 1;
     }
 
-    let ratePerNight = 5500;
+    let ratePerNight = 2800;
     if (modalRoom) {
       const selectedOption = modalRoom.options[modalRoom.selectedIndex];
       if (selectedOption && selectedOption.dataset.price) {
@@ -286,12 +286,12 @@ function initBookingEngine() {
     let addonsTotal = 0;
     const breakfast = document.getElementById('addonBreakfast');
     const transfer = document.getElementById('addonTransfer');
-    if (breakfast && breakfast.checked) addonsTotal += 650 * nights * roomsCount;
-    if (transfer && transfer.checked) addonsTotal += 1800;
+    if (breakfast && breakfast.checked) addonsTotal += 350 * nights * roomsCount;
+    if (transfer && transfer.checked) addonsTotal += 950;
 
     const baseRoomTotal = ratePerNight * nights * roomsCount;
     const subtotal = baseRoomTotal + addonsTotal;
-    const tax = Math.round(subtotal * 0.18); // 18% GST
+    const tax = Math.round(subtotal * 0.12); // 12% Hotel GST
     const grandTotal = subtotal + tax;
 
     const billNightsEl = document.getElementById('billNights');

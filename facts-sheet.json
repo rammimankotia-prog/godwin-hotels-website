@@ -1,185 +1,145 @@
 {
   "entity": {
-    "brandName": "Godwin Hotels & Resorts",
-    "legalName": "Godwin Hospitality Pvt. Ltd.",
+    "brandName": "Godwin Hotels New Delhi",
+    "legalName": "Godwin Hospitality Group",
     "website": "https://godwinhotels.com",
-    "centralReservationsPhone": "+91-1234-567-890",
+    "centralReservationsPhone": "+91-88600-81994",
     "centralEmail": "reservations@godwinhotels.com",
-    "starRating": "4.5 to 5-Star Luxury Standards",
+    "starRating": "Boutique Luxury Standards",
     "currencyAccepted": ["INR", "USD", "EUR", "AED"],
     "lastUpdated": "2026-09-25",
+    "locationSummary": "Arakashan Road, Ram Nagar, Paharganj, Central New Delhi – 110055, India (Walking distance to New Delhi Railway Station and minutes from Connaught Place).",
     "generalPolicies": {
-      "checkinTime": "14:00",
+      "checkinTime": "13:00",
       "checkoutTime": "11:00",
-      "earlyCheckinPolicy": "Early check-in from 10:00 AM is subject to room availability upon arrival; guaranteed early check-in requires reservation from the preceding night.",
-      "cancellationPolicy": "Free cancellation is permitted up to 48 hours prior to the scheduled check-in date. Cancellations made within 48 hours incur a 1-night room charge.",
+      "earlyCheckinPolicy": "Early check-in from 10:00 AM is complimentary subject to room availability upon arrival; guaranteed early morning check-in requires reservation from the preceding night.",
+      "cancellationPolicy": "Free cancellation is permitted up to 24-48 hours prior to the scheduled check-in date. Cancellations made within the late cancellation window incur a 1-night room charge.",
+      "couplePolicy": "Valid government-issued photo ID (Passport, Aadhaar, Voter ID, Driving License) is required for all adult guests at check-in. Local unmarried couples may be restricted per hotel safety guidelines.",
       "petPolicy": "Godwin Hotels does not allow pets in guest rooms or dining areas, with the exception of certified service animals.",
-      "smokingPolicy": "All indoor rooms and public suites are 100% non-smoking; designated outdoor smoking lounges are available.",
-      "breakfastPolicy": "Lavish buffet breakfast is included in all 'Bed & Breakfast' room rates and served daily from 07:00 AM to 10:30 AM at The Golden Palm Restaurant.",
-      "parkingPolicy": "Complimentary on-site valet parking and standard secure parking are provided for all registered hotel guests and event attendees."
+      "smokingPolicy": "All indoor guest rooms and restaurants are 100% non-smoking; designated outdoor rooftop smoking zones are provided.",
+      "breakfastPolicy": "Lavish multi-cuisine buffet breakfast is served daily from 07:30 AM to 10:30 AM at The Indian Grill restaurant and is included in all Bed & Breakfast room rates.",
+      "parkingPolicy": "Valet parking assistance and secure parking arrangements are provided for registered hotel guests."
     }
   },
   "properties": [
     {
-      "id": "godwin-haridwar",
-      "name": "Godwin Hotel, Haridwar",
+      "id": "hotel-grand-godwin",
+      "name": "Hotel Grand Godwin, New Delhi",
       "address": {
-        "streetAddress": "NH-58, Rishikesh Highway, Opposite Shantikunj",
-        "addressLocality": "Haridwar",
-        "addressRegion": "Uttarakhand",
-        "postalCode": "249411",
+        "streetAddress": "8502/41, Arakashan Road, Ram Nagar, Paharganj",
+        "addressLocality": "Central Delhi, New Delhi",
+        "addressRegion": "Delhi",
+        "postalCode": "110055",
         "addressCountry": "IN"
       },
-      "telephone": "+91-1334-266-000",
-      "email": "haridwar@godwinhotels.com",
+      "telephone": "+91-88600-81994",
+      "email": "grand@godwinhotels.com",
       "geo": {
-        "latitude": 29.9885,
-        "longitude": 78.1882
+        "latitude": 28.6437,
+        "longitude": 77.2155
       },
-      "priceRange": "₹5,500 - ₹18,000 INR per night",
+      "priceRange": "₹2,800 - ₹5,800 INR per night",
       "landmarkDistances": {
-        "harKiPauri": "6.5 km (approx. 12 minutes drive)",
-        "shantikunj": "0.8 km (walking distance, 3 minutes)",
-        "haridwarRailwayStation": "8.2 km (approx. 18 minutes drive)",
-        "jollyGrantAirportDehradun": "32 km (approx. 45 minutes drive)",
-        "rishikesh": "18 km (approx. 25 minutes drive)"
+        "newDelhiRailwayStationNDLS": "500 meters (approx. 5 minutes walk)",
+        "airportExpressMetroStation": "700 meters (approx. 7 minutes walk)",
+        "connaughtPlaceCP": "1.2 km (approx. 5 minutes drive / 15 minutes walk)",
+        "indiraGandhiInternationalAirportIGI": "15 km (approx. 22 minutes via Airport Express Metro)",
+        "redFortAndChandniChowk": "3.5 km (approx. 12 minutes drive)",
+        "indiaGate": "4.5 km (approx. 15 minutes drive)"
       },
       "amenities": [
-        "Outdoor Swimming Pool",
-        "The Golden Palm Multi-Cuisine Restaurant",
-        "Cafe Godwin 24-Hour Coffee Shop",
-        "Pillar-less Banquet Halls (Up to 1,200 guests)",
-        "Sprawling Lawn for Weddings (Up to 2,500 guests)",
-        "Free High-Speed Wi-Fi",
-        "24/7 Room Dining",
-        "Fitness Studio",
-        "Valet Parking"
+        "The Indian Grill Multi-Cuisine Restaurant",
+        "Coffee Brownie 24-Hour Cafe",
+        "Rooftop Terrace Lounge with City Views",
+        "High-Speed Wi-Fi Internet",
+        "24/7 Airport Pick-Up & Railway Transfers",
+        "Full Air Conditioning & Hypoallergenic Bedding",
+        "Elevator / Lift Access to All Floors",
+        "Travel Desk & Delhi Sightseeing Tours",
+        "24-Hour In-Room Dining Service",
+        "Foreign Currency Exchange & Doctor on Call"
       ],
       "rooms": [
         {
-          "type": "Deluxe Heritage Room",
-          "basePriceINR": 5500,
-          "sizeSqFt": 380,
-          "bedType": "King or Twin Beds",
-          "maxOccupancy": "2 Adults + 1 Child"
-        },
-        {
-          "type": "Executive Club Suite",
-          "basePriceINR": 8500,
-          "sizeSqFt": 550,
-          "bedType": "Super King Bed",
-          "maxOccupancy": "3 Adults or 2 Adults + 2 Children"
-        },
-        {
-          "type": "Presidential Royal Suite",
-          "basePriceINR": 16500,
-          "sizeSqFt": 1100,
-          "bedType": "Master King Bed",
-          "maxOccupancy": "4 Adults"
-        }
-      ]
-    },
-    {
-      "id": "godwin-meerut",
-      "name": "Godwin Hotel, Meerut",
-      "address": {
-        "streetAddress": "Meerut Bypass Road, NH-58, Partapur",
-        "addressLocality": "Meerut",
-        "addressRegion": "Uttar Pradesh",
-        "postalCode": "250103",
-        "addressCountry": "IN"
-      },
-      "telephone": "+91-121-244-1111",
-      "email": "meerut@godwinhotels.com",
-      "geo": {
-        "latitude": 28.9482,
-        "longitude": 77.6534
-      },
-      "priceRange": "₹6,200 - ₹22,000 INR per night",
-      "landmarkDistances": {
-        "delhiMeerutExpressway": "Direct access at Partapur Interchange",
-        "indiraGandhiInternationalAirportDelhi": "78 km (approx. 70 minutes via Expressway)",
-        "meerutCityRailwayStation": "7.5 km (approx. 15 minutes drive)",
-        "shopprixMall": "4.2 km (approx. 8 minutes drive)"
-      },
-      "amenities": [
-        "The Kohinoor Grand Ballroom (Western UP's largest pillar-less hall, 1,500 guests)",
-        "Olympic-Sized Outdoor Swimming Pool",
-        "The Regal Bar & Lounge",
-        "Multi-cuisine Fine Dining Restaurant",
-        "24-Hour Gymnasium & Steam Sauna",
-        "EV Car Charging Station",
-        "Valet Parking for 500+ Vehicles"
-      ],
-      "rooms": [
-        {
-          "type": "Superior Deluxe Room",
-          "basePriceINR": 6200,
-          "sizeSqFt": 420,
-          "bedType": "King Bed",
-          "maxOccupancy": "2 Adults + 1 Child"
-        },
-        {
-          "type": "Regency Executive Suite",
-          "basePriceINR": 9500,
-          "sizeSqFt": 620,
-          "bedType": "King Bed",
-          "maxOccupancy": "3 Adults"
-        },
-        {
-          "type": "Godwin Royal Presidential Suite",
-          "basePriceINR": 22000,
-          "sizeSqFt": 1350,
-          "bedType": "Master Suite King Bed",
-          "maxOccupancy": "4 Adults"
-        }
-      ]
-    },
-    {
-      "id": "godwin-goa",
-      "name": "Godwin Hotel, Candolim Goa",
-      "address": {
-        "streetAddress": "Fort Aguada Road, Candolim",
-        "addressLocality": "Bardez, North Goa",
-        "addressRegion": "Goa",
-        "postalCode": "403515",
-        "addressCountry": "IN"
-      },
-      "telephone": "+91-832-248-9999",
-      "email": "goa@godwinhotels.com",
-      "geo": {
-        "latitude": 15.5186,
-        "longitude": 73.7663
-      },
-      "priceRange": "₹7,800 - ₹25,000 INR per night",
-      "landmarkDistances": {
-        "candolimBeach": "0.7 km (approx. 7 minutes walk / 2 minutes drive)",
-        "calanguteBeach": "3.5 km (approx. 10 minutes drive)",
-        "fortAguada": "4.2 km (approx. 12 minutes drive)",
-        "manoharInternationalAirportMopa": "31 km (approx. 45 minutes drive)",
-        "dabolimAirport": "38 km (approx. 55 minutes drive)"
-      },
-      "amenities": [
-        "Tropical Lagoon Swimming Pool with Sunken Bar",
-        "Seafood Grill & Sunset Deck",
-        "Ayurvedic Rejuvenation Spa",
-        "Complimentary Beach Shuttle",
-        "High-Speed Wi-Fi",
-        "Boutique Travel Concierge"
-      ],
-      "rooms": [
-        {
-          "type": "Premier Pool View Room",
-          "basePriceINR": 7800,
-          "sizeSqFt": 400,
-          "bedType": "King Bed with Private Balcony",
+          "type": "Deluxe Room",
+          "basePriceINR": 2800,
+          "sizeSqFt": 240,
+          "bedType": "Queen or Twin Beds",
           "maxOccupancy": "2 Adults"
         },
         {
-          "type": "Candolim Luxury Suite",
-          "basePriceINR": 11500,
-          "sizeSqFt": 650,
-          "bedType": "Super King Bed with Sun Deck",
+          "type": "Executive Club Room",
+          "basePriceINR": 3800,
+          "sizeSqFt": 320,
+          "bedType": "King Bed",
+          "maxOccupancy": "2 Adults + 1 Child"
+        },
+        {
+          "type": "Grand Family Suite",
+          "basePriceINR": 5200,
+          "sizeSqFt": 480,
+          "bedType": "2 Queen Beds or King + Twin",
+          "maxOccupancy": "4 Guests"
+        }
+      ]
+    },
+    {
+      "id": "hotel-godwin-deluxe",
+      "name": "Hotel Godwin Deluxe, New Delhi",
+      "address": {
+        "streetAddress": "8501/15, Arakashan Road, Ram Nagar, Paharganj",
+        "addressLocality": "Central Delhi, New Delhi",
+        "addressRegion": "Delhi",
+        "postalCode": "110055",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-88600-81994",
+      "email": "deluxe@godwinhotels.com",
+      "geo": {
+        "latitude": 28.6436,
+        "longitude": 77.2154
+      },
+      "priceRange": "₹3,200 - ₹6,500 INR per night",
+      "landmarkDistances": {
+        "newDelhiRailwayStationNDLS": "500 meters (approx. 5 minutes walk)",
+        "airportExpressMetroStation": "700 meters (approx. 7 minutes walk)",
+        "connaughtPlaceCP": "1.2 km (approx. 5 minutes drive)",
+        "indiraGandhiInternationalAirportIGI": "15 km (approx. 22 minutes via Airport Express Metro)",
+        "karolBaghShoppingDistrict": "2.8 km (approx. 10 minutes drive)",
+        "sadarBazaarMarket": "1.5 km (approx. 8 minutes drive)"
+      },
+      "amenities": [
+        "Designer Boutique Interiors",
+        "The Indian Grill Restaurant & Breakfast Buffet",
+        "Rooftop Garden Terrace",
+        "Complimentary High-Speed Wi-Fi",
+        "Electronic Safe & Minibar in All Rooms",
+        "Soundproof Double-Glazed Windows",
+        "Modern Marble Bathrooms with Rain Shower",
+        "24-Hour Front Desk & Concierge",
+        "Airport Shuttle & Chauffeur Services",
+        "Business Center & Meeting Facilities"
+      ],
+      "rooms": [
+        {
+          "type": "Premier Deluxe Room",
+          "basePriceINR": 3200,
+          "sizeSqFt": 260,
+          "bedType": "Comfort King Bed",
+          "maxOccupancy": "2 Adults"
+        },
+        {
+          "type": "Executive Suite",
+          "basePriceINR": 4400,
+          "sizeSqFt": 360,
+          "bedType": "Super King Bed with Seating Area",
+          "maxOccupancy": "2 Adults + 1 Child"
+        },
+        {
+          "type": "Studio Deluxe Room",
+          "basePriceINR": 5800,
+          "sizeSqFt": 450,
+          "bedType": "Master King Bed with Workstation & Minibar",
           "maxOccupancy": "3 Adults"
         }
       ]
