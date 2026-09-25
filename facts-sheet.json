@@ -9,6 +9,13 @@
     "starRating": "Boutique Luxury Standards",
     "currencyAccepted": ["INR", "USD", "EUR", "AED"],
     "lastUpdated": "2026-09-25",
+    "socialProfiles": {
+      "x": "https://x.com/grand_godwin",
+      "linkedin": "https://www.linkedin.com/company/hotel-grand-godwin/",
+      "facebook": "https://www.facebook.com/HotelGodwindelhi/",
+      "instagram": "https://www.instagram.com/godwinhotels_/",
+      "tripadvisor": "https://www.tripadvisor.in/Hotel_Review-g304551-d592998-Reviews-Hotel_Grand_Godwin-New_Delhi_National_Capital_Territory_of_Delhi.html"
+    },
     "locationSummary": "Arakashan Road, Ram Nagar, Paharganj, Central New Delhi – 110055, India (Walking distance to New Delhi Railway Station and minutes from Connaught Place).",
     "generalPolicies": {
       "checkinTime": "13:00",

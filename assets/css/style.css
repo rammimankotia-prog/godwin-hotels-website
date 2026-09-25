@@ -968,7 +968,7 @@ ul { list-style: none; }
 .footer-brand-name { font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold-200); }
 .footer-brand-sub  { font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-600); }
 .footer-about { font-size: 0.84rem; color: rgba(255,255,255,0.4); line-height: 1.8; margin-bottom: 1.5rem; }
-.footer-socials { display: flex; gap: 0.75rem; }
+.footer-socials { display: flex; gap: 0.75rem; flex-wrap: wrap; }
 .social-btn {
   width: 36px; height: 36px; border-radius: 50%;
   border: 1px solid rgba(200,146,46,0.25);

@@ -88,3 +88,9 @@ npx serve .
 - **Direct Reservations**: +91 88600 81994 / +91 88600 81995 / +91 11 2355 5777
 - **The Indian Grill Restaurant**: +91 88600 81991
 - **Central Email**: book@godwinhotels.com
+- **Hotel Grand Godwin Social**:
+  - Facebook: [HotelGodwindelhi](https://www.facebook.com/HotelGodwindelhi/)
+  - Instagram: [@godwinhotels_](https://www.instagram.com/godwinhotels_/)
+  - X: [@grand_godwin](https://x.com/grand_godwin)
+  - LinkedIn: [hotel-grand-godwin](https://www.linkedin.com/company/hotel-grand-godwin/)
+  - TripAdvisor: [Hotel Grand Godwin](https://www.tripadvisor.in/Hotel_Review-g304551-d592998-Reviews-Hotel_Grand_Godwin-New_Delhi_National_Capital_Territory_of_Delhi.html)
