@@ -1,0 +1,12 @@
+# Operating System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Local Development / Server logs
+data/reservations.log
+*.log
+.vscode/
+.idea/
