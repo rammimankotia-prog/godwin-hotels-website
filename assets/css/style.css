@@ -1015,8 +1015,8 @@ ul { list-style: none; }
 }
 .footer-main { padding: 5rem 0 3rem; }
 .footer-grid {
-  display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr;
-  gap: 3.5rem;
+  display: grid; grid-template-columns: 1.35fr 0.95fr 0.95fr 1.75fr;
+  gap: 2.5rem; align-items: flex-start;
 }
 .footer-brand { }
 .footer-brand-logo { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.2rem; }
@@ -1051,13 +1051,41 @@ ul { list-style: none; }
 }
 .footer-col ul li a:hover { color: var(--gold-300); }
 
-.footer-contact-item {
-  display: flex; align-items: flex-start; gap: 0.7rem;
-  font-size: 0.82rem; color: rgba(255,255,255,0.45); margin-bottom: 0.7rem;
-  line-height: 1.5;
+.footer-contact-list {
+  display: flex; flex-direction: column; gap: 0.65rem;
 }
-.footer-contact-item i { color: var(--gold-500); font-size: 0.78rem; margin-top: 0.2rem; flex-shrink: 0; }
-.footer-contact-item a:hover { color: var(--gold-300); }
+.footer-contact-row {
+  display: flex; align-items: baseline; gap: 0.65rem;
+  font-size: 0.82rem; line-height: 1.5;
+}
+.footer-contact-row.address-row { align-items: flex-start; }
+.footer-contact-row .f-icon {
+  width: 18px; text-align: center; color: var(--gold-400);
+  font-size: 0.8rem; flex-shrink: 0; display: inline-flex; justify-content: center;
+}
+.footer-contact-row .f-icon.wa { color: #25D366; }
+.footer-contact-row .f-label {
+  color: rgba(255,255,255,0.45); font-size: 0.78rem; min-width: 95px; flex-shrink: 0;
+}
+.footer-contact-row .f-val {
+  color: rgba(255,255,255,0.88); font-size: 0.82rem; white-space: nowrap;
+  text-decoration: none; transition: color 0.2s;
+}
+.footer-contact-row a.f-val:hover { color: var(--gold-300); }
+.footer-contact-row .f-val.wa { color: #25D366; }
+.footer-contact-row a.f-val.wa:hover { color: #55f191; }
+.footer-contact-row .f-sub-link {
+  display: inline-flex; align-items: center; gap: 0.25rem;
+  font-size: 0.7rem; font-weight: 600; margin-left: 0.45rem;
+  padding: 0.1rem 0.45rem; border-radius: 10px;
+  background: rgba(37,211,102,0.12); border: 1px solid rgba(37,211,102,0.35);
+  text-decoration: none;
+}
+.footer-contact-row .f-sub-link.wa { color: #25D366; }
+.footer-contact-row .f-sub-link:hover { background: #25D366; color: #fff; }
+.footer-contact-row .address-text {
+  white-space: normal; color: rgba(255,255,255,0.6); font-size: 0.8rem; line-height: 1.45;
+}
 
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.06);
