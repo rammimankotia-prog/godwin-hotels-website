@@ -48,7 +48,7 @@
         "name": "Godwin Hotels New Delhi",
         "legalName": "Godwin Hospitality Group",
         "url": "https://godwinhotels.com",
-        "telephone": "+91-88600-81994",
+        "telephone": ["+91-88600-81994", "+91-88600-81995"],
         "email": "book@godwinhotels.com",
         "sameAs": ["https://www.facebook.com/godwinhotels","https://www.tripadvisor.com"]
       },
@@ -59,7 +59,7 @@
         "parentOrganization": { "@id": "https://godwinhotels.com/#organization" },
         "description": "Premier boutique hotel located at 8502/41 Arakashan Road, Paharganj, New Delhi. Situated 500 meters from New Delhi Railway Station and 1.2 km from Connaught Place. Features Coffee Brownie café, rooftop terrace, elevator, fully air-conditioned rooms with centralized warmer.",
         "url": "https://godwinhotels.com/#destinations",
-        "telephone": "+91-88600-81994",
+        "telephone": ["+91-88600-81994", "+91-88600-81995"],
         "email": "book@godwinhotels.com",
         "priceRange": "₹2,800 - ₹5,800 INR",
         "checkinTime": "13:00",
@@ -84,7 +84,7 @@
         "parentOrganization": { "@id": "https://godwinhotels.com/#organization" },
         "description": "Contemporary designer boutique hotel at 8501/15 Arakashan Road, Paharganj, New Delhi. Located 500 meters from New Delhi Railway Station and near Connaught Place. Features The Indian Grill multi-cuisine restaurant, modern marble bathrooms, soundproof double-glazed windows, fully air-conditioned rooms with centralized warmer, and air purifiers installed in all rooms.",
         "url": "https://godwinhotels.com/#destinations",
-        "telephone": "+91-88600-81994",
+        "telephone": ["+91-88600-81994", "+91-88600-81995"],
         "email": "book@godwinhotels.com",
         "priceRange": "₹3,200 - ₹6,500 INR",
         "checkinTime": "13:00",
@@ -101,6 +101,24 @@
           "addressCountry": "IN"
         },
         "geo": { "@type": "GeoCoordinates", "latitude": 28.6436, "longitude": 77.2154 }
+      },
+      {
+        "@type": "Restaurant",
+        "@id": "https://godwinhotels.com/#the-indian-grill",
+        "name": "The Indian Grill Restaurant",
+        "parentOrganization": { "@id": "https://godwinhotels.com/#organization" },
+        "containedInPlace": { "@id": "https://godwinhotels.com/#hotel-godwin-deluxe" },
+        "description": "Multi-cuisine restaurant at Hotel Godwin Deluxe, New Delhi. Tandoori specialties, North Indian cuisine, Chinese and Continental favorites.",
+        "url": "https://godwinhotels.com/#dining",
+        "telephone": "+91-88600-81991",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "8501/15, Arakashan Road, Ram Nagar, Paharganj",
+          "addressLocality": "Central Delhi, New Delhi",
+          "addressRegion": "Delhi",
+          "postalCode": "110055",
+          "addressCountry": "IN"
+        }
       },
       {
         "@type": "FAQPage",
@@ -127,7 +145,9 @@
       <div class="top-bar-inner">
         <div class="top-bar-contacts">
           <a href="tel:+918860081994"><i class="fa-solid fa-phone-volume"></i> +91 88600 81994</a>
+          <a href="tel:+918860081995"><i class="fa-solid fa-phone"></i> +91 88600 81995</a>
           <a href="https://wa.me/918860081994?text=Hello%20Godwin%20Hotels%20Delhi,%20I%20would%20like%20to%20inquire%20about%20a%20room%20reservation." target="_blank" rel="noopener" style="color:#25D366;"><i class="fa-brands fa-whatsapp"></i> +91 8860081994</a>
+          <a href="tel:+918860081991" class="hide-mobile" title="The Indian Grill Restaurant"><i class="fa-solid fa-utensils"></i> Restaurant: +91 88600 81991</a>
           <a href="mailto:book@godwinhotels.com" class="hide-mobile"><i class="fa-solid fa-envelope"></i> book@godwinhotels.com</a>
           <span class="hide-mobile"><i class="fa-solid fa-location-dot"></i> Arakashan Road, Paharganj, New Delhi</span>
         </div>
@@ -595,12 +615,12 @@
             </thead>
             <tbody>
               <tr><th scope="row">Exact Address</th><td>8502/41, Arakashan Road, Ram Nagar, Paharganj, New Delhi – 110055</td><td>8501/15, Arakashan Road, Ram Nagar, Paharganj, New Delhi – 110055</td></tr>
-              <tr><th scope="row">Direct Phone</th><td>+91 88600 81994 / +91 11 2355 5777</td><td>+91 88600 81994 / +91 11 2355 5777</td></tr>
+              <tr><th scope="row">Direct Phone</th><td><a href="tel:+918860081994" style="color:inherit;text-decoration:none;">+91 88600 81994</a> / <a href="tel:+918860081995" style="color:inherit;text-decoration:none;">+91 88600 81995</a><br><span style="font-size:0.75rem;color:rgba(255,255,255,0.6);">Landline: <a href="tel:+911123555777" style="color:inherit;text-decoration:none;">+91 11 2355 5777</a></span></td><td><a href="tel:+918860081994" style="color:inherit;text-decoration:none;">+91 88600 81994</a> / <a href="tel:+918860081995" style="color:inherit;text-decoration:none;">+91 88600 81995</a><br><span style="font-size:0.75rem;color:rgba(255,255,255,0.6);">Landline: <a href="tel:+911123555777" style="color:inherit;text-decoration:none;">+91 11 2355 5777</a></span></td></tr>
               <tr><th scope="row">Distance to NDLS Station</th><td><i class="fa-solid fa-train"></i> 500 metres (5-minute walk)</td><td><i class="fa-solid fa-train"></i> 500 metres (5-minute walk)</td></tr>
               <tr><th scope="row">Airport Express Metro</th><td>700 metres (7-minute walk)</td><td>700 metres (7-minute walk)</td></tr>
               <tr><th scope="row">Distance to Connaught Place</th><td>1.2 km (≈ 5 minutes by cab)</td><td>1.2 km (≈ 5 minutes by cab)</td></tr>
               <tr><th scope="row">IGI Airport Transit</th><td>15 km — 22 min via Airport Express Metro</td><td>15 km — 22 min via Airport Express Metro</td></tr>
-              <tr><th scope="row">Dining</th><td>Coffee Brownie 24h Café</td><td>The Indian Grill Restaurant (Multi-cuisine &amp; Buffet)</td></tr>
+              <tr><th scope="row">Dining</th><td>Coffee Brownie 24h Café</td><td>The Indian Grill Restaurant (Multi-cuisine &amp; Buffet)<br><span style="font-size:0.75rem;color:var(--gold-400);"><i class="fa-solid fa-phone"></i> Table Booking: <a href="tel:+918860081991" style="color:var(--gold-300);text-decoration:underline;">+91 88600 81991</a></span></td></tr>
               <tr><th scope="row">Air Conditioning</th><td>Fully Air-Conditioned · Centralized Warmer</td><td>Fully Air-Conditioned · Centralized Warmer</td></tr>
               <tr><th scope="row">Air Purifier</th><td>—</td><td><i class="fa-solid fa-wind"></i> Installed in All Rooms</td></tr>
               <tr><th scope="row">Rooftop Terrace</th><td>Open rooftop lounge — City skyline views</td><td>Rooftop garden terrace — Open seating</td></tr>
@@ -642,6 +662,9 @@
               <div>
                 <div class="dining-feat-title">The Indian Grill Restaurant <span style="font-size:0.72rem;color:var(--gold-500);font-weight:600;">· Hotel Godwin Deluxe</span></div>
                 <div class="dining-feat-desc">Signature butter chicken, dal makhani, paneer tikka, Chinese noodles, and Continental sizzlers prepared fresh by skilled chefs. Daily morning breakfast buffet included.</div>
+                <div style="margin-top:0.45rem;font-size:0.82rem;color:var(--gold-400);display:flex;align-items:center;gap:0.4rem;flex-wrap:wrap;">
+                  <i class="fa-solid fa-phone"></i> <span>Restaurant Direct / Table Booking: <a href="tel:+918860081991" style="color:#fff;font-weight:600;text-decoration:underline;">+91 88600 81991</a></span>
+                </div>
               </div>
             </div>
             <div class="dining-feat">
@@ -658,12 +681,15 @@
                 <div class="dining-feat-desc">Order from our full menu straight to your room — perfect for late arrivals after a long train journey or early pre-dawn departures.</div>
               </div>
             </div>
-            <div style="margin-top:0.5rem;">
+            <div style="margin-top:0.8rem;display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap;">
               <button class="btn-gold trigger-booking-modal"
-                      data-destination="Hotel Grand Godwin, New Delhi"
+                      data-destination="Hotel Godwin Deluxe, New Delhi"
                       data-room="Table at The Indian Grill">
                 <i class="fa-solid fa-utensils"></i> Reserve a Dining Table
               </button>
+              <a href="tel:+918860081991" class="btn-outline-gold" style="font-size:0.85rem;padding:0.75rem 1.3rem;display:inline-flex;align-items:center;gap:0.45rem;text-decoration:none;">
+                <i class="fa-solid fa-phone"></i> Call The Indian Grill: +91 88600 81991
+              </a>
             </div>
           </div>
         </div>
@@ -1032,9 +1058,10 @@
           <!-- Contact Column -->
           <div class="footer-col">
             <div class="footer-col-title">Contact &amp; Reservations</div>
-            <div class="footer-contact-item"><i class="fa-solid fa-phone"></i><a href="tel:+918860081994">+91 88600 81994</a></div>
+            <div class="footer-contact-item"><i class="fa-solid fa-phone"></i><a href="tel:+918860081994">+91 88600 81994</a> &bull; <a href="tel:+918860081995">+91 88600 81995</a></div>
             <div class="footer-contact-item"><i class="fa-solid fa-phone-volume"></i><a href="tel:+911123555777">+91 11 2355 5777</a></div>
             <div class="footer-contact-item" style="color:#25D366;"><i class="fa-brands fa-whatsapp" style="color:#25D366;"></i><a href="https://wa.me/918860081994?text=Hello%20Godwin%20Hotels%20Delhi,%20I%20would%20like%20to%20make%20a%20reservation." target="_blank" rel="noopener" style="color:#25D366;">+91 8860081994 (WhatsApp)</a></div>
+            <div class="footer-contact-item"><i class="fa-solid fa-utensils" style="color:var(--gold-400);"></i><a href="tel:+918860081991">+91 88600 81991</a> <span style="font-size:0.75rem;color:rgba(255,255,255,0.6);">(The Indian Grill)</span></div>
             <div class="footer-contact-item"><i class="fa-solid fa-envelope"></i><a href="mailto:book@godwinhotels.com">book@godwinhotels.com</a></div>
             <div class="footer-contact-item"><i class="fa-solid fa-location-dot"></i>Arakashan Road, Ram Nagar, Paharganj, New Delhi – 110055</div>
             <div style="margin-top:1.2rem;">

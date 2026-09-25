@@ -3,8 +3,9 @@
     "brandName": "Godwin Hotels New Delhi",
     "legalName": "Godwin Hospitality Group",
     "website": "https://godwinhotels.com",
-    "centralReservationsPhone": "+91-88600-81994",
+    "centralReservationsPhone": "+91-88600-81994 / +91-88600-81995",
     "centralEmail": "book@godwinhotels.com",
+    "restaurantPhone": "+91-88600-81991 (The Indian Grill)",
     "starRating": "Boutique Luxury Standards",
     "currencyAccepted": ["INR", "USD", "EUR", "AED"],
     "lastUpdated": "2026-09-25",
@@ -32,7 +33,7 @@
         "postalCode": "110055",
         "addressCountry": "IN"
       },
-      "telephone": "+91-88600-81994",
+      "telephone": "+91-88600-81994 / +91-88600-81995",
       "email": "book@godwinhotels.com",
       "geo": {
         "latitude": 28.6437,
@@ -93,7 +94,8 @@
         "postalCode": "110055",
         "addressCountry": "IN"
       },
-      "telephone": "+91-88600-81994",
+      "telephone": "+91-88600-81994 / +91-88600-81995",
+      "restaurantPhone": "+91-88600-81991 (The Indian Grill)",
       "email": "book@godwinhotels.com",
       "geo": {
         "latitude": 28.6436,

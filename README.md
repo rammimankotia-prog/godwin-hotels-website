@@ -85,5 +85,6 @@ npx serve .
 ## 🌐 Remote Repository
 
 - **Repository**: [https://github.com/rammimankotia-prog/godwin-hotels-website](https://github.com/rammimankotia-prog/godwin-hotels-website)
-- **Direct Reservations**: +91 88600 81994 / +91 11 2355 5777
+- **Direct Reservations**: +91 88600 81994 / +91 88600 81995 / +91 11 2355 5777
+- **The Indian Grill Restaurant**: +91 88600 81991
 - **Central Email**: book@godwinhotels.com
