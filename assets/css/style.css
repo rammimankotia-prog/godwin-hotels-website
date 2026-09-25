@@ -147,6 +147,10 @@ ul { list-style: none; }
 }
 .top-bar-contacts a:hover { color: var(--gold-300); }
 .top-bar-contacts i { color: var(--gold-500); font-size: 0.72rem; }
+.top-bar-phone { display: inline-flex; align-items: center; gap: 0.55rem; }
+.top-bar-phone a { color: rgba(255,255,255,0.7); font-size: 0.78rem; font-weight: 500; display: inline-flex; align-items: center; gap: 0.35rem; transition: color 0.2s, transform 0.2s; }
+.top-bar-phone a:hover { color: var(--gold-300); }
+.top-bar-phone a.top-wa:hover { color: #25D366; }
 
 .currency-select {
   background: transparent; border: 1px solid rgba(200,146,46,0.3);
