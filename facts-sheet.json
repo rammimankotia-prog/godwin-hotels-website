@@ -104,6 +104,8 @@
     {
       "id": "hotel-godwin-deluxe",
       "name": "Hotel Godwin Deluxe, New Delhi",
+      "totalRooms": 26,
+      "url": "https://godwinhotels.com/hotel-godwin-deluxe/",
       "address": {
         "streetAddress": "8501/15, Arakashan Road, Ram Nagar, Paharganj",
         "addressLocality": "Central Delhi, New Delhi",
@@ -118,7 +120,7 @@
         "latitude": 28.6436,
         "longitude": 77.2154
       },
-      "priceRange": "₹3,200 - ₹6,500 INR per night",
+      "priceRange": "₹3,200 - ₹5,800 INR per night",
       "landmarkDistances": {
         "newDelhiRailwayStationNDLS": "500 meters (approx. 5 minutes walk)",
         "airportExpressMetroStation": "700 meters (approx. 7 minutes walk)",
@@ -128,38 +130,47 @@
         "sadarBazaarMarket": "1.5 km (approx. 8 minutes drive)"
       },
       "amenities": [
+        "26 Boutique Luxury Rooms",
+        "Medical-Grade In-Room HEPA Air Purifiers",
+        "The Indian Grill On-Site Multi-Cuisine Restaurant",
+        "Soundproof Double-Glazed Acoustic Windows",
         "Designer Boutique Interiors",
-        "The Indian Grill Restaurant & Breakfast Buffet",
         "Rooftop Garden Terrace",
         "Complimentary High-Speed Wi-Fi",
         "Electronic Safe & Minibar in All Rooms",
-        "Soundproof Double-Glazed Windows",
         "Modern Marble Bathrooms with Rain Shower",
         "24-Hour Front Desk & Concierge",
-        "Airport Shuttle & Chauffeur Services",
-        "Business Center & Meeting Facilities"
+        "Airport Shuttle & Chauffeur Services"
       ],
       "rooms": [
         {
-          "type": "Premier Deluxe Room",
+          "type": "Standard Room (Ground Floor)",
           "basePriceINR": 3200,
-          "sizeSqFt": 260,
-          "bedType": "Comfort King Bed",
-          "maxOccupancy": "2 Adults"
+          "sizeSqFt": 250,
+          "bedType": "Queen Comfort Bed",
+          "maxOccupancy": "2 Adults",
+          "floor": "Ground Floor (Step-Free Access)"
         },
         {
-          "type": "Executive Suite",
-          "basePriceINR": 4400,
-          "sizeSqFt": 360,
-          "bedType": "Super King Bed with Seating Area",
+          "type": "Premier King Room",
+          "basePriceINR": 3800,
+          "sizeSqFt": 320,
+          "bedType": "Royal King Bed",
           "maxOccupancy": "2 Adults + 1 Child"
         },
         {
-          "type": "Studio Deluxe Room",
-          "basePriceINR": 5800,
-          "sizeSqFt": 450,
-          "bedType": "Master King Bed with Workstation & Minibar",
-          "maxOccupancy": "3 Adults"
+          "type": "Premier Twin Room",
+          "basePriceINR": 3700,
+          "sizeSqFt": 310,
+          "bedType": "2 Twin Beds",
+          "maxOccupancy": "2 Adults"
+        },
+        {
+          "type": "Premier Studio King Room",
+          "basePriceINR": 4800,
+          "sizeSqFt": 430,
+          "bedType": "Master King Bed with Lounge Suite",
+          "maxOccupancy": "3 Adults / 2 Adults + 1 Child"
         }
       ]
     }

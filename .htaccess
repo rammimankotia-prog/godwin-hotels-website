@@ -18,6 +18,16 @@ DirectoryIndex index.php index.html
 
   # 3. Direct route for /hotel-grand-godwin/
   RewriteRule ^hotel-grand-godwin/$ hotel-grand-godwin/index.html [L,QSA]
+
+  # 4. Redirect legacy .html and .php requests for hotel-godwin-deluxe to canonical /hotel-godwin-deluxe/
+  RewriteCond %{THE_REQUEST} /hotel-godwin-deluxe\.(html|php) [NC]
+  RewriteRule ^hotel-godwin-deluxe\.(html|php)$ /hotel-godwin-deluxe/ [R=301,L]
+
+  # 5. Redirect /hotel-godwin-deluxe without trailing slash to /hotel-godwin-deluxe/
+  RewriteRule ^hotel-godwin-deluxe$ /hotel-godwin-deluxe/ [R=301,L]
+
+  # 6. Direct route for /hotel-godwin-deluxe/
+  RewriteRule ^hotel-godwin-deluxe/$ hotel-godwin-deluxe/index.html [L,QSA]
 </IfModule>
 
 # ─── GZIP & BROTLI COMPRESSION FOR FAST LOADING ───
