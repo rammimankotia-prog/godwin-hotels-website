@@ -75,22 +75,29 @@
           "type": "Deluxe Room",
           "basePriceINR": 2800,
           "sizeSqFt": 240,
-          "bedType": "Queen or Twin Beds",
+          "bedType": "Queen Bed",
           "maxOccupancy": "2 Adults"
         },
         {
-          "type": "Executive Club Room",
-          "basePriceINR": 3800,
+          "type": "Executive Room",
+          "basePriceINR": 3600,
           "sizeSqFt": 320,
           "bedType": "King Bed",
           "maxOccupancy": "2 Adults + 1 Child"
         },
         {
-          "type": "Grand Family Suite",
-          "basePriceINR": 5200,
-          "sizeSqFt": 480,
-          "bedType": "2 Queen Beds or King + Twin",
-          "maxOccupancy": "4 Guests"
+          "type": "Studio Room",
+          "basePriceINR": 4500,
+          "sizeSqFt": 420,
+          "bedType": "Master King Bed with Lounge Seating",
+          "maxOccupancy": "2 Adults + 1 Child"
+        },
+        {
+          "type": "Executive Twin Room",
+          "basePriceINR": 3400,
+          "sizeSqFt": 300,
+          "bedType": "2 Twin Beds",
+          "maxOccupancy": "2 Adults"
         }
       ]
     },

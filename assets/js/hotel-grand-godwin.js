@@ -413,8 +413,10 @@ function initGrandGodwinBooking() {
 
   const ROOM_RATES = {
     'Deluxe Room (39 Rooms Total)': 2800,
-    'Executive Club Room': 3800,
-    'Grand Family Suite': 5200
+    'Deluxe Room': 2800,
+    'Executive Room': 3600,
+    'Studio Room': 4500,
+    'Executive Twin Room': 3400
   };
 
   function updatePricing() {
