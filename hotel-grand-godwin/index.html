@@ -177,56 +177,67 @@
   </div>
 
   <!-- ─── NAVBAR ─── -->
-  <header class="navbar" id="navbar" style="background:rgba(8,15,29,0.98);box-shadow:0 4px 20px rgba(0,0,0,0.35);">
-    <div class="container navbar-inner" style="display:flex;align-items:center;justify-content:space-between;">
-      <a href="./" class="nav-brand" style="display:flex;align-items:center;gap:0.75rem;">
-        <div class="brand-crown" style="font-size:1.8rem;">👑</div>
-        <div>
-          <div class="brand-name" style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;letter-spacing:0.04em;color:var(--gold-300);">HOTEL GRAND GODWIN</div>
-          <div class="brand-tagline" style="font-size:0.68rem;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-transform:uppercase;">Central New Delhi · 39 Boutique Rooms</div>
-        </div>
-      </a>
+  <header class="grand-site-header" id="siteHeader">
+    <div class="container-wide">
+      <div class="nav-inner">
 
-      <nav class="nav-links" id="navLinks" style="display:flex;align-items:center;gap:1.5rem;">
-        <div class="nav-dropdown">
-          <a href="../#destinations" class="nav-link nav-dropdown-toggle" style="color:var(--gold-300);">
-            Our Hotels <i class="fa-solid fa-chevron-down chevron"></i>
-          </a>
-          <div class="nav-dropdown-menu" style="background:#0d1829;border:1px solid rgba(217,169,74,0.35);box-shadow:0 16px 40px rgba(0,0,0,0.5);">
-            <a href="./" class="nav-dropdown-item" style="color:#fff;">
-              <div style="color:var(--gold-400);font-size:1.15rem;margin-top:0.15rem;"><i class="fa-solid fa-crown"></i></div>
-              <div>
-                <div class="nav-dropdown-item-title" style="color:#fff;">Hotel Grand Godwin <span style="font-size:0.65rem;background:rgba(217,169,74,0.2);color:var(--gold-300);padding:0.12rem 0.45rem;border-radius:4px;margin-left:0.35rem;">39 Rooms</span></div>
-                <div class="nav-dropdown-item-desc" style="color:rgba(255,255,255,0.7);">Current Page · 8502/41 Arakashan Rd</div>
-              </div>
-            </a>
-            <a href="../#destinations" class="nav-dropdown-item" style="color:#fff;">
-              <div style="color:var(--gold-300);font-size:1.15rem;margin-top:0.15rem;"><i class="fa-solid fa-gem"></i></div>
-              <div>
-                <div class="nav-dropdown-item-title" style="color:#fff;">Hotel Godwin Deluxe</div>
-                <div class="nav-dropdown-item-desc" style="color:rgba(255,255,255,0.7);">Sister Boutique · 8501/15 Arakashan Rd</div>
-              </div>
-            </a>
-            <div class="nav-dropdown-divider" style="background:rgba(217,169,74,0.2);"></div>
-            <a href="../" class="nav-dropdown-item" style="padding:0.5rem 1.15rem;font-size:0.78rem;color:var(--gold-300);font-weight:600;">
-              <i class="fa-solid fa-arrow-left"></i> Back to Godwin Group Main Page
-            </a>
+        <!-- Brand Logo -->
+        <a href="./" class="brand-logo" aria-label="Hotel Grand Godwin Home">
+          <div class="brand-crest" aria-hidden="true">👑</div>
+          <div class="brand-text-wrap">
+            <span class="brand-name">Hotel Grand Godwin</span>
+            <span class="brand-sub">Central New Delhi · 39 Rooms</span>
           </div>
-        </div>
-        <a href="#about" class="nav-link">About Hotel</a>
-        <a href="#rooms-39" class="nav-link">39 Rooms &amp; Suites</a>
-        <a href="#amenities" class="nav-link">Facilities &amp; Cafe</a>
-        <a href="#amenity-map" class="nav-link" style="color:var(--gold-300);"><i class="fa-solid fa-map-location-dot"></i> Amenity Map</a>
-        <a href="#google-profile" class="nav-link"><i class="fa-brands fa-google"></i> Reviews</a>
-        <a href="#contact" class="nav-link">Contact</a>
-        <a href="#booking" class="btn-gold" style="padding:0.6rem 1.4rem;font-size:0.8rem;border-radius:999px;">
-          <i class="fa-solid fa-calendar-check"></i> Book Direct
         </a>
-      </nav>
 
-      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation" style="color:#fff;font-size:1.4rem;">
-        <i class="fa-solid fa-bars" id="menuIcon"></i>
-      </button>
+        <!-- Nav Links -->
+        <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+          <!-- Our Hotels Dropdown -->
+          <div class="nav-dropdown">
+            <a href="../#destinations" class="nav-link nav-dropdown-toggle" id="hotelsDropdownToggle" aria-haspopup="true" aria-expanded="false">
+              <span>Our Hotels</span> <i class="fa-solid fa-chevron-down chevron"></i>
+            </a>
+            <div class="nav-dropdown-menu" aria-labelledby="hotelsDropdownToggle" style="background:#0d1829;border:1px solid rgba(217,169,74,0.35);box-shadow:0 16px 40px rgba(0,0,0,0.5);">
+              <a href="./" class="nav-dropdown-item" style="color:#fff;">
+                <div style="color:var(--gold-400);font-size:1.15rem;margin-top:0.15rem;"><i class="fa-solid fa-crown"></i></div>
+                <div>
+                  <div class="nav-dropdown-item-title" style="color:#fff;">Hotel Grand Godwin <span style="font-size:0.65rem;background:rgba(217,169,74,0.2);color:var(--gold-300);padding:0.12rem 0.45rem;border-radius:4px;margin-left:0.35rem;">39 Rooms</span></div>
+                  <div class="nav-dropdown-item-desc" style="color:rgba(255,255,255,0.7);">Current Page · 8502/41 Arakashan Rd</div>
+                </div>
+              </a>
+              <a href="../#destinations" class="nav-dropdown-item" style="color:#fff;">
+                <div style="color:var(--gold-300);font-size:1.15rem;margin-top:0.15rem;"><i class="fa-solid fa-gem"></i></div>
+                <div>
+                  <div class="nav-dropdown-item-title" style="color:#fff;">Hotel Godwin Deluxe</div>
+                  <div class="nav-dropdown-item-desc" style="color:rgba(255,255,255,0.7);">Sister Boutique · 8501/15 Arakashan Rd</div>
+                </div>
+              </a>
+              <div class="nav-dropdown-divider" style="background:rgba(217,169,74,0.2);"></div>
+              <a href="../" class="nav-dropdown-item" style="padding:0.5rem 1.15rem;font-size:0.78rem;color:var(--gold-300);font-weight:600;">
+                <i class="fa-solid fa-arrow-left"></i> Back to Godwin Group Main Page
+              </a>
+            </div>
+          </div>
+
+          <a href="#about" class="nav-link">About Hotel</a>
+          <a href="#rooms-39" class="nav-link">39 Rooms</a>
+          <a href="#amenities" class="nav-link">Facilities</a>
+          <a href="#amenity-map" class="nav-link"><i class="fa-solid fa-map-location-dot"></i> Amenity Map</a>
+          <a href="#google-profile" class="nav-link"><i class="fa-brands fa-google"></i> Reviews</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- CTA & Mobile Toggle -->
+        <div style="display:flex;align-items:center;gap:0.75rem;">
+          <a href="#booking" class="nav-cta" aria-label="Book room direct">
+            <i class="fa-solid fa-calendar-check"></i> Book Direct
+          </a>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <i class="fa-solid fa-bars" id="menuIcon"></i>
+          </button>
+        </div>
+
+      </div>
     </div>
   </header>
 
