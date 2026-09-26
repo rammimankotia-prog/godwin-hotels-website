@@ -42,9 +42,12 @@ function initNavbar() {
     }
   });
 
-  // Close on nav link click
-  document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
+  // Close on nav link & dropdown item click
+  document.querySelectorAll('.nav-link, .nav-dropdown-item').forEach(link => {
+    link.addEventListener('click', (e) => {
+      if (link.classList.contains('nav-dropdown-toggle') && window.innerWidth <= 960) {
+        return; // Allow expanding dropdown on mobile
+      }
       navLinks?.classList.remove('open');
       toggle?.setAttribute('aria-expanded', 'false');
       if (menuIcon) menuIcon.className = 'fa-solid fa-bars';
