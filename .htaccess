@@ -1,0 +1,48 @@
+# ==============================================================================
+# GODWIN HOTELS — APACHE / XAMPP REWRITE & SECURITY DIRECTIVES
+# ==============================================================================
+
+Options +FollowSymLinks -Indexes
+DirectoryIndex index.php index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1. Redirect legacy .html and .php requests for hotel-grand-godwin to canonical /hotel-grand-godwin/
+  RewriteCond %{THE_REQUEST} /hotel-grand-godwin\.(html|php) [NC]
+  RewriteRule ^hotel-grand-godwin\.(html|php)$ /hotel-grand-godwin/ [R=301,L]
+
+  # 2. Redirect /hotel-grand-godwin without trailing slash to /hotel-grand-godwin/
+  RewriteRule ^hotel-grand-godwin$ /hotel-grand-godwin/ [R=301,L]
+
+  # 3. Direct route for /hotel-grand-godwin/
+  RewriteRule ^hotel-grand-godwin/$ hotel-grand-godwin/index.html [L,QSA]
+</IfModule>
+
+# ─── GZIP & BROTLI COMPRESSION FOR FAST LOADING ───
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml image/svg+xml
+</IfModule>
+
+# ─── BROWSER CACHING FOR ASSETS ───
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresDefault "access plus 2 days"
+</IfModule>
+
+# ─── SECURITY HEADERS ───
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

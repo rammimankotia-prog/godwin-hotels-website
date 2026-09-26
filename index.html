@@ -64,7 +64,8 @@
         "name": "Hotel Grand Godwin, New Delhi",
         "parentOrganization": { "@id": "https://godwinhotels.com/#organization" },
         "description": "Premier boutique hotel located at 8502/41 Arakashan Road, Paharganj, New Delhi. Situated 500 meters from New Delhi Railway Station and 1.2 km from Connaught Place. Features Coffee Brownie café, rooftop terrace, elevator, fully air-conditioned rooms with centralized warmer.",
-        "url": "https://godwinhotels.com/#destinations",
+        "url": "https://godwinhotels.com/hotel-grand-godwin/",
+        "numberOfRooms": 39,
         "sameAs": [
           "https://x.com/grand_godwin",
           "https://www.linkedin.com/company/hotel-grand-godwin/",
@@ -194,6 +195,7 @@
           <div class="nav-links" id="navLinks">
             <a href="#home"         class="nav-link">Home</a>
             <a href="#destinations" class="nav-link">Our Hotels</a>
+            <a href="hotel-grand-godwin/" class="nav-link" style="color:var(--gold-400);font-weight:600;"><i class="fa-solid fa-crown" style="font-size:0.75rem;"></i> Grand Godwin</a>
             <a href="#rooms"        class="nav-link">Rooms</a>
             <a href="#facts"        class="nav-link">Hotel Facts</a>
             <a href="#dining"       class="nav-link">Dining</a>
@@ -460,12 +462,18 @@
                   <div class="hotel-price-from">Starting from</div>
                   <div class="hotel-price-value"><span data-base-price="2800">₹2,800</span> <span>/ night</span></div>
                 </div>
-                <button class="btn-gold trigger-booking-modal"
-                        data-destination="Hotel Grand Godwin, New Delhi"
-                        data-room="Deluxe Room" data-price="2800"
-                        style="padding:0.65rem 1.4rem;font-size:0.75rem;">
-                  Book Grand Godwin
-                </button>
+                <div style="display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap;">
+                  <a href="hotel-grand-godwin/" class="btn-ghost-gold"
+                     style="padding:0.65rem 1.1rem;font-size:0.75rem;text-decoration:none;">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Dedicated Page
+                  </a>
+                  <button class="btn-gold trigger-booking-modal"
+                          data-destination="Hotel Grand Godwin, New Delhi"
+                          data-room="Deluxe Room" data-price="2800"
+                          style="padding:0.65rem 1.4rem;font-size:0.75rem;">
+                    Book Grand Godwin
+                  </button>
+                </div>
               </div>
             </div>
           </article>
