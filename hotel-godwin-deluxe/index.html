@@ -99,26 +99,26 @@
         "containsPlace": [
           {
             "@type": "HotelRoom",
-            "name": "Standard Room (Ground Floor)",
-            "description": "Accessible ground floor 220 sq.ft room with queen bed, modern marble shower, warmer, and quiet ambience.",
+            "name": "Standard ( Ground Floor )",
+            "description": "Accessible ground floor 180 sq.ft (17 sq.mt) room with double bed, modern marble shower, warmer, and quiet ambience.",
             "occupancy": { "@type": "QuantitativeValue", "maxValue": 2 }
           },
           {
             "@type": "HotelRoom",
-            "name": "Premier King Room",
-            "description": "Designer 280 sq.ft room with comfort king bed, soundproof windows, air purifier, rain shower, and minibar.",
-            "occupancy": { "@type": "QuantitativeValue", "maxValue": 2 }
+            "name": "Premier King Room with Air-Purifier",
+            "description": "Designer 250 sq.ft (23 sq.mt) room with double bed, soundproof windows, air purifier, rain shower, and minibar.",
+            "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 }
           },
           {
             "@type": "HotelRoom",
-            "name": "Premier Twin Room",
-            "description": "Contemporary 280 sq.ft room with two separate twin beds, reading lights, air purifier, and centralized warmer.",
-            "occupancy": { "@type": "QuantitativeValue", "maxValue": 2 }
+            "name": "Premier Twin Bed Room with Air-Purifier",
+            "description": "Contemporary 288 sq.ft (27 sq.mt) room with 2 x single bed(s), reading lights, air purifier, and centralized warmer.",
+            "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 }
           },
           {
             "@type": "HotelRoom",
-            "name": "Premier Studio King Room",
-            "description": "Generous 450 sq.ft suite with master king bed, executive workstation, minibar, air purifier, and lounge seating.",
+            "name": "Premier Studio King Room with Air-Purifier",
+            "description": "Generous 450 sq.ft (42 sq.mt) suite with master king bed, executive workstation, minibar, air purifier, and lounge seating.",
             "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 }
           }
         ]
@@ -132,7 +132,7 @@
             "name": "How many rooms are there in Hotel Godwin Deluxe, New Delhi?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Hotel Godwin Deluxe features exactly 26 contemporary designer boutique rooms configured across 4 categories: Standard Room (Ground Floor), Premier King Room, Premier Twin Room, and Premier Studio King Room."
+              "text": "Hotel Godwin Deluxe features exactly 26 contemporary designer boutique rooms configured across 4 categories: Standard ( Ground Floor ), Premier King Room with Air-Purifier, Premier Twin Bed Room with Air-Purifier, and Premier Studio King Room with Air-Purifier."
             }
           },
           {
@@ -140,7 +140,7 @@
             "name": "What room categories are available at Hotel Godwin Deluxe?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Hotel Godwin Deluxe offers 4 room categories: 1. Standard Room (Ground Floor), 2. Premier King Room, 3. Premier Twin Room, and 4. Premier Studio King Room."
+              "text": "Hotel Godwin Deluxe offers 4 room categories: 1. Standard ( Ground Floor ), 2. Premier King Room with Air-Purifier, 3. Premier Twin Bed Room with Air-Purifier, and 4. Premier Studio King Room with Air-Purifier."
             }
           },
           {
@@ -466,56 +466,64 @@
               <img src="../assets/images/deluxe_standard.jpg" alt="Standard Room Ground Floor at Hotel Godwin Deluxe" loading="lazy">
             </div>
             <div class="room-cat-body">
-              <h3 class="room-cat-title">Standard Room (Ground Floor)</h3>
+              <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.25rem;">
+                <h3 class="room-cat-title" style="margin-bottom:0;">Standard ( Ground Floor )</h3>
+                <span style="font-size:0.85rem;color:var(--text-muted);font-weight:600;"><i class="fa-solid fa-users" style="color:var(--gold-600);"></i> Max 2 Guests</span>
+              </div>
               <div class="room-cat-specs">
-                <span class="room-cat-spec-item"><i class="fa-solid fa-ruler-combined"></i> 220 Sq. Ft.</span>
-                <span class="room-cat-spec-item"><i class="fa-solid fa-bed"></i> 1 Queen Bed</span>
-                <span class="room-cat-spec-item"><i class="fa-solid fa-user-group"></i> Max 2 Adults</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-maximize"></i> 180 sq.ft (17 sq.mt)</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-bed"></i> Double Bed</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-shower"></i> 1 Bathroom</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-users"></i> Max 2 Guests</span>
               </div>
               <p class="room-cat-desc">
                 Located on the ground level for seamless zero-step accessibility. Ideal for travelers with heavy luggage or guests preferring direct reception proximity. Features soothing minimalist décor and warm heaters.
               </p>
               <ul class="room-cat-features">
-                <li><i class="fa-solid fa-circle-check"></i> Ground Level Zero-Step Accessibility</li>
+                <li><i class="fa-solid fa-circle-check"></i> 180 sq.ft (17 sq.mt) Ground Level Room</li>
+                <li><i class="fa-solid fa-circle-check"></i> Double Bed &amp; 1 Bathroom with Modern Shower</li>
                 <li><i class="fa-solid fa-circle-check"></i> Medical HEPA Air Purifier in Room</li>
                 <li><i class="fa-solid fa-circle-check"></i> Centralized Room Warmer &amp; Split AC</li>
-                <li><i class="fa-solid fa-circle-check"></i> Modern Marble Bathroom &amp; Shower</li>
-                <li><i class="fa-solid fa-circle-check"></i> 43" Smart LED TV &amp; Free Wi-Fi</li>
+                <li><i class="fa-solid fa-circle-check"></i> 43" Smart LED TV &amp; Free High-Speed Wi-Fi</li>
               </ul>
               <div class="room-cat-footer">
                 <div>
                   <div style="font-size:0.75rem;color:var(--text-muted);">From</div>
                   <div class="room-cat-price">₹3,500 <span>/ night</span></div>
                 </div>
-                <button class="btn-gold select-deluxe-room-cat-btn" data-category="Standard Room" style="padding:0.6rem 1.15rem;font-size:0.78rem;border-radius:999px;">
+                <button class="btn-gold select-deluxe-room-cat-btn" data-category="Standard" style="padding:0.6rem 1.15rem;font-size:0.78rem;border-radius:999px;">
                   Select
                 </button>
               </div>
             </div>
           </article>
 
-          <!-- Category 2: Premier King Room -->
+          <!-- Category 2: Premier King Room with Air-Purifier -->
           <article class="room-cat-card" id="cat-premier-king">
             <div class="room-cat-badge" style="background:#1b263b;">Guest Favorite</div>
             <div class="room-cat-img-box">
-              <img src="../assets/images/deluxe_premier_king.jpg" alt="Premier King Room at Hotel Godwin Deluxe" loading="lazy">
+              <img src="../assets/images/deluxe_premier_king.jpg" alt="Premier King Room with Air-Purifier at Hotel Godwin Deluxe" loading="lazy">
             </div>
             <div class="room-cat-body">
-              <h3 class="room-cat-title">Premier King Room</h3>
+              <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.25rem;">
+                <h3 class="room-cat-title" style="margin-bottom:0;">Premier King Room with Air-Purifier</h3>
+                <span style="font-size:0.85rem;color:var(--text-muted);font-weight:600;"><i class="fa-solid fa-users" style="color:var(--gold-600);"></i> Max 3 Guests</span>
+              </div>
               <div class="room-cat-specs">
-                <span class="room-cat-spec-item"><i class="fa-solid fa-ruler-combined"></i> 280 Sq. Ft.</span>
-                <span class="room-cat-spec-item"><i class="fa-solid fa-bed"></i> Plush King Bed</span>
-                <span class="room-cat-spec-item"><i class="fa-solid fa-user-group"></i> Max 2 Adults</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-maximize"></i> 250 sq.ft (23 sq.mt)</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-bed"></i> Double Bed</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-shower"></i> 1 Bathroom</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-users"></i> Max 3 Guests</span>
               </div>
               <p class="room-cat-desc">
-                Our signature designer room. Boasts a plush king-size bed, navy velvet accents, soundproof double-glazed windows, dedicated HEPA air purifier, and contemporary marble flooring.
+                Our signature designer room. Boasts a plush double bed, navy velvet accents, soundproof double-glazed windows, dedicated HEPA air purifier, and contemporary marble flooring.
               </p>
               <ul class="room-cat-features">
+                <li><i class="fa-solid fa-circle-check"></i> 250 sq.ft (23 sq.mt) Contemporary Boutique Room</li>
+                <li><i class="fa-solid fa-circle-check"></i> Double Bed &amp; 1 Bathroom with Rain Shower</li>
+                <li><i class="fa-solid fa-circle-check"></i> Dedicated In-Room HEPA Air Purifier</li>
                 <li><i class="fa-solid fa-circle-check"></i> Soundproof Double-Glazed Windows</li>
-                <li><i class="fa-solid fa-circle-check"></i> Dedicated HEPA Air Purifier</li>
-                <li><i class="fa-solid fa-circle-check"></i> Rain Shower with Premium Toiletries</li>
-                <li><i class="fa-solid fa-circle-check"></i> Stocked Minibar &amp; Digital Safety Safe</li>
-                <li><i class="fa-solid fa-circle-check"></i> Centralized Room Warmer &amp; AC</li>
+                <li><i class="fa-solid fa-circle-check"></i> Centralized Room Warmer &amp; Split AC</li>
               </ul>
               <div class="room-cat-footer">
                 <div>
@@ -529,27 +537,31 @@
             </div>
           </article>
 
-          <!-- Category 3: Premier Twin Room -->
+          <!-- Category 3: Premier Twin Bed Room with Air-Purifier -->
           <article class="room-cat-card" id="cat-premier-twin">
             <div class="room-cat-badge" style="background:#243d65;">Twin Comfort</div>
             <div class="room-cat-img-box">
-              <img src="../assets/images/deluxe_premier_twin.jpg" alt="Premier Twin Room at Hotel Godwin Deluxe" loading="lazy">
+              <img src="../assets/images/deluxe_premier_twin.jpg" alt="Premier Twin Bed Room with Air-Purifier at Hotel Godwin Deluxe" loading="lazy">
             </div>
             <div class="room-cat-body">
-              <h3 class="room-cat-title">Premier Twin Room</h3>
+              <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.25rem;">
+                <h3 class="room-cat-title" style="margin-bottom:0;">Premier Twin Bed Room with Air-Purifier</h3>
+                <span style="font-size:0.85rem;color:var(--text-muted);font-weight:600;"><i class="fa-solid fa-users" style="color:var(--gold-600);"></i> Max 3 Guests</span>
+              </div>
               <div class="room-cat-specs">
-                <span class="room-cat-spec-item"><i class="fa-solid fa-ruler-combined"></i> 280 Sq. Ft.</span>
-                <span class="room-cat-spec-item"><i class="fa-solid fa-bed"></i> 2 Twin Single Beds</span>
-                <span class="room-cat-spec-item"><i class="fa-solid fa-user-group"></i> Max 2 Adults</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-maximize"></i> 288 sq.ft (27 sq.mt)</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-bed"></i> 2 x Single Bed(s)</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-shower"></i> 1 Bathroom</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-users"></i> Max 3 Guests</span>
               </div>
               <p class="room-cat-desc">
                 Specially tailored for corporate colleagues, friends, or traveling pairs. Features two separate twin single beds, independent bedside reading lamps, soundproof glazing, and active HEPA air filtration.
               </p>
               <ul class="room-cat-features">
-                <li><i class="fa-solid fa-circle-check"></i> Two Separate Twin Single Beds</li>
-                <li><i class="fa-solid fa-circle-check"></i> In-Room HEPA Air Purifier</li>
+                <li><i class="fa-solid fa-circle-check"></i> 288 sq.ft (27 sq.mt) Spacious Twin Suite</li>
+                <li><i class="fa-solid fa-circle-check"></i> 2 x Single Bed(s) Configuration &amp; 1 Bathroom</li>
+                <li><i class="fa-solid fa-circle-check"></i> In-Room HEPA Air Purifier Protection</li>
                 <li><i class="fa-solid fa-circle-check"></i> Soundproof Acoustic Windows</li>
-                <li><i class="fa-solid fa-circle-check"></i> Rainfall Marble Shower Enclosure</li>
                 <li><i class="fa-solid fa-circle-check"></i> Centralized Room Warmer &amp; Fast Wi-Fi</li>
               </ul>
               <div class="room-cat-footer">
@@ -564,25 +576,29 @@
             </div>
           </article>
 
-          <!-- Category 4: Premier Studio King Room -->
+          <!-- Category 4: Premier Studio King Room with Air-Purifier -->
           <article class="room-cat-card" id="cat-studio-king">
             <div class="room-cat-badge" style="background:var(--gold-600);">Boutique Suite</div>
             <div class="room-cat-img-box">
-              <img src="../assets/images/deluxe_premier_studio.jpg" alt="Premier Studio King Room at Hotel Godwin Deluxe" loading="lazy">
+              <img src="../assets/images/deluxe_premier_studio.jpg" alt="Premier Studio King Room with Air-Purifier at Hotel Godwin Deluxe" loading="lazy">
             </div>
             <div class="room-cat-body">
-              <h3 class="room-cat-title">Premier Studio King</h3>
+              <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.25rem;">
+                <h3 class="room-cat-title" style="margin-bottom:0;">Premier Studio King Room with Air-Purifier</h3>
+                <span style="font-size:0.85rem;color:var(--text-muted);font-weight:600;"><i class="fa-solid fa-users" style="color:var(--gold-600);"></i> Max 3 Guests</span>
+              </div>
               <div class="room-cat-specs">
-                <span class="room-cat-spec-item"><i class="fa-solid fa-ruler-combined"></i> 450 Sq. Ft.</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-maximize"></i> 450 sq.ft (42 sq.mt)</span>
                 <span class="room-cat-spec-item"><i class="fa-solid fa-bed"></i> Master King Bed</span>
-                <span class="room-cat-spec-item"><i class="fa-solid fa-user-group"></i> 2 Adults + 1 Child</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-shower"></i> 1 Bathroom</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-users"></i> Max 3 Guests</span>
               </div>
               <p class="room-cat-desc">
                 Our most generous accommodation. A magnificent suite-style studio featuring a master king bed, plush velvet sofa lounge seating, marble coffee table, ergonomic work desk, and expansive panoramic city views.
               </p>
               <ul class="room-cat-features">
-                <li><i class="fa-solid fa-circle-check"></i> Designer Velvet Sofa Lounge Seating</li>
-                <li><i class="fa-solid fa-circle-check"></i> Dedicated Workstation with Task Lamp</li>
+                <li><i class="fa-solid fa-circle-check"></i> 450 sq.ft (42 sq.mt) Boutique Executive Suite</li>
+                <li><i class="fa-solid fa-circle-check"></i> Master King Bed + Velvet Lounge &amp; 1 Bathroom</li>
                 <li><i class="fa-solid fa-circle-check"></i> High-Output HEPA Air Purifier</li>
                 <li><i class="fa-solid fa-circle-check"></i> Large Windows with Panoramic City Views</li>
                 <li><i class="fa-solid fa-circle-check"></i> Stocked Minibar &amp; Luxury Toiletries</li>
@@ -620,38 +636,38 @@
             </thead>
             <tbody>
               <tr>
-                <td><strong>Standard Room (Ground Floor)</strong></td>
-                <td>220 Sq. Ft.</td>
-                <td>1 Queen Bed</td>
-                <td>2 Adults</td>
-                <td>Ground Level Zero Steps, HEPA Purifier, Warmer, Wi-Fi</td>
+                <td><strong>Standard ( Ground Floor )</strong></td>
+                <td>180 sq.ft (17 sq.mt)</td>
+                <td>Double Bed</td>
+                <td>Max 2 Guests</td>
+                <td>Ground Level Zero Steps, HEPA Purifier, 1 Bathroom, Warmer, Wi-Fi</td>
                 <td><strong>₹3,500</strong> / night</td>
-                <td><a href="#booking" class="select-deluxe-room-cat-btn" data-category="Standard Room" style="color:var(--gold-700);font-weight:700;">Select <i class="fa-solid fa-arrow-right"></i></a></td>
+                <td><a href="#booking" class="select-deluxe-room-cat-btn" data-category="Standard" style="color:var(--gold-700);font-weight:700;">Select <i class="fa-solid fa-arrow-right"></i></a></td>
               </tr>
               <tr>
-                <td><strong>Premier King Room</strong></td>
-                <td>280 Sq. Ft.</td>
-                <td>1 Plush King Bed</td>
-                <td>2 Adults</td>
-                <td>Soundproof Glazing, HEPA Purifier, Rain Shower, Minibar</td>
+                <td><strong>Premier King Room with Air-Purifier</strong></td>
+                <td>250 sq.ft (23 sq.mt)</td>
+                <td>Double Bed</td>
+                <td>Max 3 Guests</td>
+                <td>Soundproof Glazing, In-Room HEPA Purifier, 1 Bathroom, Rain Shower</td>
                 <td><strong>₹4,800</strong> / night</td>
                 <td><a href="#booking" class="select-deluxe-room-cat-btn" data-category="Premier King" style="color:var(--gold-700);font-weight:700;">Select <i class="fa-solid fa-arrow-right"></i></a></td>
               </tr>
               <tr>
-                <td><strong>Premier Twin Room</strong></td>
-                <td>280 Sq. Ft.</td>
-                <td>2 Separate Twin Beds</td>
-                <td>2 Adults</td>
-                <td>Two Independent Beds, Ideal for Colleagues, Purifier, Warmer</td>
+                <td><strong>Premier Twin Bed Room with Air-Purifier</strong></td>
+                <td>288 sq.ft (27 sq.mt)</td>
+                <td>2 x Single Bed(s)</td>
+                <td>Max 3 Guests</td>
+                <td>2 Separate Single Beds, In-Room HEPA Purifier, 1 Bathroom, Soundproof</td>
                 <td><strong>₹4,800</strong> / night</td>
                 <td><a href="#booking" class="select-deluxe-room-cat-btn" data-category="Premier Twin" style="color:var(--gold-700);font-weight:700;">Select <i class="fa-solid fa-arrow-right"></i></a></td>
               </tr>
               <tr>
-                <td><strong>Premier Studio King Room</strong></td>
-                <td>450 Sq. Ft.</td>
+                <td><strong>Premier Studio King Room with Air-Purifier</strong></td>
+                <td>450 sq.ft (42 sq.mt)</td>
                 <td>Master King Bed + Sofa Lounge</td>
-                <td>2 Adults + 1 Child</td>
-                <td>Velvet Lounge Seating, Work Desk, City Panorama, Purifier</td>
+                <td>Max 3 Guests</td>
+                <td>Velvet Lounge Seating, Work Desk, City Panorama, Purifier, 1 Bathroom</td>
                 <td><strong>₹5,600</strong> / night</td>
                 <td><a href="#booking" class="select-deluxe-room-cat-btn" data-category="Premier Studio" style="color:var(--gold-700);font-weight:700;">Select <i class="fa-solid fa-arrow-right"></i></a></td>
               </tr>
@@ -869,10 +885,10 @@
                   <i class="fa-solid fa-bed" style="color:var(--gold-600);"></i> Room Category (26 Rooms)
                 </label>
                 <select id="deluxeResRoomCategory" style="width:100%;padding:0.75rem 1rem;border:1.5px solid rgba(200,146,46,0.35);border-radius:var(--radius-md);background:#fff;font-family:inherit;font-size:0.9rem;">
-                  <option value="Standard Room (Ground Floor)">Standard Room (Ground Floor) — ₹3,500/night</option>
-                  <option value="Premier King Room" selected>Premier King Room — ₹4,800/night</option>
-                  <option value="Premier Twin Room">Premier Twin Room — ₹4,800/night</option>
-                  <option value="Premier Studio King Room">Premier Studio King Room — ₹5,600/night</option>
+                  <option value="Standard ( Ground Floor )">Standard ( Ground Floor ) — ₹3,500/night</option>
+                  <option value="Premier King Room with Air-Purifier" selected>Premier King Room with Air-Purifier — ₹4,800/night</option>
+                  <option value="Premier Twin Bed Room with Air-Purifier">Premier Twin Bed Room with Air-Purifier — ₹4,800/night</option>
+                  <option value="Premier Studio King Room with Air-Purifier">Premier Studio King Room with Air-Purifier — ₹5,600/night</option>
                 </select>
               </div>
 
@@ -1165,10 +1181,10 @@
             </summary>
             <p style="margin-top:0.75rem;font-size:0.9rem;color:var(--text-body);line-height:1.65;">
               We offer 4 distinct room categories:
-              <br>• <strong>Standard Room (Ground Floor)</strong> (220 sq ft, Queen Bed) — Starting from ₹3,500/night
-              <br>• <strong>Premier King Room</strong> (280 sq ft, Comfort King Bed) — Starting from ₹4,800/night
-              <br>• <strong>Premier Twin Room</strong> (280 sq ft, 2 Separate Twin Beds) — Starting from ₹4,800/night
-              <br>• <strong>Premier Studio King Room</strong> (450 sq ft, Master King with Velvet Lounge Sofa) — Starting from ₹5,600/night
+              <br>• <strong>Standard ( Ground Floor )</strong> (180 sq.ft / 17 sq.mt, Double Bed, 1 Bathroom, Max 2 Guests) — Starting from ₹3,500/night
+              <br>• <strong>Premier King Room with Air-Purifier</strong> (250 sq.ft / 23 sq.mt, Double Bed, 1 Bathroom, Max 3 Guests) — Starting from ₹4,800/night
+              <br>• <strong>Premier Twin Bed Room with Air-Purifier</strong> (288 sq.ft / 27 sq.mt, 2 x Single Bed(s), 1 Bathroom, Max 3 Guests) — Starting from ₹4,800/night
+              <br>• <strong>Premier Studio King Room with Air-Purifier</strong> (450 sq.ft / 42 sq.mt, Master King Bed, 1 Bathroom, Max 3 Guests) — Starting from ₹5,600/night
             </p>
           </details>
 

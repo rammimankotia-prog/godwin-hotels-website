@@ -401,6 +401,10 @@ function initGodwinDeluxeBooking() {
   const waBtn = document.getElementById('deluxeResWhatsAppBtn');
 
   const ROOM_RATES_DELUXE = {
+    'Standard ( Ground Floor )': 3500,
+    'Premier King Room with Air-Purifier': 4800,
+    'Premier Twin Bed Room with Air-Purifier': 4800,
+    'Premier Studio King Room with Air-Purifier': 5600,
     'Standard Room (Ground Floor)': 3500,
     'Premier King Room': 4800,
     'Premier Twin Room': 4800,

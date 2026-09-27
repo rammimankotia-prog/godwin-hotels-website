@@ -155,33 +155,41 @@
       ],
       "rooms": [
         {
-          "type": "Standard Room (Ground Floor)",
+          "type": "Standard ( Ground Floor )",
           "basePriceINR": 3500,
-          "sizeSqFt": 250,
-          "bedType": "Queen Comfort Bed",
-          "maxOccupancy": "2 Adults",
+          "sizeSqFt": 180,
+          "sizeSqMt": 17,
+          "bedType": "Double Bed",
+          "bathrooms": 1,
+          "maxOccupancy": "Max 2 Guests",
           "floor": "Ground Floor (Step-Free Access)"
         },
         {
-          "type": "Premier King Room",
+          "type": "Premier King Room with Air-Purifier",
           "basePriceINR": 4800,
-          "sizeSqFt": 320,
-          "bedType": "Royal King Bed",
-          "maxOccupancy": "2 Adults + 1 Child"
+          "sizeSqFt": 250,
+          "sizeSqMt": 23,
+          "bedType": "Double Bed",
+          "bathrooms": 1,
+          "maxOccupancy": "Max 3 Guests"
         },
         {
-          "type": "Premier Twin Room",
+          "type": "Premier Twin Bed Room with Air-Purifier",
           "basePriceINR": 4800,
-          "sizeSqFt": 310,
-          "bedType": "2 Twin Beds",
-          "maxOccupancy": "2 Adults"
+          "sizeSqFt": 288,
+          "sizeSqMt": 27,
+          "bedType": "2 x Single Bed(s)",
+          "bathrooms": 1,
+          "maxOccupancy": "Max 3 Guests"
         },
         {
-          "type": "Premier Studio King Room",
+          "type": "Premier Studio King Room with Air-Purifier",
           "basePriceINR": 5600,
-          "sizeSqFt": 430,
+          "sizeSqFt": 450,
+          "sizeSqMt": 42,
           "bedType": "Master King Bed with Lounge Suite",
-          "maxOccupancy": "3 Adults / 2 Adults + 1 Child"
+          "bathrooms": 1,
+          "maxOccupancy": "Max 3 Guests"
         }
       ]
     }
