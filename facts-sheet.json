@@ -4,7 +4,7 @@
     "legalName": "Godwin Hospitality Group",
     "website": "https://godwinhotels.com",
     "centralReservationsPhone": "+91-88600-81994",
-    "travelDeskPhone": "+91-88600-81995",
+    "centralLandline": "011-45304480",
     "centralEmail": "book@godwinhotels.com",
     "restaurantPhone": "+91-88600-81991 (The Indian Grill - Call & WhatsApp)",
     "starRating": "Boutique Luxury Standards",
@@ -43,7 +43,8 @@
         "postalCode": "110055",
         "addressCountry": "IN"
       },
-      "telephone": "+91-88600-81994 / +91-88600-81995",
+      "telephone": "+91-88600-81994",
+      "landline": "011-45304480",
       "email": "book@godwinhotels.com",
       "geo": {
         "latitude": 28.6437,
@@ -122,7 +123,8 @@
         "postalCode": "110055",
         "addressCountry": "IN"
       },
-      "telephone": "+91-88600-81994 / +91-88600-81995",
+      "telephone": "+91-88600-81994",
+      "landline": "011-45304480",
       "restaurantPhone": "+91-88600-81991 (The Indian Grill)",
       "email": "book@godwinhotels.com",
       "geo": {
