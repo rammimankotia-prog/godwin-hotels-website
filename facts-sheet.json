@@ -49,7 +49,7 @@
         "latitude": 28.6437,
         "longitude": 77.2155
       },
-      "priceRange": "₹2,800 - ₹5,800 INR per night",
+      "priceRange": "₹3,800 - ₹5,800 INR per night",
       "landmarkDistances": {
         "newDelhiRailwayStationNDLS": "500 meters (approx. 5 minutes walk)",
         "airportExpressMetroStation": "700 meters (approx. 7 minutes walk)",
@@ -73,7 +73,7 @@
       "rooms": [
         {
           "type": "Deluxe Room",
-          "basePriceINR": 2800,
+          "basePriceINR": 3800,
           "sizeSqFt": 180,
           "sizeSqMt": 17,
           "bedType": "Double Bed",
@@ -82,7 +82,7 @@
         },
         {
           "type": "Executive Room",
-          "basePriceINR": 3600,
+          "basePriceINR": 4400,
           "sizeSqFt": 225,
           "sizeSqMt": 21,
           "bedType": "Double Bed",
@@ -91,7 +91,7 @@
         },
         {
           "type": "Executive Twin Room",
-          "basePriceINR": 3400,
+          "basePriceINR": 4400,
           "sizeSqFt": 225,
           "sizeSqMt": 21,
           "bedType": "2 x Single Bed(s)",
@@ -100,7 +100,7 @@
         },
         {
           "type": "Studio Room with Air-Purifier",
-          "basePriceINR": 4500,
+          "basePriceINR": 4800,
           "sizeSqFt": 275,
           "sizeSqMt": 26,
           "bedType": "Double Bed",

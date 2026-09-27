@@ -412,20 +412,20 @@ function initGrandGodwinBooking() {
   const waBtn = document.getElementById('resWhatsAppBtn');
 
   const ROOM_RATES = {
-    'Deluxe Room (39 Rooms Total)': 2800,
-    'Deluxe Room': 2800,
-    'Executive Room': 3600,
-    'Studio Room': 4500,
-    'Studio Room with Air-Purifier': 4500,
-    'Executive Twin Room': 3400,
-    'Executive Twin': 3400
+    'Deluxe Room (39 Rooms Total)': 3800,
+    'Deluxe Room': 3800,
+    'Executive Room': 4400,
+    'Studio Room': 4800,
+    'Studio Room with Air-Purifier': 4800,
+    'Executive Twin Room': 4400,
+    'Executive Twin': 4400
   };
 
   function updatePricing() {
     if (!roomSelect || !summaryBox) return;
     const selectedRoom = roomSelect.value;
     const nights = parseInt(nightsInput?.value || 1, 10);
-    const ratePerNight = ROOM_RATES[selectedRoom] || 2800;
+    const ratePerNight = ROOM_RATES[selectedRoom] || 3800;
     const total = ratePerNight * nights;
 
     summaryBox.innerHTML = `

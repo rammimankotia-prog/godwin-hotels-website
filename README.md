@@ -17,7 +17,7 @@
 
 | Hotel Name | Exact Address | Key Highlights | Starting Rate |
 | :--- | :--- | :--- | :--- |
-| **Hotel Grand Godwin** | 8502/41, Arakashan Road, Ram Nagar, Paharganj, New Delhi – 110055 | Classic warm hospitality, elevator, spacious family suites, The Indian Grill, rooftop city view terrace | **₹2,800 / night** |
+| **Hotel Grand Godwin** | 8502/41, Arakashan Road, Ram Nagar, Paharganj, New Delhi – 110055 | Classic warm hospitality, elevator, spacious family suites, The Indian Grill, rooftop city view terrace | **₹3,800 / night** |
 | **Hotel Godwin Deluxe** | 8501/15, Arakashan Road, Ram Nagar, Paharganj, New Delhi – 110055 | Modern designer boutique rooms, soundproof glazing, rain showers, minibar, executive suites | **₹3,200 / night** |
 
 ---
