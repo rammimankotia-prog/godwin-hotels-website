@@ -254,9 +254,9 @@ const AMENITY_DATA_DELUXE = [
   // Dining
   {
     category: "dining",
-    name: "The Indian Grill Multi-Cuisine Restaurant",
-    badge: "On-Site · Ground Floor",
-    desc: "Signature in-house dining venue serving authentic Mughlai curries, tandoori kebabs & hot morning buffet.",
+    name: "The Indian Grill Multi-Cuisine Restaurant (7:30 AM – 11:00 PM)",
+    badge: "On-Site · Ground Floor (Last Order 10:45 PM)",
+    desc: "Signature in-house dining venue open daily 7:30 AM to 11:00 PM (last order 10:45 PM). Authentic Mughlai curries, tandoori kebabs & morning buffet (7:30–10:30 AM).",
     icon: "fa-utensils",
     destQuery: "The Indian Grill, 8501/15 Arakashan Road, Paharganj, New Delhi"
   },

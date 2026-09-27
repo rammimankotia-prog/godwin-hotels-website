@@ -32,7 +32,7 @@
    - Distinct `Hotel` entities for both properties with exact NAP, Geo-coordinates, star ratings, review counts, room types, and pricing offers.
    - Comprehensive `FAQPage` schema addressing high-intent queries asked to AI assistants (ChatGPT, Claude, Perplexity, Gemini).
 3. **Dining & Facilities**:
-   - **The Indian Grill**: Multi-cuisine dining (North Indian curries, tandoori kebabs, Italian, Continental, Chinese, and breakfast buffet).
+   - **The Indian Grill**: Multi-cuisine dining open 7:30 AM to 11:00 PM (last order 10:45 PM), serving North Indian curries, tandoori kebabs, Chinese, Continental, and morning buffet (7:30–10:30 AM).
    - **Coffee Brownie**: Boutique cafe open 8:00 AM to 10:00 PM daily, serving fresh brews, espresso, sandwiches, and pastries.
    - **Rooftop Terrace Lounges**: Open-air relaxation with panoramic Delhi skyline views.
    - **24/7 Airport Transfers & Tour Desk**: Golden Triangle (Agra/Jaipur) and Delhi sightseeing cab bookings.

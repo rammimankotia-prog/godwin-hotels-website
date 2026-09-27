@@ -26,7 +26,7 @@
       "couplePolicy": "Valid government-issued photo ID (Passport, Aadhaar, Voter ID, Driving License) is required for all adult guests at check-in. Local unmarried couples may be restricted per hotel safety guidelines.",
       "petPolicy": "Godwin Hotels does not allow pets in guest rooms or dining areas, with the exception of certified service animals.",
       "smokingPolicy": "All indoor guest rooms and restaurants are 100% non-smoking; designated outdoor rooftop smoking zones are provided.",
-      "breakfastPolicy": "Lavish multi-cuisine buffet breakfast is served daily from 07:30 AM to 10:30 AM at The Indian Grill restaurant and is included in all Bed & Breakfast room rates.",
+      "diningPolicy": "The Indian Grill is open daily from 07:30 AM to 11:00 PM (last order taken at 10:45 PM). Lavish multi-cuisine buffet breakfast is served daily from 07:30 AM to 10:30 AM at The Indian Grill restaurant and is included in all Bed & Breakfast room rates.",
       "parkingPolicy": "Valet parking assistance and secure parking arrangements are provided for registered hotel guests."
     }
   },
@@ -62,7 +62,7 @@
         "indiaGate": "4.5 km (approx. 15 minutes drive)"
       },
       "amenities": [
-        "The Indian Grill Multi-Cuisine Restaurant",
+        "The Indian Grill Multi-Cuisine Restaurant (7:30 AM - 11:00 PM · Last Order 10:45 PM)",
         "Coffee Brownie Cafe (8:00 AM - 10:00 PM)",
         "Rooftop Terrace Lounge with City Views",
         "High-Speed Wi-Fi Internet",
@@ -147,7 +147,7 @@
       "amenities": [
         "26 Boutique Luxury Rooms",
         "Medical-Grade In-Room HEPA Air Purifiers",
-        "The Indian Grill On-Site Multi-Cuisine Restaurant",
+        "The Indian Grill On-Site Multi-Cuisine Restaurant (7:30 AM - 11:00 PM · Last Order 10:45 PM)",
         "Soundproof Double-Glazed Acoustic Windows",
         "Designer Boutique Interiors",
         "Rooftop Garden Terrace",

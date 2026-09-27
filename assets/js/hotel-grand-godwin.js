@@ -271,9 +271,9 @@ const AMENITY_DATA = [
   },
   {
     category: "dining",
-    name: "The Indian Grill Restaurant",
-    badge: "On-Site / Adjacent Sister Facility",
-    desc: "Renowned multi-cuisine dining serving Mughlai curries, tandoori kebabs, Italian pastas & daily buffet breakfast.",
+    name: "The Indian Grill Restaurant (7:30 AM – 11:00 PM)",
+    badge: "7:30 AM – 11:00 PM · Last Order 10:45 PM",
+    desc: "Renowned multi-cuisine dining serving Mughlai curries, tandoori kebabs, Italian pastas & daily buffet breakfast (7:30 AM – 10:30 AM).",
     icon: "fa-utensils",
     destQuery: "The Indian Grill, Arakashan Road, Paharganj, New Delhi"
   },
