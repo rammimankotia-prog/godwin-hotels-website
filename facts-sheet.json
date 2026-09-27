@@ -58,8 +58,15 @@
         "indiraGandhiInternationalAirportIGI": "15 km (approx. 22 minutes via Airport Express Metro)",
         "kashmereGateISBT": "5.5 km (approx. 15 minutes drive / 7 minutes via Yellow Line Metro)",
         "hazratNizamuddinRailwayStation": "8.5 km (approx. 20 minutes drive)",
-        "redFortAndChandniChowk": "3.5 km (approx. 12 minutes drive)",
-        "indiaGate": "4.5 km (approx. 15 minutes drive)"
+        "redFortAndChandniChowk": "3.5 km (approx. 12 minutes drive - closed Mondays)",
+        "indiaGateWarMemorial": "4.5 km (approx. 15 minutes drive)",
+        "rashtrapatiBhavanAndParliament": "4.5 km (approx. 15 minutes drive)",
+        "qutubMinar": "15 km (approx. 35 minutes drive / direct Metro)",
+        "humayunsTomb": "8.0 km (approx. 20 minutes drive)",
+        "lotusTemple": "13 km (approx. 30 minutes drive)",
+        "birlaMandirLaxminarayan": "3.0 km (approx. 10 minutes drive)",
+        "gurudwaraBanglaSahib": "2.2 km (approx. 7 minutes drive)",
+        "rajGhat": "4.0 km (approx. 12 minutes drive)"
       },
       "amenities": [
         "The Indian Grill Multi-Cuisine Restaurant (7:30 AM - 11:00 PM · Last Order 10:45 PM)",
@@ -142,7 +149,16 @@
         "kashmereGateISBT": "5.5 km (approx. 15 minutes drive / 7 minutes via Yellow Line Metro)",
         "hazratNizamuddinRailwayStation": "8.5 km (approx. 20 minutes drive)",
         "karolBaghShoppingDistrict": "2.8 km (approx. 10 minutes drive)",
-        "sadarBazaarMarket": "1.5 km (approx. 8 minutes drive)"
+        "sadarBazaarMarket": "1.5 km (approx. 8 minutes drive)",
+        "redFortAndChandniChowk": "3.5 km (approx. 12 minutes drive - closed Mondays)",
+        "indiaGateWarMemorial": "4.5 km (approx. 15 minutes drive)",
+        "rashtrapatiBhavanAndParliament": "4.5 km (approx. 15 minutes drive)",
+        "qutubMinar": "15 km (approx. 35 minutes drive / direct Metro)",
+        "humayunsTomb": "8.0 km (approx. 20 minutes drive)",
+        "lotusTemple": "13 km (approx. 30 minutes drive)",
+        "birlaMandirLaxminarayan": "3.0 km (approx. 10 minutes drive)",
+        "gurudwaraBanglaSahib": "2.2 km (approx. 7 minutes drive)",
+        "rajGhat": "4.0 km (approx. 12 minutes drive)"
       },
       "amenities": [
         "26 Boutique Luxury Rooms",

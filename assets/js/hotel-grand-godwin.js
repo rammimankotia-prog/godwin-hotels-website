@@ -294,20 +294,76 @@ const AMENITY_DATA = [
     destQuery: "Karim's Restaurant, Jama Masjid, Old Delhi"
   },
 
-  // Sights
+  // Sights & Heritage (Typical Delhi Sightseeing Itinerary Highlights)
   {
     category: "sights",
-    name: "Connaught Place (CP) & Central Park",
-    badge: "1.2 km · 5 min drive / 15 min walk",
-    desc: "Colonial Georgian-style architecture, heritage buildings, luxury shopping colonnades & huge Indian flag.",
+    name: "Rashtrapati Bhavan & Parliament House",
+    badge: "4.5 km · 15 min drive",
+    desc: "Morning Landmark: Majestic President's Estate, ceremonial Kartavya Path boulevard, and India's Parliament House.",
+    icon: "fa-building-columns",
+    destQuery: "Rashtrapati Bhavan, President's Estate, New Delhi"
+  },
+  {
+    category: "sights",
+    name: "India Gate War Memorial",
+    badge: "4.5 km · 15 min drive",
+    desc: "Morning Landmark: Iconic 42m national war memorial arch with eternal flame (Amar Jawan Jyoti) and grand fountains.",
+    icon: "fa-archway",
+    destQuery: "India Gate, Kartavya Path, New Delhi"
+  },
+  {
+    category: "sights",
+    name: "Qutub Minar Complex (UNESCO)",
+    badge: "15 km · 35 min drive / Metro",
+    desc: "Historical Wonder: Towering 73-meter medieval minaret built in 1192 and the famous 1,600-year-old rust-resistant Iron Pillar.",
     icon: "fa-monument",
-    destQuery: "Central Park, Connaught Place, New Delhi"
+    destQuery: "Qutub Minar, Mehrauli, New Delhi"
+  },
+  {
+    category: "sights",
+    name: "Humayun's Tomb (UNESCO)",
+    badge: "8.0 km · 20 min drive",
+    desc: "Historical Wonder: Magnificent 1570 red sandstone Mughal garden tomb that inspired the architectural design of the Taj Mahal.",
+    icon: "fa-place-of-worship",
+    destQuery: "Humayun's Tomb, Nizamuddin East, New Delhi"
+  },
+  {
+    category: "sights",
+    name: "Lotus Temple (Bahá'í House of Worship)",
+    badge: "13 km · 30 min drive",
+    desc: "Spiritual & Cultural Site: Pure white marble lotus-shaped architectural marvel welcoming people of all faiths for silent meditation.",
+    icon: "fa-spa",
+    destQuery: "Lotus Temple, Kalkaji, New Delhi"
+  },
+  {
+    category: "sights",
+    name: "Birla Mandir (Laxminarayan Temple)",
+    badge: "3.0 km · 10 min drive",
+    desc: "Spiritual & Cultural Site: Celebrated Hindu temple inaugurated by Mahatma Gandhi, famed for Orissan carvings and peaceful gardens.",
+    icon: "fa-om",
+    destQuery: "Laxminarayan Temple, Mandir Marg, New Delhi"
+  },
+  {
+    category: "sights",
+    name: "Gurudwara Bangla Sahib",
+    badge: "2.2 km · 7 min drive",
+    desc: "Spiritual & Cultural Site: Sacred Sikh shrine near CP with golden domes, holy healing pool (Sarovar), and 24/7 community Langar.",
+    icon: "fa-hands-praying",
+    destQuery: "Gurudwara Shri Bangla Sahib, Connaught Place, New Delhi"
+  },
+  {
+    category: "sights",
+    name: "Raj Ghat (Mahatma Gandhi Memorial)",
+    badge: "4.0 km · 12 min drive",
+    desc: "Old Delhi Memorial: Peaceful black marble memorial marking Mahatma Gandhi's cremation spot amidst tranquil riverside parklands.",
+    icon: "fa-peace",
+    destQuery: "Raj Ghat, Mahatma Gandhi Marg, New Delhi"
   },
   {
     category: "sights",
     name: "Red Fort (Lal Qila - UNESCO)",
     badge: "3.5 km · 12 min drive",
-    desc: "Magnificent red sandstone fortress built by Mughal Emperor Shah Jahan in 1638.",
+    desc: "Old Delhi Landmark: Magnificent 1638 red sandstone Mughal imperial fortress. (Note: Red Fort & several museums closed on Mondays).",
     icon: "fa-landmark",
     destQuery: "Red Fort, Netaji Subhash Marg, Lal Qila, Chandni Chowk, New Delhi"
   },
@@ -315,17 +371,17 @@ const AMENITY_DATA = [
     category: "sights",
     name: "Jama Masjid Delhi",
     badge: "3.0 km · 10 min drive",
-    desc: "One of India's largest historical mosques with 40-meter minarets overlooking Old Delhi.",
+    desc: "One of India's largest historical mosques with 40-meter minarets overlooking the historic heart of Old Delhi.",
     icon: "fa-mosque",
     destQuery: "Jama Masjid, Old Delhi, New Delhi"
   },
   {
     category: "sights",
-    name: "India Gate & Kartavya Path",
-    badge: "4.5 km · 15 min drive",
-    desc: "National war memorial arch, evening illuminated lawns and Rashtrapati Bhavan view.",
-    icon: "fa-archway",
-    destQuery: "India Gate, Rajpath, India Gate, New Delhi"
+    name: "Connaught Place (CP) & Central Park",
+    badge: "1.2 km · 5 min drive / 15 min walk",
+    desc: "Colonial Georgian-style circular architecture, heritage buildings, luxury shopping colonnades & huge Indian flag in Central Park.",
+    icon: "fa-circle-nodes",
+    destQuery: "Central Park, Connaught Place, New Delhi"
   },
 
   // Shopping
