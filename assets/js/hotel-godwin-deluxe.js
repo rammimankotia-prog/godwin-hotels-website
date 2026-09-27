@@ -401,17 +401,17 @@ function initGodwinDeluxeBooking() {
   const waBtn = document.getElementById('deluxeResWhatsAppBtn');
 
   const ROOM_RATES_DELUXE = {
-    'Standard Room (Ground Floor)': 2800,
-    'Premier King Room': 3400,
-    'Premier Twin Room': 3400,
-    'Premier Studio King Room': 4800
+    'Standard Room (Ground Floor)': 3500,
+    'Premier King Room': 4800,
+    'Premier Twin Room': 4800,
+    'Premier Studio King Room': 5600
   };
 
   function updatePricing() {
     if (!roomSelect || !summaryBox) return;
     const selectedRoom = roomSelect.value;
     const nights = parseInt(nightsInput?.value || 1, 10);
-    const ratePerNight = ROOM_RATES_DELUXE[selectedRoom] || 3400;
+    const ratePerNight = ROOM_RATES_DELUXE[selectedRoom] || 4800;
     const total = ratePerNight * nights;
 
     summaryBox.innerHTML = `

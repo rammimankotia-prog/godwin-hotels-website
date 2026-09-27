@@ -3,8 +3,8 @@
     "brandName": "Godwin Hotels New Delhi",
     "legalName": "Godwin Hospitality Group",
     "website": "https://godwinhotels.com",
-    "centralReservationsPhone": "+91-88600-81994",
-    "centralLandline": "011-45304480",
+    "centralReservationsPhone": "+91-88600-81994, +91-88600-81992",
+    "centralLandline": "+91-11-45094949",
     "centralEmail": "book@godwinhotels.com",
     "restaurantPhone": "+91-88600-81991 (The Indian Grill - Call & WhatsApp)",
     "starRating": "Boutique Luxury Standards",
@@ -43,8 +43,8 @@
         "postalCode": "110055",
         "addressCountry": "IN"
       },
-      "telephone": "+91-88600-81994",
-      "landline": "011-45304480",
+      "telephone": "+91-88600-81994, +91-88600-81992",
+      "landline": "+91-11-45094949",
       "email": "book@godwinhotels.com",
       "geo": {
         "latitude": 28.6437,
@@ -123,15 +123,15 @@
         "postalCode": "110055",
         "addressCountry": "IN"
       },
-      "telephone": "+91-88600-81994",
-      "landline": "011-45304480",
+      "telephone": "+91-88600-81994, +91-88600-81992",
+      "landline": "+91-11-45094949",
       "restaurantPhone": "+91-88600-81991 (The Indian Grill)",
       "email": "book@godwinhotels.com",
       "geo": {
         "latitude": 28.6436,
         "longitude": 77.2154
       },
-      "priceRange": "₹3,200 - ₹5,800 INR per night",
+      "priceRange": "₹3,500 - ₹5,600 INR per night",
       "landmarkDistances": {
         "newDelhiRailwayStationNDLS": "500 meters (approx. 5 minutes walk)",
         "airportExpressMetroStation": "700 meters (approx. 7 minutes walk)",
@@ -156,7 +156,7 @@
       "rooms": [
         {
           "type": "Standard Room (Ground Floor)",
-          "basePriceINR": 3200,
+          "basePriceINR": 3500,
           "sizeSqFt": 250,
           "bedType": "Queen Comfort Bed",
           "maxOccupancy": "2 Adults",
@@ -164,21 +164,21 @@
         },
         {
           "type": "Premier King Room",
-          "basePriceINR": 3800,
+          "basePriceINR": 4800,
           "sizeSqFt": 320,
           "bedType": "Royal King Bed",
           "maxOccupancy": "2 Adults + 1 Child"
         },
         {
           "type": "Premier Twin Room",
-          "basePriceINR": 3700,
+          "basePriceINR": 4800,
           "sizeSqFt": 310,
           "bedType": "2 Twin Beds",
           "maxOccupancy": "2 Adults"
         },
         {
           "type": "Premier Studio King Room",
-          "basePriceINR": 4800,
+          "basePriceINR": 5600,
           "sizeSqFt": 430,
           "bedType": "Master King Bed with Lounge Suite",
           "maxOccupancy": "3 Adults / 2 Adults + 1 Child"
