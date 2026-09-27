@@ -51,5 +51,5 @@ if (!is_dir($logDir)) {
 echo json_encode([
     'status' => 'success',
     'bookingRef' => $bookingRef,
-    'message' => 'Reservation received successfully. Our concierge will contact you shortly.'
+    'message' => 'Booking query received successfully. Our concierge will contact you shortly.'
 ]);

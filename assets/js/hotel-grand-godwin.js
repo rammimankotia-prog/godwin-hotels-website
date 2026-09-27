@@ -560,7 +560,7 @@ function initGrandGodwinBooking() {
       const guests = document.getElementById('resGuests')?.value || '2 Adults';
       const address = document.getElementById('resGuestAddress')?.value || '';
 
-      const msg = `Hello Hotel Grand Godwin Team, I would like to book a stay:\n` +
+      const msg = `Hello Hotel Grand Godwin Team, I would like to inquire about a booking:\n` +
         `• Hotel: Hotel Grand Godwin (39 Rooms Boutique)\n` +
         `• Category: ${selectedRoom}\n` +
         `• Dates: ${checkin} to ${checkout} (${nights} nights)\n` +
@@ -588,7 +588,7 @@ function initGrandGodwinBooking() {
 
     const submitBtn = form.querySelector('button[type="submit"]');
     const originalText = submitBtn.innerHTML;
-    submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Confirming Reservation...';
+    submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Submitting Query...';
     submitBtn.disabled = true;
 
     const payload = {
@@ -617,13 +617,13 @@ function initGrandGodwinBooking() {
           document.getElementById('bookingSuccessRef').textContent = data.bookingRef;
           modal.style.display = 'flex';
         } else {
-          alert(`Reservation Received! Your booking reference is ${data.bookingRef}. Our concierge will contact you shortly.`);
+          alert(`Query Received! Your query reference is ${data.bookingRef}. Our concierge will contact you shortly.`);
         }
         form.reset();
         initGrandGodwinDates();
         updatePricing();
       } else {
-        alert(data.message || 'Error saving reservation. Please call +91-88600-81994.');
+        alert(data.message || 'Error submitting query. Please call +91-88600-81994.');
       }
     } catch (err) {
       alert('Your inquiry was recorded. Our reservation desk will call you at ' + payload.phone);

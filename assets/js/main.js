@@ -311,7 +311,7 @@ function initBookingForms() {
     // WhatsApp handoff
     const total = document.getElementById('billTotal')?.textContent || '';
     const msg = encodeURIComponent(
-      `Hello Godwin Hotels Delhi,\n\nI would like to confirm a reservation:\n\n` +
+      `Hello Godwin Hotels Delhi,\n\nI have a booking query:\n\n` +
       `Hotel: ${hotel}\n` +
       `Guest Name: ${name}\n` +
       `Phone: ${phone}\n` +
@@ -321,7 +321,7 @@ function initBookingForms() {
       `Room Type: ${document.getElementById('modalRoomType')?.value}\n` +
       `Guests: ${document.getElementById('modalGuests')?.value}\n` +
       `Grand Total: ${total}\n\n` +
-      `Please confirm my reservation. Thank you!`
+      `Please assist with room availability and best rates. Thank you!`
     );
     window.open(`https://wa.me/918860081994?text=${msg}`, '_blank');
   });
