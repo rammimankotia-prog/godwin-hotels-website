@@ -808,29 +808,34 @@
 
         <div class="map-explorer-layout">
 
-          <!-- Google Map Embed & Overlay Badge -->
+          <!-- Google Map Embed & Overlay Badge with Exact Pinpoint -->
           <div class="map-wrapper-card">
             <div class="map-overlay-badge">
-              <i class="fa-solid fa-hotel" style="color:var(--gold-400);"></i>
+              <i class="fa-solid fa-location-dot" style="color:#ff3b30;font-size:1.15rem;"></i>
               <div>
                 <strong>Hotel Grand Godwin, New Delhi</strong><br>
-                <span style="font-size:0.72rem;color:rgba(255,255,255,0.75);">8502/41, Arakashan Road, Paharganj</span>
+                <span style="font-size:0.72rem;color:rgba(255,255,255,0.85);">📍 8502/41, Arakashan Road, Ram Nagar, Paharganj</span>
               </div>
             </div>
 
-            <!-- Embedded Interactive Google Map -->
+            <!-- Embedded Interactive Google Map with Exact Pin Point -->
             <iframe id="hotelGrandGodwinMap"
-                    title="Hotel Grand Godwin Location Map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.5979502914197!2d77.2133113!3d28.6437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd3957b44747%3A0xaf6572eb0f135b61!2sHotel%20Grand%20Godwin!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                    title="Hotel Grand Godwin Exact Pin Point Location Map"
+                    src="https://maps.google.com/maps?q=Hotel+Grand+Godwin,+8502/41+Arakashan+Road,+Ram+Nagar,+Paharganj,+New+Delhi,+Delhi+110055&t=&z=17&ie=UTF8&iwloc=B&output=embed"
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
 
-            <div style="background:#080f1d;padding:0.75rem 1.25rem;display:flex;align-items:center;justify-content:space-between;color:#fff;font-size:0.78rem;">
-              <span><i class="fa-solid fa-compass" style="color:var(--gold-400);"></i> GPS: 28.6437° N, 77.2155° E</span>
-              <a href="https://www.google.com/maps/dir/?api=1&destination=Hotel+Grand+Godwin+Paharganj+New+Delhi" 
-                 target="_blank" rel="noopener noreferrer" style="color:var(--gold-300);text-decoration:underline;">
-                <i class="fa-solid fa-location-arrow"></i> Navigate Directly in Google Maps
-              </a>
+            <div style="background:#080f1d;padding:0.75rem 1.25rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.75rem;color:#fff;font-size:0.78rem;">
+              <span><i class="fa-solid fa-location-crosshairs" style="color:var(--gold-400);"></i> <strong>Exact Pin Point:</strong> 8502/41 Arakashan Road (28.6437° N, 77.2155° E)</span>
+              <div style="display:flex;align-items:center;gap:0.75rem;">
+                <button type="button" id="resetHotelPinBtn" class="btn-ghost-gold" style="padding:0.3rem 0.85rem;font-size:0.74rem;border-radius:999px;color:var(--gold-300);border-color:rgba(217,169,74,0.5);cursor:pointer;background:transparent;">
+                  <i class="fa-solid fa-crosshairs"></i> Reset Hotel Pin
+                </button>
+                <a href="https://maps.google.com/?cid=12644265435012379361" 
+                   target="_blank" rel="noopener noreferrer" style="color:var(--gold-300);text-decoration:underline;">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in Google Maps
+                </a>
+              </div>
             </div>
           </div>
 
@@ -841,7 +846,7 @@
                 <i class="fa-solid fa-layer-group"></i> All Amenities
               </button>
               <button class="amenity-tab-btn" data-cat="transit">
-                <i class="fa-solid fa-train"></i> Transit &amp; Metro
+                <i class="fa-solid fa-train"></i> Transit &amp; More
               </button>
               <button class="amenity-tab-btn" data-cat="dining">
                 <i class="fa-solid fa-utensils"></i> Dining &amp; Cafes
@@ -1222,6 +1227,18 @@
             </summary>
             <p style="margin-top:0.75rem;font-size:0.9rem;color:var(--text-body);line-height:1.65;">
               Standard check-in is at 1:00 PM (13:00) and check-out is at 11:00 AM (11:00). Complimentary early check-in from 10:00 AM is offered subject to room availability upon arrival. 24-hour secure luggage storage is always complimentary.
+            </p>
+          </details>
+
+          <details class="faq-item" style="background:var(--ivory);padding:1.25rem;border-radius:var(--radius-md);margin-bottom:1rem;border:1px solid rgba(0,0,0,0.06);">
+            <summary style="font-weight:600;font-size:1.05rem;color:var(--navy-850);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+              <span>How do I reach the hotel from Kashmere Gate (ISBT) and Nizamuddin Railway Station?</span>
+              <i class="fa-solid fa-chevron-down" style="color:var(--gold-600);"></i>
+            </summary>
+            <p style="margin-top:0.75rem;font-size:0.9rem;color:var(--text-body);line-height:1.65;">
+              • <strong>From Kashmere Gate (ISBT)</strong>: Located approx. <strong>5.5 km</strong> away. By Delhi Metro, take the direct Yellow Line from Kashmere Gate Station to New Delhi Metro Station (just 3 stops, 7 minutes), take the Ajmeri Gate exit, and walk 5 minutes (500m) to the hotel. By auto/cab, travel time is approx. 15 minutes.
+              <br><br>
+              • <strong>From Hazrat Nizamuddin Railway Station (NZM)</strong>: Located approx. <strong>8.5 km</strong> away (approx. 20–25 minutes drive via Mathura Road / Barakhamba). Direct prepaid cabs and auto-rickshaws are available 24/7 at the station, or contact our front desk at <a href="tel:+918860081994" style="color:var(--gold-700);font-weight:600;">+91 88600 81994</a> to arrange chauffeured station pick-up.
             </p>
           </details>
 

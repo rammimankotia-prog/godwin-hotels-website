@@ -228,6 +228,22 @@ const AMENITY_DATA_DELUXE = [
   },
   {
     category: "transit",
+    name: "Kashmere Gate ISBT (Inter-State Bus Terminal)",
+    badge: "5.5 km · 15 min drive / 7 min via Metro",
+    desc: "Northern India's primary interstate bus hub (Himachal, Punjab, Uttarakhand & Haryana) with direct Yellow Line Metro ride to New Delhi Station in just 3 stops (7 mins).",
+    icon: "fa-bus",
+    destQuery: "Maharana Pratap Inter State Bus Terminus, Kashmere Gate, New Delhi"
+  },
+  {
+    category: "transit",
+    name: "Hazrat Nizamuddin Railway Station (NZM)",
+    badge: "8.5 km · 20 min drive",
+    desc: "Key terminal for premier South & West India trains including Vande Bharat, Rajdhani & Gatimaan Express. Fast cab connection or direct metro link.",
+    icon: "fa-train",
+    destQuery: "Hazrat Nizamuddin Railway Station, Nizamuddin East, New Delhi"
+  },
+  {
+    category: "transit",
     name: "Indira Gandhi International Airport (DEL)",
     badge: "15 km · 24/7 Hotel Cab Transfer",
     desc: "Chauffeured pickup and drop directly to T1, T2 & T3 with flight tracking concierge.",
@@ -352,7 +368,8 @@ function initGodwinDeluxeAmenityExplorer() {
   const container = document.getElementById('deluxeAmenityItemsList');
   const buttons = document.querySelectorAll('.deluxe-amenity-tab-btn');
 
-  if (!container) return;
+  const mapIframe = document.getElementById('hotelGodwinDeluxeMap');
+  const DELUXE_MAP_URL = "https://maps.google.com/maps?q=Hotel+Godwin+Deluxe,+8501/15+Arakashan+Road,+Ram+Nagar,+Paharganj,+New+Delhi,+Delhi+110055&t=&z=17&ie=UTF8&iwloc=B&output=embed";
 
   function renderList(category) {
     const filtered = category === 'all' 
@@ -360,15 +377,18 @@ function initGodwinDeluxeAmenityExplorer() {
       : AMENITY_DATA_DELUXE.filter(item => item.category === category);
 
     container.innerHTML = filtered.map(item => `
-      <div class="amenity-item-card">
+      <div class="amenity-item-card" data-query="${encodeURIComponent(item.destQuery)}" style="cursor:pointer;">
         <div class="amenity-item-info">
           <h4><i class="fa-solid ${item.icon}" style="color:var(--gold-600);width:18px;"></i> ${item.name}</h4>
           <p class="amenity-item-desc">${item.desc}</p>
         </div>
         <div class="amenity-item-meta">
           <span class="amenity-distance-badge">${item.badge}</span>
-          <div>
-            <a href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(item.destQuery)}" 
+          <div style="display:flex;gap:0.4rem;align-items:center;">
+            <button type="button" class="btn-map-preview" data-query="${encodeURIComponent(item.destQuery)}" style="background:rgba(200,146,46,0.12);border:1px solid rgba(200,146,46,0.3);color:var(--gold-700);font-size:0.75rem;padding:0.35rem 0.65rem;border-radius:999px;cursor:pointer;font-weight:600;">
+              <i class="fa-solid fa-map-pin"></i> View on Map
+            </button>
+            <a href="https://www.google.com/maps/dir/?api=1&origin=Hotel+Godwin+Deluxe,+8501/15+Arakashan+Road,+Ram+Nagar,+Paharganj,+New+Delhi&destination=${encodeURIComponent(item.destQuery)}" 
                target="_blank" rel="noopener noreferrer" class="btn-directions">
               <i class="fa-solid fa-diamond-turn-right"></i> Directions
             </a>
@@ -376,6 +396,28 @@ function initGodwinDeluxeAmenityExplorer() {
         </div>
       </div>
     `).join('');
+
+    // Attach click to preview on map
+    container.querySelectorAll('.btn-map-preview').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const query = decodeURIComponent(btn.getAttribute('data-query'));
+        if (mapIframe && query) {
+          mapIframe.src = `https://maps.google.com/maps?q=${encodeURIComponent(query)}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+          document.getElementById('amenity-map')?.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    container.querySelectorAll('.amenity-item-card').forEach(card => {
+      card.addEventListener('click', (e) => {
+        if (e.target.closest('a') || e.target.closest('button')) return;
+        const query = decodeURIComponent(card.getAttribute('data-query'));
+        if (mapIframe && query) {
+          mapIframe.src = `https://maps.google.com/maps?q=${encodeURIComponent(query)}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+        }
+      });
+    });
   }
 
   renderList('all');
@@ -388,6 +430,14 @@ function initGodwinDeluxeAmenityExplorer() {
       renderList(cat);
     });
   });
+
+  // Reset Hotel Pin button
+  const resetBtn = document.getElementById('resetDeluxeHotelPinBtn');
+  if (resetBtn && mapIframe) {
+    resetBtn.addEventListener('click', () => {
+      mapIframe.src = DELUXE_MAP_URL;
+    });
+  }
 }
 
 /* ─────────────────────────────────────────────────────────────
