@@ -74,30 +74,39 @@
         {
           "type": "Deluxe Room",
           "basePriceINR": 2800,
-          "sizeSqFt": 240,
-          "bedType": "Queen Bed",
-          "maxOccupancy": "2 Adults"
+          "sizeSqFt": 180,
+          "sizeSqMt": 17,
+          "bedType": "Double Bed",
+          "bathrooms": 1,
+          "maxOccupancy": "Max 3 Guests"
         },
         {
           "type": "Executive Room",
           "basePriceINR": 3600,
-          "sizeSqFt": 320,
-          "bedType": "King Bed",
-          "maxOccupancy": "2 Adults + 1 Child"
-        },
-        {
-          "type": "Studio Room",
-          "basePriceINR": 4500,
-          "sizeSqFt": 420,
-          "bedType": "Master King Bed with Lounge Seating",
-          "maxOccupancy": "2 Adults + 1 Child"
+          "sizeSqFt": 225,
+          "sizeSqMt": 21,
+          "bedType": "Double Bed",
+          "bathrooms": 1,
+          "maxOccupancy": "Max 3 Guests"
         },
         {
           "type": "Executive Twin Room",
           "basePriceINR": 3400,
-          "sizeSqFt": 300,
-          "bedType": "2 Twin Beds",
-          "maxOccupancy": "2 Adults"
+          "sizeSqFt": 225,
+          "sizeSqMt": 21,
+          "bedType": "2 x Single Bed(s)",
+          "bathrooms": 1,
+          "maxOccupancy": "Max 3 Guests"
+        },
+        {
+          "type": "Studio Room with Air-Purifier",
+          "basePriceINR": 4500,
+          "sizeSqFt": 275,
+          "sizeSqMt": 26,
+          "bedType": "Double Bed",
+          "bathrooms": 1,
+          "view": "City View",
+          "maxOccupancy": "Max 3 Guests"
         }
       ]
     },

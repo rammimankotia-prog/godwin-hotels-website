@@ -416,7 +416,9 @@ function initGrandGodwinBooking() {
     'Deluxe Room': 2800,
     'Executive Room': 3600,
     'Studio Room': 4500,
-    'Executive Twin Room': 3400
+    'Studio Room with Air-Purifier': 4500,
+    'Executive Twin Room': 3400,
+    'Executive Twin': 3400
   };
 
   function updatePricing() {

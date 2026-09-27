@@ -100,26 +100,26 @@
           {
             "@type": "HotelRoom",
             "name": "Deluxe Room",
-            "description": "Comfortable 240 sq.ft boutique room with queen bed, Italian marble shower, centralized warmer, and high-speed Wi-Fi.",
-            "occupancy": { "@type": "QuantitativeValue", "maxValue": 2 }
-          },
-          {
-            "@type": "HotelRoom",
-            "name": "Executive Room",
-            "description": "Sophisticated 320 sq.ft executive room with king size bed, dedicated workstation, minibar, and premium luxury toiletries.",
+            "description": "Comfortable 180 sq.ft (17 sq.mt) boutique room with double bed, 1 bathroom, centralized warmer, and high-speed Wi-Fi.",
             "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 }
           },
           {
             "@type": "HotelRoom",
-            "name": "Studio Room",
-            "description": "Spacious 420 sq.ft studio room featuring master king bed, designer lounge sofa seating, and coffee bar amenities.",
+            "name": "Executive Room",
+            "description": "Sophisticated 225 sq.ft (21 sq.mt) executive room with double bed, 1 bathroom, dedicated workstation, minibar, and premium luxury toiletries.",
             "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 }
           },
           {
             "@type": "HotelRoom",
             "name": "Executive Twin Room",
-            "description": "Contemporary 300 sq.ft room with two separate twin beds, reading lamps, rain shower, and centralized warmer.",
-            "occupancy": { "@type": "QuantitativeValue", "maxValue": 2 }
+            "description": "Contemporary 225 sq.ft (21 sq.mt) room with 2 x single bed(s), 1 bathroom, reading lamps, rain shower, and centralized warmer.",
+            "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 }
+          },
+          {
+            "@type": "HotelRoom",
+            "name": "Studio Room with Air-Purifier",
+            "description": "Spacious 275 sq.ft (26 sq.mt) studio room with air-purifier, city view, double bed, 1 bathroom, and coffee bar amenities.",
+            "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 }
           }
         ]
       },
@@ -132,7 +132,7 @@
             "name": "How many rooms are there in Hotel Grand Godwin, New Delhi?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Hotel Grand Godwin features exactly 39 boutique guest rooms across 4 categories: Deluxe Room, Executive Room, Studio Room, and Executive Twin Room, ensuring intimate, attentive, and crowd-free hospitality."
+              "text": "Hotel Grand Godwin features exactly 39 boutique guest rooms across 4 categories: Deluxe Room, Executive Room, Executive Twin Room, and Studio Room with Air-Purifier, ensuring intimate, attentive, and crowd-free hospitality."
             }
           },
           {
@@ -148,7 +148,7 @@
             "name": "What room categories are available at Hotel Grand Godwin?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Hotel Grand Godwin offers 4 distinct room categories: 1. Deluxe Room (240 sq ft, Queen bed), 2. Executive Room (320 sq ft, King bed with work desk), 3. Studio Room (420 sq ft, Master King bed with lounge seating area), and 4. Executive Twin Room (300 sq ft, 2 Separate Twin beds)."
+              "text": "Hotel Grand Godwin offers 4 distinct room categories: 1. Deluxe Room (180 sq.ft / 17 sq.mt, Double Bed, 1 Bathroom, Max 3 Guests), 2. Executive Room (225 sq.ft / 21 sq.mt, Double Bed, 1 Bathroom, Max 3 Guests), 3. Executive Twin Room (225 sq.ft / 21 sq.mt, 2 x Single Bed(s), 1 Bathroom, Max 3 Guests), and 4. Studio Room with Air-Purifier (275 sq.ft / 26 sq.mt, City View, Double Bed, 1 Bathroom, Max 3 Guests)."
             }
           },
           {
@@ -452,7 +452,7 @@
         <div class="section-header-center" style="margin-bottom:2.5rem;">
           <span class="section-eyebrow">Accommodation</span>
           <h2 class="section-title">The 4 Distinct Room Categories</h2>
-          <p class="section-lead">Tailored for corporate professionals, solo executives, couples, friends, and family travelers across Deluxe, Executive, Studio, and Executive Twin accommodations.</p>
+          <p class="section-lead">Tailored for corporate professionals, solo executives, couples, friends, and family travelers across Deluxe, Executive, Executive Twin, and Studio accommodations.</p>
         </div>
 
         <!-- Room Cards Grid (4 Categories) -->
@@ -465,17 +465,21 @@
               <img src="../assets/images/room_deluxe.jpg" alt="Deluxe Room at Hotel Grand Godwin New Delhi" loading="lazy">
             </div>
             <div class="room-cat-body">
-              <h3 class="room-cat-title">Deluxe Room</h3>
+              <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.25rem;">
+                <h3 class="room-cat-title" style="margin-bottom:0;">Deluxe Room</h3>
+                <span style="font-size:0.85rem;color:var(--text-muted);font-weight:600;"><i class="fa-solid fa-users" style="color:var(--gold-600);"></i> Max 3 Guests</span>
+              </div>
               <div class="room-cat-specs">
-                <span class="room-cat-spec-item"><i class="fa-solid fa-ruler-combined"></i> 240 Sq. Ft.</span>
-                <span class="room-cat-spec-item"><i class="fa-solid fa-bed"></i> 1 Queen Bed</span>
-                <span class="room-cat-spec-item"><i class="fa-solid fa-user-group"></i> Max 2 Adults</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-maximize"></i> 180 sq.ft (17 sq.mt)</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-bed"></i> Double Bed</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-shower"></i> 1 Bathroom</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-users"></i> Max 3 Guests</span>
               </div>
               <p class="room-cat-desc">
-                Ideal for solo travelers and couples seeking comfortable boutique luxury in Central Delhi. Features centralized warmers for winter, split AC, and plush pillow-top mattress.
+                Ideal for solo travelers, couples, and guests seeking comfortable boutique luxury in Central Delhi. Features centralized warmers for winter, split AC, and plush double bed.
               </p>
               <ul class="room-cat-features">
-                <li><i class="fa-solid fa-circle-check"></i> Italian Marble Bath with Rain Shower</li>
+                <li><i class="fa-solid fa-circle-check"></i> 1 Private Bathroom with Rain Shower</li>
                 <li><i class="fa-solid fa-circle-check"></i> Centralized Room Warmer &amp; Split AC</li>
                 <li><i class="fa-solid fa-circle-check"></i> 43" Smart LED TV with Channels</li>
                 <li><i class="fa-solid fa-circle-check"></i> Tea &amp; Coffee Maker Replenished Daily</li>
@@ -500,20 +504,24 @@
               <img src="../assets/images/room_executive.jpg" alt="Executive Room at Hotel Grand Godwin New Delhi" loading="lazy">
             </div>
             <div class="room-cat-body">
-              <h3 class="room-cat-title">Executive Room</h3>
+              <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.25rem;">
+                <h3 class="room-cat-title" style="margin-bottom:0;">Executive Room</h3>
+                <span style="font-size:0.85rem;color:var(--text-muted);font-weight:600;"><i class="fa-solid fa-users" style="color:var(--gold-600);"></i> Max 3 Guests</span>
+              </div>
               <div class="room-cat-specs">
-                <span class="room-cat-spec-item"><i class="fa-solid fa-ruler-combined"></i> 320 Sq. Ft.</span>
-                <span class="room-cat-spec-item"><i class="fa-solid fa-bed"></i> Plush King Bed</span>
-                <span class="room-cat-spec-item"><i class="fa-solid fa-user-group"></i> 2 Adults + 1 Child</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-maximize"></i> 225 sq.ft (21 sq.mt)</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-bed"></i> Double Bed</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-shower"></i> 1 Bathroom</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-users"></i> Max 3 Guests</span>
               </div>
               <p class="room-cat-desc">
                 Designed for discerning business professionals and travelers wanting extra elegance. Includes ergonomic workstation, minibar, sound-insulated double glazing, and ambient mood lighting.
               </p>
               <ul class="room-cat-features">
+                <li><i class="fa-solid fa-circle-check"></i> 1 Marble Bathroom with Rain Shower</li>
                 <li><i class="fa-solid fa-circle-check"></i> Ergonomic Executive Workstation &amp; Lamp</li>
                 <li><i class="fa-solid fa-circle-check"></i> Stocked Minibar Refrigerator</li>
                 <li><i class="fa-solid fa-circle-check"></i> Soundproof Double-Glazed Windows</li>
-                <li><i class="fa-solid fa-circle-check"></i> Luxury Toiletries Kit &amp; Bathrobes</li>
                 <li><i class="fa-solid fa-circle-check"></i> Centralized Warmers &amp; Priority Service</li>
               </ul>
               <div class="room-cat-footer">
@@ -528,61 +536,30 @@
             </div>
           </article>
 
-          <!-- Category 3: Studio Room -->
-          <article class="room-cat-card" id="cat-studio">
-            <div class="room-cat-badge" style="background:var(--gold-600);">Spacious Studio</div>
-            <div class="room-cat-img-box">
-              <img src="../assets/images/room_studio.jpg" alt="Studio Room at Hotel Grand Godwin New Delhi" loading="lazy">
-            </div>
-            <div class="room-cat-body">
-              <h3 class="room-cat-title">Studio Room</h3>
-              <div class="room-cat-specs">
-                <span class="room-cat-spec-item"><i class="fa-solid fa-ruler-combined"></i> 420 Sq. Ft.</span>
-                <span class="room-cat-spec-item"><i class="fa-solid fa-bed"></i> Master King Bed</span>
-                <span class="room-cat-spec-item"><i class="fa-solid fa-user-group"></i> 2 Adults + 1 Child</span>
-              </div>
-              <p class="room-cat-desc">
-                Generously proportioned open-concept luxury studio. Features a designer curved sofa lounge area, coffee counter with microwave &amp; mini fridge, expansive windows, and plush king bed.
-              </p>
-              <ul class="room-cat-features">
-                <li><i class="fa-solid fa-circle-check"></i> Integrated Designer Sofa Lounge Seating</li>
-                <li><i class="fa-solid fa-circle-check"></i> Coffee Bar Counter &amp; Refrigerator</li>
-                <li><i class="fa-solid fa-circle-check"></i> Double Wardrobe &amp; Digital Safety Vault</li>
-                <li><i class="fa-solid fa-circle-check"></i> Natural Sunlight &amp; Centralized Warmers</li>
-                <li><i class="fa-solid fa-circle-check"></i> High-Speed Fiber Wi-Fi Everywhere</li>
-              </ul>
-              <div class="room-cat-footer">
-                <div>
-                  <div style="font-size:0.75rem;color:var(--text-muted);">From</div>
-                  <div class="room-cat-price">₹4,500 <span>/ night</span></div>
-                </div>
-                <button class="btn-gold select-room-cat-btn" data-category="Studio Room" style="padding:0.6rem 1.15rem;font-size:0.78rem;border-radius:999px;">
-                  Select
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Category 4: Executive Twin Room -->
+          <!-- Category 3: Executive Twin Room -->
           <article class="room-cat-card" id="cat-twin">
             <div class="room-cat-badge" style="background:#243d65;">Twin Beds</div>
             <div class="room-cat-img-box">
               <img src="../assets/images/room_twin.jpg" alt="Executive Twin Room at Hotel Grand Godwin New Delhi" loading="lazy">
             </div>
             <div class="room-cat-body">
-              <h3 class="room-cat-title">Executive Twin</h3>
+              <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.25rem;">
+                <h3 class="room-cat-title" style="margin-bottom:0;">Executive Twin Room</h3>
+                <span style="font-size:0.85rem;color:var(--text-muted);font-weight:600;"><i class="fa-solid fa-users" style="color:var(--gold-600);"></i> Max 3 Guests</span>
+              </div>
               <div class="room-cat-specs">
-                <span class="room-cat-spec-item"><i class="fa-solid fa-ruler-combined"></i> 300 Sq. Ft.</span>
-                <span class="room-cat-spec-item"><i class="fa-solid fa-bed"></i> 2 Twin Single Beds</span>
-                <span class="room-cat-spec-item"><i class="fa-solid fa-user-group"></i> 2 Adults</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-maximize"></i> 225 sq.ft (21 sq.mt)</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-bed"></i> 2 x Single Bed(s)</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-shower"></i> 1 Bathroom</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-users"></i> Max 3 Guests</span>
               </div>
               <p class="room-cat-desc">
-                Ideal for business colleagues, friends, and family companions traveling together. Offers two separate plush twin single beds with dedicated reading lights, rain shower, and centralized warmers.
+                Ideal for business colleagues, friends, and family companions traveling together. Offers two separate plush single beds with dedicated reading lights, rain shower, and centralized warmers.
               </p>
               <ul class="room-cat-features">
-                <li><i class="fa-solid fa-circle-check"></i> Two Separate Independent Twin Beds</li>
+                <li><i class="fa-solid fa-circle-check"></i> 2 x Single Bed(s) Configuration</li>
+                <li><i class="fa-solid fa-circle-check"></i> 1 Bathroom with Rain Shower</li>
                 <li><i class="fa-solid fa-circle-check"></i> Individual Bedside Reading Lamps</li>
-                <li><i class="fa-solid fa-circle-check"></i> Italian Marble Shower &amp; Rain Spray</li>
                 <li><i class="fa-solid fa-circle-check"></i> Centralized Room Warmer &amp; Split AC</li>
                 <li><i class="fa-solid fa-circle-check"></i> 43" Smart LED TV &amp; Fast Wi-Fi</li>
               </ul>
@@ -592,6 +569,46 @@
                   <div class="room-cat-price">₹3,400 <span>/ night</span></div>
                 </div>
                 <button class="btn-gold select-room-cat-btn" data-category="Executive Twin" style="padding:0.6rem 1.15rem;font-size:0.78rem;border-radius:999px;">
+                  Select
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Category 4: Studio Room with Air-Purifier -->
+          <article class="room-cat-card" id="cat-studio">
+            <div class="room-cat-badge" style="background:var(--gold-600);">Spacious Studio &amp; Air-Purifier</div>
+            <div class="room-cat-img-box">
+              <img src="../assets/images/room_studio.jpg" alt="Studio Room at Hotel Grand Godwin New Delhi" loading="lazy">
+            </div>
+            <div class="room-cat-body">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.25rem;">
+                <h3 class="room-cat-title" style="margin-bottom:0;">Studio Room with Air-Purifier</h3>
+                <span style="font-size:0.85rem;color:var(--text-muted);font-weight:600;"><i class="fa-solid fa-users" style="color:var(--gold-600);"></i> Max 3 Guests</span>
+              </div>
+              <div class="room-cat-specs">
+                <span class="room-cat-spec-item"><i class="fa-solid fa-maximize"></i> 275 sq.ft (26 sq.mt)</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-city"></i> City View</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-bed"></i> Double Bed</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-shower"></i> 1 Bathroom</span>
+                <span class="room-cat-spec-item"><i class="fa-solid fa-users"></i> Max 3 Guests</span>
+              </div>
+              <p class="room-cat-desc">
+                Generously proportioned open-concept luxury studio featuring panoramic city views and an in-room air-purifier. Designed with plush double bed, designer curved sofa lounge area, coffee counter with mini fridge, and natural sunlight.
+              </p>
+              <ul class="room-cat-features">
+                <li><i class="fa-solid fa-circle-check"></i> Medical-Grade In-Room Air-Purifier</li>
+                <li><i class="fa-solid fa-circle-check"></i> Panoramic City View Windows</li>
+                <li><i class="fa-solid fa-circle-check"></i> 1 Bathroom with Luxury Amenities</li>
+                <li><i class="fa-solid fa-circle-check"></i> Integrated Designer Sofa Lounge Seating</li>
+                <li><i class="fa-solid fa-circle-check"></i> Coffee Bar Counter &amp; Refrigerator</li>
+              </ul>
+              <div class="room-cat-footer">
+                <div>
+                  <div style="font-size:0.75rem;color:var(--text-muted);">From</div>
+                  <div class="room-cat-price">₹4,500 <span>/ night</span></div>
+                </div>
+                <button class="btn-gold select-room-cat-btn" data-category="Studio Room" style="padding:0.6rem 1.15rem;font-size:0.78rem;border-radius:999px;">
                   Select
                 </button>
               </div>
@@ -611,7 +628,8 @@
                 <th>Category</th>
                 <th>Room Size</th>
                 <th>Bedding Configuration</th>
-                <th>Max Guests</th>
+                <th>Bathroom</th>
+                <th>Occupancy</th>
                 <th>Key Highlights</th>
                 <th>Starting Price</th>
                 <th>Action</th>
@@ -620,39 +638,43 @@
             <tbody>
               <tr>
                 <td><strong>Deluxe Room</strong></td>
-                <td>240 Sq. Ft.</td>
-                <td>1 Queen Bed</td>
-                <td>2 Adults</td>
+                <td>180 sq.ft (17 sq.mt)</td>
+                <td>Double Bed</td>
+                <td>1 Bathroom</td>
+                <td>Max 3 Guests</td>
                 <td>Central Warmer, Rain Shower, 43" Smart TV, Free Wi-Fi</td>
                 <td><strong>₹2,800</strong> / night</td>
                 <td><a href="#booking" class="select-room-cat-btn" data-category="Deluxe Room" style="color:var(--gold-700);font-weight:700;">Select <i class="fa-solid fa-arrow-right"></i></a></td>
               </tr>
               <tr>
                 <td><strong>Executive Room</strong></td>
-                <td>320 Sq. Ft.</td>
-                <td>1 Plush King Bed</td>
-                <td>2 Adults + 1 Child</td>
+                <td>225 sq.ft (21 sq.mt)</td>
+                <td>Double Bed</td>
+                <td>1 Bathroom</td>
+                <td>Max 3 Guests</td>
                 <td>Work Desk, Minibar, Soundproof Windows, City View</td>
                 <td><strong>₹3,600</strong> / night</td>
                 <td><a href="#booking" class="select-room-cat-btn" data-category="Executive Room" style="color:var(--gold-700);font-weight:700;">Select <i class="fa-solid fa-arrow-right"></i></a></td>
               </tr>
               <tr>
-                <td><strong>Studio Room</strong></td>
-                <td>420 Sq. Ft.</td>
-                <td>Master King Bed + Lounge Sofa</td>
-                <td>2 Adults + 1 Child</td>
-                <td>Spacious Open Studio, Sofa Lounge, Coffee Bar &amp; Fridge</td>
-                <td><strong>₹4,500</strong> / night</td>
-                <td><a href="#booking" class="select-room-cat-btn" data-category="Studio Room" style="color:var(--gold-700);font-weight:700;">Select <i class="fa-solid fa-arrow-right"></i></a></td>
-              </tr>
-              <tr>
                 <td><strong>Executive Twin Room</strong></td>
-                <td>300 Sq. Ft.</td>
-                <td>2 Separate Twin Beds</td>
-                <td>2 Adults</td>
+                <td>225 sq.ft (21 sq.mt)</td>
+                <td>2 x Single Bed(s)</td>
+                <td>1 Bathroom</td>
+                <td>Max 3 Guests</td>
                 <td>Two Independent Beds, Ideal for Colleagues &amp; Friends, Warmer</td>
                 <td><strong>₹3,400</strong> / night</td>
                 <td><a href="#booking" class="select-room-cat-btn" data-category="Executive Twin" style="color:var(--gold-700);font-weight:700;">Select <i class="fa-solid fa-arrow-right"></i></a></td>
+              </tr>
+              <tr>
+                <td><strong>Studio Room with Air-Purifier</strong></td>
+                <td>275 sq.ft (26 sq.mt)</td>
+                <td>Double Bed</td>
+                <td>1 Bathroom</td>
+                <td>Max 3 Guests</td>
+                <td>City View, Air-Purifier, Sofa Lounge, Coffee Bar &amp; Fridge</td>
+                <td><strong>₹4,500</strong> / night</td>
+                <td><a href="#booking" class="select-room-cat-btn" data-category="Studio Room" style="color:var(--gold-700);font-weight:700;">Select <i class="fa-solid fa-arrow-right"></i></a></td>
               </tr>
             </tbody>
           </table>
@@ -868,10 +890,10 @@
                   <i class="fa-solid fa-bed" style="color:var(--gold-600);"></i> Room Category (39 Rooms)
                 </label>
                 <select id="resRoomCategory" style="width:100%;padding:0.75rem 1rem;border:1.5px solid rgba(200,146,46,0.35);border-radius:var(--radius-md);background:#fff;font-family:inherit;font-size:0.9rem;">
-                  <option value="Deluxe Room (39 Rooms Total)">Deluxe Room (₹2,800/night)</option>
-                  <option value="Executive Room">Executive Room (₹3,600/night)</option>
-                  <option value="Studio Room">Studio Room (₹4,500/night)</option>
-                  <option value="Executive Twin Room">Executive Twin Room (₹3,400/night)</option>
+                  <option value="Deluxe Room (39 Rooms Total)">Deluxe Room — 180 sq.ft (17 sq.mt) (₹2,800/night)</option>
+                  <option value="Executive Room">Executive Room — 225 sq.ft (21 sq.mt) (₹3,600/night)</option>
+                  <option value="Executive Twin Room">Executive Twin Room — 225 sq.ft (21 sq.mt) (₹3,400/night)</option>
+                  <option value="Studio Room with Air-Purifier">Studio Room with Air-Purifier — 275 sq.ft (26 sq.mt) (₹4,500/night)</option>
                 </select>
               </div>
 
@@ -1165,10 +1187,10 @@
             </summary>
             <p style="margin-top:0.75rem;font-size:0.9rem;color:var(--text-body);line-height:1.65;">
               We offer 4 distinct room categories:
-              <br>• <strong>Deluxe Room</strong> (240 sq ft, Queen Bed) — Starting from ₹2,800/night
-              <br>• <strong>Executive Room</strong> (320 sq ft, King Bed with Workstation) — Starting from ₹3,600/night
-              <br>• <strong>Studio Room</strong> (420 sq ft, Master King with Lounge Sofa &amp; Coffee Bar) — Starting from ₹4,500/night
-              <br>• <strong>Executive Twin Room</strong> (300 sq ft, 2 Separate Twin Beds) — Starting from ₹3,400/night
+              <br>• <strong>Deluxe Room</strong> (180 sq.ft / 17 sq.mt, Double Bed, 1 Bathroom, Max 3 Guests) — Starting from ₹2,800/night
+              <br>• <strong>Executive Room</strong> (225 sq.ft / 21 sq.mt, Double Bed, 1 Bathroom, Max 3 Guests) — Starting from ₹3,600/night
+              <br>• <strong>Executive Twin Room</strong> (225 sq.ft / 21 sq.mt, 2 x Single Bed(s), 1 Bathroom, Max 3 Guests) — Starting from ₹3,400/night
+              <br>• <strong>Studio Room with Air-Purifier</strong> (275 sq.ft / 26 sq.mt, City View, Double Bed, 1 Bathroom, Max 3 Guests) — Starting from ₹4,500/night
             </p>
           </details>
 
