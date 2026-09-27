@@ -247,9 +247,9 @@ const AMENITY_DATA = [
   // Dining
   {
     category: "dining",
-    name: "Coffee Brownie (24-Hour Cafe)",
+    name: "Coffee Brownie Cafe (8:00 AM – 10:00 PM)",
     badge: "On-Site · Ground Level",
-    desc: "Boutique on-site cafe serving freshly brewed espresso, cappuccinos, fudgy brownies & snacks round the clock.",
+    desc: "Boutique on-site cafe serving freshly brewed espresso, cappuccinos, fudgy brownies & snacks from 8:00 AM to 10:00 PM daily.",
     icon: "fa-mug-hot",
     destQuery: "Hotel Grand Godwin, 8502/41 Arakashan Road, Paharganj, New Delhi"
   },

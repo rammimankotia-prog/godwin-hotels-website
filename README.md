@@ -33,7 +33,7 @@
    - Comprehensive `FAQPage` schema addressing high-intent queries asked to AI assistants (ChatGPT, Claude, Perplexity, Gemini).
 3. **Dining & Facilities**:
    - **The Indian Grill**: Multi-cuisine dining (North Indian curries, tandoori kebabs, Italian, Continental, Chinese, and breakfast buffet).
-   - **Coffee Brownie**: 24-hour cafe serving fresh brews, espresso, sandwiches, and pastries.
+   - **Coffee Brownie**: Boutique cafe open 8:00 AM to 10:00 PM daily, serving fresh brews, espresso, sandwiches, and pastries.
    - **Rooftop Terrace Lounges**: Open-air relaxation with panoramic Delhi skyline views.
    - **24/7 Airport Transfers & Tour Desk**: Golden Triangle (Agra/Jaipur) and Delhi sightseeing cab bookings.
 4. **Canonical Single Source of Truth (`facts-sheet.json`)**:

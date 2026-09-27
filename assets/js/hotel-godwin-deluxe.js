@@ -246,9 +246,9 @@ const AMENITY_DATA_DELUXE = [
   },
   {
     category: "dining",
-    name: "Coffee Brownie (24-Hour Cafe)",
+    name: "Coffee Brownie Cafe (8:00 AM – 10:00 PM)",
     badge: "Across Street (Sister Hotel Grand Godwin)",
-    desc: "24/7 boutique cafe serving specialty coffee, hot fudge brownies, and gourmet sandwiches.",
+    desc: "Boutique cafe serving specialty coffee, hot fudge brownies, and gourmet sandwiches daily from 8:00 AM to 10:00 PM.",
     icon: "fa-mug-hot",
     destQuery: "Hotel Grand Godwin, Arakashan Road, Paharganj, New Delhi"
   },
