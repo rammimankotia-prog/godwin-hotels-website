@@ -741,6 +741,7 @@ ul { list-style: none; }
 .hotel-img-tags {
   position: absolute; bottom: 1.2rem; left: 1.2rem; right: 1.2rem;
   display: flex; justify-content: space-between; align-items: flex-end;
+  gap: 0.5rem; flex-wrap: wrap;
 }
 .hotel-location-pill {
   background: rgba(8,15,29,0.75); backdrop-filter: blur(8px);
