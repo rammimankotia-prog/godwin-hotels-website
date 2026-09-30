@@ -7,27 +7,37 @@ DirectoryIndex index.php index.html
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteBase /
+  # RewriteBase / (Uncomment on production root domain if required)
 
   # 1. Redirect legacy .html and .php requests for hotel-grand-godwin to canonical /hotel-grand-godwin/
   RewriteCond %{THE_REQUEST} /hotel-grand-godwin\.(html|php) [NC]
   RewriteRule ^hotel-grand-godwin\.(html|php)$ /hotel-grand-godwin/ [R=301,L]
 
   # 2. Redirect /hotel-grand-godwin without trailing slash to /hotel-grand-godwin/
-  RewriteRule ^hotel-grand-godwin$ /hotel-grand-godwin/ [R=301,L]
+  RewriteRule ^hotel-grand-godwin$ hotel-grand-godwin/ [R=301,L]
 
   # 3. Direct route for /hotel-grand-godwin/
   RewriteRule ^hotel-grand-godwin/$ hotel-grand-godwin/index.html [L,QSA]
 
   # 4. Redirect legacy .html and .php requests for hotel-godwin-deluxe to canonical /hotel-godwin-deluxe/
   RewriteCond %{THE_REQUEST} /hotel-godwin-deluxe\.(html|php) [NC]
-  RewriteRule ^hotel-godwin-deluxe\.(html|php)$ /hotel-godwin-deluxe/ [R=301,L]
+  RewriteRule ^hotel-godwin-deluxe\.(html|php)$ hotel-godwin-deluxe/ [R=301,L]
 
   # 5. Redirect /hotel-godwin-deluxe without trailing slash to /hotel-godwin-deluxe/
-  RewriteRule ^hotel-godwin-deluxe$ /hotel-godwin-deluxe/ [R=301,L]
+  RewriteRule ^hotel-godwin-deluxe$ hotel-godwin-deluxe/ [R=301,L]
 
   # 6. Direct route for /hotel-godwin-deluxe/
   RewriteRule ^hotel-godwin-deluxe/$ hotel-godwin-deluxe/index.html [L,QSA]
+
+  # 7. Redirect legacy .html and .php requests for delhi-sightseeing to canonical /delhi-sightseeing/
+  RewriteCond %{THE_REQUEST} /delhi-sightseeing\.(html|php) [NC]
+  RewriteRule ^delhi-sightseeing\.(html|php)$ delhi-sightseeing/ [R=301,L]
+
+  # 8. Redirect /delhi-sightseeing without trailing slash to /delhi-sightseeing/
+  RewriteRule ^delhi-sightseeing$ delhi-sightseeing/ [R=301,L]
+
+  # 9. Direct route for /delhi-sightseeing/
+  RewriteRule ^delhi-sightseeing/$ delhi-sightseeing/index.html [L,QSA]
 </IfModule>
 
 # ─── GZIP & BROTLI COMPRESSION FOR FAST LOADING ───
