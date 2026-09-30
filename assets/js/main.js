@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
    NAVBAR: Scroll Effect + Mobile Toggle
 ───────────────────────────────────────── */
 function initNavbar() {
-  const navbar      = document.getElementById('navbar');
+  const navbar      = document.getElementById('navbar') || document.getElementById('siteHeader');
   const toggle      = document.getElementById('mobileToggle');
   const navLinks    = document.getElementById('navLinks');
   const menuIcon    = document.getElementById('menuIcon');
@@ -34,7 +34,8 @@ function initNavbar() {
   window.addEventListener('scroll', handleScroll, { passive: true });
 
   // Mobile toggle
-  toggle?.addEventListener('click', () => {
+  toggle?.addEventListener('click', (e) => {
+    e.stopPropagation();
     const isOpen = navLinks?.classList.toggle('open');
     toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     if (menuIcon) {
@@ -42,11 +43,29 @@ function initNavbar() {
     }
   });
 
-  // Close on nav link & dropdown item click
+  // Mobile Dropdown Click Handler (for iOS / Android touch screens)
+  document.querySelectorAll('.nav-dropdown-toggle').forEach(dropToggle => {
+    dropToggle.addEventListener('click', (e) => {
+      if (window.innerWidth <= 1140) {
+        e.preventDefault();
+        e.stopPropagation();
+        const dropMenu = dropToggle.nextElementSibling;
+        const chevron = dropToggle.querySelector('.chevron');
+        if (dropMenu) {
+          const isMenuOpen = dropMenu.classList.toggle('show-mobile');
+          if (chevron) {
+            chevron.style.transform = isMenuOpen ? 'rotate(180deg)' : '';
+          }
+        }
+      }
+    });
+  });
+
+  // Close mobile drawer on nav link & dropdown item click (except dropdown toggle)
   document.querySelectorAll('.nav-link, .nav-dropdown-item').forEach(link => {
-    link.addEventListener('click', (e) => {
-      if (link.classList.contains('nav-dropdown-toggle') && window.innerWidth <= 960) {
-        return; // Allow expanding dropdown on mobile
+    link.addEventListener('click', () => {
+      if (link.classList.contains('nav-dropdown-toggle')) {
+        return; // Handled above
       }
       navLinks?.classList.remove('open');
       toggle?.setAttribute('aria-expanded', 'false');
@@ -54,9 +73,9 @@ function initNavbar() {
     });
   });
 
-  // Close on outside click
+  // Close drawer on outside click
   document.addEventListener('click', (e) => {
-    if (!navbar?.contains(e.target)) {
+    if (navbar && !navbar.contains(e.target)) {
       navLinks?.classList.remove('open');
       toggle?.setAttribute('aria-expanded', 'false');
       if (menuIcon) menuIcon.className = 'fa-solid fa-bars';

@@ -132,20 +132,46 @@
   color: #fff !important;
 }
 
-@media (max-width: 1080px) {
+@media (min-width: 1141px) and (max-width: 1320px) {
   .grand-site-header .nav-links {
     gap: 0.15rem;
   }
   .grand-site-header .nav-link {
-    padding: 0.45rem 0.5rem !important;
-    font-size: 0.75rem !important;
+    padding: 0.4rem 0.45rem !important;
+    font-size: 0.72rem !important;
+    letter-spacing: 0.03em !important;
+  }
+  .grand-site-header .nav-cta {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.72rem !important;
+  }
+  .grand-site-header .brand-name {
+    font-size: 1.15rem;
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1140px) {
   .grand-site-header .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: min(340px, 88vw);
+    height: 100dvh;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: max(5rem, calc(4rem + env(safe-area-inset-top))) 1.5rem max(2rem, env(safe-area-inset-bottom));
     background: #080f1d !important;
     border-left: 1px solid rgba(217, 169, 74, 0.25);
+    box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+    transition: right 0.35s var(--ease-out);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 1100;
+  }
+  .grand-site-header .nav-links.open {
+    right: 0;
   }
   .grand-site-header .nav-link {
     color: rgba(255, 255, 255, 0.9) !important;
@@ -153,6 +179,10 @@
     padding: 0.85rem 0 !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
     width: 100% !important;
+  }
+  .grand-site-header .mobile-toggle {
+    display: flex;
+    z-index: 1200;
   }
 }
 
@@ -994,6 +1024,9 @@
   -webkit-backdrop-filter: blur(12px);
   border-top: 1px solid rgba(217, 169, 74, 0.3);
   padding: 0.75rem 1.25rem;
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+  padding-left: max(1.25rem, env(safe-area-inset-left));
+  padding-right: max(1.25rem, env(safe-area-inset-right));
   display: flex;
   align-items: center;
   justify-content: space-between;

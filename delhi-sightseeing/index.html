@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#080f1d">
   <title>Delhi Sightseeing, Monuments &amp; 1-Day Tour Package | Godwin Hotels Delhi</title>
   <meta name="description" content="Discover top monuments in Delhi (Red Fort, Qutub Minar, Humayun's Tomb), famous bazaars (Chandni Chowk, Dilli Haat), must-see attractions, and book our 1-Day Local Tour @ ₹4,500 INR (8 Hours / 80 KM) with private AC car, fuel & parking included.">
   <meta name="keywords" content="delhi sightseeing, monuments in delhi, bazaars in delhi, places to see in delhi, delhi day tour, 1 day delhi tour package 4500, qutub minar, red fort, humayun tomb, chandni chowk tour, godwin hotels travel desk">
@@ -101,12 +102,13 @@
     /* Sub-nav quick pill links */
     .quick-jump-nav {
       position: sticky;
-      top: 76px;
+      top: 72px;
       z-index: 99;
       background: rgba(8, 15, 29, 0.96);
       border-bottom: 1px solid rgba(217, 169, 74, 0.3);
-      padding: 0.75rem 0;
+      padding: 0.65rem 0;
       backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       box-shadow: 0 8px 24px rgba(0,0,0,0.3);
     }
     .quick-jump-inner {
@@ -115,8 +117,10 @@
       gap: 0.65rem;
       overflow-x: auto;
       white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
       scrollbar-width: none;
       -ms-overflow-style: none;
+      padding: 0 0.5rem;
     }
     .quick-jump-inner::-webkit-scrollbar { display: none; }
     .jump-pill {
@@ -131,6 +135,7 @@
       font-size: 0.85rem;
       font-weight: 500;
       transition: all 0.25s ease;
+      touch-action: manipulation;
     }
     .jump-pill:hover, .jump-pill.active {
       background: var(--gold-500);
@@ -148,12 +153,12 @@
     /* Cards grid */
     .sight-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
       gap: 2rem;
       margin-top: 2.5rem;
     }
-    @media (max-width: 480px) {
-      .sight-grid { grid-template-columns: 1fr; }
+    @media (max-width: 640px) {
+      .sight-grid { grid-template-columns: 1fr; gap: 1.5rem; }
     }
     .sight-card {
       background: #ffffff;
@@ -403,11 +408,25 @@
       line-height: 1.6;
     }
 
-    /* Responsive adjustments */
+    /* Responsive adjustments for Tablets, Laptops & Mobile / Apple / Android */
+    @media (max-width: 1024px) {
+      .tour-package-hero { padding: 2rem; }
+    }
     @media (max-width: 768px) {
-      .tour-package-hero { padding: 1.75rem; }
-      .timeline-wrap { padding-left: 1.5rem; }
-      .timeline-node::before { left: -1.5rem; }
+      .tour-package-hero { padding: 1.5rem 1.25rem; }
+      .tour-price-badge { font-size: 1.85rem; padding: 0.5rem 1.25rem; }
+      .tour-inclusions-grid { grid-template-columns: 1fr; }
+      .timeline-wrap { padding-left: 1.25rem; }
+      .timeline-node::before { left: -1.25rem; }
+      .hero-title { font-size: clamp(2rem, 7vw, 2.85rem); }
+      .hero-lead { font-size: 1rem; }
+      .hero-badges-grid { gap: 0.65rem; }
+      .hero-badge-item { font-size: 0.8rem; padding: 0.45rem 0.75rem; width: 100%; }
+    }
+    @media (max-width: 480px) {
+      .tour-package-hero { padding: 1.25rem 1rem; border-radius: var(--radius-md); }
+      .inclusion-box { padding: 1rem; }
+      .exclusion-callout { padding: 1rem; }
     }
   </style>
 
@@ -1624,36 +1643,25 @@
   </footer>
 
   <!-- Floating Mobile WhatsApp & Call CTA -->
-  <div style="position:fixed;bottom:1.5rem;right:1.5rem;z-index:999;display:flex;flex-direction:column;gap:0.75rem;">
+  <div style="position:fixed;bottom:max(1.5rem, calc(1rem + env(safe-area-inset-bottom)));right:max(1.5rem, calc(1rem + env(safe-area-inset-right)));z-index:999;display:flex;flex-direction:column;gap:0.75rem;">
     <a href="https://wa.me/918860081994?text=Hello%20Travel%20Desk%20Godwin%20Hotels,%20I%20would%20like%20to%20book%20the%20Delhi%20Sightseeing%20Tour%20at%204500%20INR%20(8%20Hours%20/%2080%20KM)."
        target="_blank" rel="noopener noreferrer"
-       style="width:54px;height:54px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.6rem;box-shadow:0 6px 20px rgba(37,211,102,0.45);text-decoration:none;"
+       style="width:54px;height:54px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.6rem;box-shadow:0 6px 20px rgba(37,211,102,0.45);text-decoration:none;touch-action:manipulation;"
        title="Chat on WhatsApp to book ₹4,500 tour">
       <i class="fa-brands fa-whatsapp"></i>
     </a>
     <a href="tel:+918860081994"
-       style="width:54px;height:54px;border-radius:50%;background:var(--gold-500);color:#080f1d;display:flex;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:0 6px 20px rgba(200,146,46,0.45);text-decoration:none;"
+       style="width:54px;height:54px;border-radius:50%;background:var(--gold-500);color:#080f1d;display:flex;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:0 6px 20px rgba(200,146,46,0.45);text-decoration:none;touch-action:manipulation;"
        title="Call Tour Desk: +91 88600 81994">
       <i class="fa-solid fa-phone"></i>
     </a>
   </div>
 
-  <!-- Mobile Toggle Script -->
+  <!-- Main scripts -->
+  <script src="../assets/js/main.js"></script>
+
+  <!-- Quick Jump Pill Active State -->
   <script>
-    const mobileToggle = document.getElementById('mobileToggle');
-    const navLinks = document.getElementById('navLinks');
-    const menuIcon = document.getElementById('menuIcon');
-
-    if (mobileToggle && navLinks) {
-      mobileToggle.addEventListener('click', () => {
-        const isOpen = navLinks.classList.toggle('nav-open');
-        mobileToggle.setAttribute('aria-expanded', isOpen);
-        if (menuIcon) {
-          menuIcon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
-        }
-      });
-    }
-
     // Smooth active highlight for quick jump pills
     const pills = document.querySelectorAll('.jump-pill');
     window.addEventListener('scroll', () => {
@@ -1672,7 +1680,7 @@
           pill.classList.remove('active');
         }
       });
-    });
+    }, { passive: true });
   </script>
 
 </body>
