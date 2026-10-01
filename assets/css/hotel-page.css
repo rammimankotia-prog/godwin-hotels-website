@@ -69,6 +69,42 @@
   white-space: nowrap;
 }
 
+@media (max-width: 480px) {
+  .grand-site-header .nav-inner {
+    gap: 0.35rem;
+  }
+  .grand-site-header .brand-logo {
+    gap: 0.45rem;
+    min-width: 0;
+    max-width: calc(100% - 48px);
+  }
+  .grand-site-header .brand-crest {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    font-size: 1rem;
+  }
+  .grand-site-header .brand-name {
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .grand-site-header .brand-sub {
+    font-size: 0.52rem;
+    letter-spacing: 0.04em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 360px) {
+  .grand-site-header .brand-sub {
+    display: none;
+  }
+}
+
 .grand-site-header .nav-links {
   display: flex;
   align-items: center;
@@ -152,9 +188,10 @@
 
 @media (max-width: 1140px) {
   .grand-site-header .nav-links {
+    display: none;
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 0;
     width: min(340px, 88vw);
     height: 100dvh;
     height: 100vh;
@@ -165,13 +202,13 @@
     background: #080f1d !important;
     border-left: 1px solid rgba(217, 169, 74, 0.25);
     box-shadow: -10px 0 30px rgba(0,0,0,0.5);
-    transition: right 0.35s var(--ease-out);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     z-index: 1100;
   }
   .grand-site-header .nav-links.open {
-    right: 0;
+    display: flex;
+    animation: drawerSlideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
   .grand-site-header .nav-link {
     color: rgba(255, 255, 255, 0.9) !important;
@@ -183,6 +220,11 @@
   .grand-site-header .mobile-toggle {
     display: flex;
     z-index: 1200;
+  }
+}
+@media (max-width: 768px) {
+  .grand-site-header .nav-cta {
+    display: none !important;
   }
 }
 
@@ -266,6 +308,24 @@
 @media (max-width: 900px) {
   .gb-banner-grid {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 680px) {
+  .gb-compliance-banner {
+    padding: 1.4rem 1.1rem;
+    margin-top: -2.5rem;
+  }
+  .gb-badge-pill {
+    white-space: normal;
+    font-size: 0.68rem;
+    line-height: 1.35;
+    padding: 0.3rem 0.65rem;
+  }
+  .gb-title {
+    font-size: 1.35rem;
+  }
+  .gb-desc {
+    font-size: 0.84rem;
   }
 }
 
@@ -577,6 +637,11 @@
   transform: translateX(4px);
 }
 
+.amenity-item-info {
+  min-width: 0;
+  flex: 1;
+}
+
 .amenity-item-info h4 {
   font-size: 0.95rem;
   font-weight: 600;
@@ -606,6 +671,29 @@
   padding: 0.25rem 0.6rem;
   border-radius: 999px;
   margin-bottom: 0.35rem;
+}
+
+@media (max-width: 600px) {
+  .amenity-item-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 0.85rem 1rem;
+  }
+
+  .amenity-item-meta {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .amenity-distance-badge {
+    margin-bottom: 0;
+  }
 }
 
 .btn-directions {
@@ -638,6 +726,13 @@
   margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .spotlight-banner {
+    padding: 1.75rem 1.25rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .spotlight-banner::before {
@@ -840,6 +935,16 @@
   box-shadow: var(--shadow-sm);
   border: 1px solid rgba(0, 0, 0, 0.07);
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .comparison-wrap {
+    padding: 1rem 0.75rem;
+    margin-top: 2rem;
+  }
 }
 
 .comparison-table {
@@ -1163,4 +1268,122 @@
   color: var(--text-body);
   line-height: 1.6;
   font-style: italic;
+}
+
+/* ─── Grand Godwin & Godwin Deluxe Footer Polish ─── */
+.footer {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  padding-bottom: calc(5.5rem + env(safe-area-inset-bottom)) !important;
+}
+
+.footer .container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.hotel-footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  margin-bottom: 3.5rem;
+  width: 100%;
+}
+
+.hotel-footer-grid > div {
+  min-width: 0;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.footer ul li {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  line-height: 1.55;
+}
+
+.footer a {
+  word-break: break-word;
+}
+
+.hotel-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+.hotel-footer-bottom-copy {
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.hotel-footer-bottom-links {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .hotel-footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .hotel-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .hotel-footer-bottom {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 1rem !important;
+  }
+  .hotel-footer-bottom-copy {
+    text-align: center !important;
+  }
+  .hotel-footer-bottom-links {
+    justify-content: center !important;
+    gap: 0.85rem 1.25rem;
+  }
+}
+
+/* ─── Floating Action Bar Mobile Responsiveness ─── */
+@media (max-width: 580px) {
+  .floating-action-bar {
+    padding: 0.55rem 0.75rem;
+    padding-bottom: max(0.55rem, env(safe-area-inset-bottom));
+    padding-left: max(0.75rem, env(safe-area-inset-left));
+    padding-right: max(0.75rem, env(safe-area-inset-right));
+    gap: 0.4rem;
+  }
+  .floating-action-left {
+    display: none;
+  }
+  .floating-actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.4rem;
+  }
+  .btn-floating-wa, .btn-floating-call, .floating-actions .btn-gold {
+    flex: 1;
+    justify-content: center;
+    padding: 0.55rem 0.35rem;
+    font-size: 0.75rem;
+    text-align: center;
+    white-space: nowrap;
+    gap: 0.3rem;
+  }
 }

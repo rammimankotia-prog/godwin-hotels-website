@@ -759,7 +759,7 @@
         </div>
 
         <!-- Full Amenities Grid -->
-        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:1.5rem;margin-top:3.5rem;">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(min(100%, 260px), 1fr));gap:1.5rem;margin-top:3.5rem;">
           <div style="background:var(--ivory);padding:1.5rem;border-radius:var(--radius-md);display:flex;align-items:flex-start;gap:1rem;border:1px solid rgba(0,0,0,0.06);">
             <div style="color:var(--gold-600);font-size:1.4rem;margin-top:0.2rem;"><i class="fa-solid fa-train"></i></div>
             <div>
@@ -910,7 +910,7 @@
             </a>
           </div>
 
-          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:1.25rem;">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(min(100%, 260px), 1fr));gap:1.25rem;">
             
             <!-- Morning Landmarks -->
             <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(217,169,74,0.22);border-radius:var(--radius-md);padding:1.4rem;">
@@ -985,7 +985,7 @@
         <div style="background:var(--white);border-radius:var(--radius-lg);padding:2.5rem;box-shadow:var(--shadow-md);border:1px solid rgba(200,146,46,0.3);">
           
           <form id="grandReservationForm">
-            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:1.25rem;margin-bottom:1.5rem;">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(min(100%, 220px), 1fr));gap:1.25rem;margin-bottom:1.5rem;">
               
               <!-- Room Category Selector -->
               <div>
@@ -1034,7 +1034,7 @@
             </div>
 
             <!-- Guest Details -->
-            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:1.25rem;margin-bottom:1.5rem;">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(min(100%, 220px), 1fr));gap:1.25rem;margin-bottom:1.5rem;">
               <div>
                 <label style="display:block;font-size:0.8rem;font-weight:600;color:var(--navy-850);margin-bottom:0.4rem;">
                   <i class="fa-solid fa-user" style="color:var(--gold-600);"></i> Primary Guest Full Name *
@@ -1370,7 +1370,7 @@
   <!-- ─── FOOTER ─── -->
   <footer class="footer" style="background:#04080f;color:rgba(255,255,255,0.7);padding:4.5rem 0 2rem;border-top:1px solid rgba(217,169,74,0.3);">
     <div class="container">
-      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:2.5rem;margin-bottom:3.5rem;">
+      <div class="hotel-footer-grid">
         
         <!-- Brand Col -->
         <div>
@@ -1428,11 +1428,11 @@
 
       </div>
 
-      <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:0.78rem;">
-        <div>
+      <div class="hotel-footer-bottom">
+        <div class="hotel-footer-bottom-copy">
           &copy; 2026 Hotel Grand Godwin, New Delhi. All rights reserved. Managed by Godwin Hospitality Group.
         </div>
-        <div style="display:flex;gap:1rem;">
+        <div class="hotel-footer-bottom-links">
           <a href="../facts-sheet.json" target="_blank" style="color:var(--gold-400);">Facts Sheet JSON</a>
           <a href="../sitemap.xml" target="_blank" style="color:rgba(255,255,255,0.6);">Sitemap</a>
           <a href="https://maps.google.com/?cid=12644265435012379361" target="_blank" rel="noopener noreferrer" style="color:#8ab4f8;">Google Listing</a>
