@@ -88,7 +88,7 @@ npx serve .
 - **Direct Reservations**: +91 88600 81994 / +91 88600 81992
 - **Reception Front Desk**: +91 88600 81999 (Hotel Grand Godwin) / +91 88600 81992 (Hotel Godwin Deluxe)
 - **Landlines**: +91 -11- 45304480 (Hotel Grand Godwin) / +91 -11- 45094949 (Hotel Godwin Deluxe)
-- **Travel Desk & Transfers**: +91 88600 81994
+- **Travel Desk & Transfers**: +91 88600 81995 (Both Hotels)
 - **The Indian Grill Restaurant**: +91 88600 81991 (Call & WhatsApp)
 - **Central Email**: book@godwinhotels.com
 - **Hotel Grand Godwin Social**:

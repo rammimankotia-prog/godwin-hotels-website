@@ -6,6 +6,7 @@
     "centralReservationsPhone": "+91-88600-81994, +91-88600-81992",
     "centralReceptionPhone": "+91-88600-81999 (Grand Godwin), +91-88600-81992 (Godwin Deluxe)",
     "centralLandline": "+91-11-45304480 (Grand Godwin), +91-11-45094949 (Godwin Deluxe)",
+    "travelDeskPhone": "+91-88600-81995 (Airport Transfers & Delhi / Agra Tours - Call & WhatsApp)",
     "centralEmail": "book@godwinhotels.com",
     "restaurantPhone": "+91-88600-81991 (The Indian Grill - Call & WhatsApp)",
     "starRating": "Boutique Luxury Standards",
@@ -48,6 +49,7 @@
       "telephone": "+91-88600-81994, +91-88600-81992",
       "receptionPhone": "+91-88600-81999",
       "landline": "+91-11-45304480",
+      "travelDeskPhone": "+91-88600-81995",
       "email": "book@godwinhotels.com",
       "geo": {
         "latitude": 28.6437,
@@ -140,6 +142,7 @@
       "telephone": "+91-88600-81994, +91-88600-81992",
       "receptionPhone": "+91-88600-81992",
       "landline": "+91-11-45094949",
+      "travelDeskPhone": "+91-88600-81995",
       "restaurantPhone": "+91-88600-81991 (The Indian Grill)",
       "email": "book@godwinhotels.com",
       "geo": {
