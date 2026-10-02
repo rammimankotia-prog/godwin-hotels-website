@@ -253,7 +253,7 @@ if (!empty($config['send_guest_ack']) && !empty($guestEmail) && filter_var($gues
       </p>
       <div style="background:#f8fafc;border-radius:8px;padding:16px;margin:20px 0;font-size:13px;line-height:1.6;">
         <strong>Need immediate assistance?</strong><br>
-        &bull; 24/7 Reception Desk: <a href="tel:+918860081999" style="color:#c8922e;text-decoration:none;">+91 88600 81999</a><br>
+        &bull; 24/7 Reception Desk: <a href="tel:+918860081999" style="color:#c8922e;text-decoration:none;">+91 88600 81999</a> (Grand Godwin) / <a href="tel:+918860081992" style="color:#c8922e;text-decoration:none;">+91 88600 81992</a> (Godwin Deluxe)<br>
         &bull; WhatsApp Concierge: <a href="https://wa.me/918860081994" style="color:#25d366;text-decoration:none;">+91 88600 81994</a><br>
         &bull; Address: 8501-8502, Arakashan Road, Ram Nagar, Paharganj, New Delhi 110055 (500m from New Delhi Railway Station)
       </div>

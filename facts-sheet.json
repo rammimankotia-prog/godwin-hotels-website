@@ -4,13 +4,13 @@
     "legalName": "Godwin Hospitality Group",
     "website": "https://godwinhotels.com",
     "centralReservationsPhone": "+91-88600-81994, +91-88600-81992",
-    "centralReceptionPhone": "+91-88600-81999",
-    "centralLandline": "+91-11-45094949",
+    "centralReceptionPhone": "+91-88600-81999 (Grand Godwin), +91-88600-81992 (Godwin Deluxe)",
+    "centralLandline": "+91-11-45304480 (Grand Godwin), +91-11-45094949 (Godwin Deluxe)",
     "centralEmail": "book@godwinhotels.com",
     "restaurantPhone": "+91-88600-81991 (The Indian Grill - Call & WhatsApp)",
     "starRating": "Boutique Luxury Standards",
     "currencyAccepted": ["INR", "USD", "EUR", "AED"],
-    "lastUpdated": "2026-09-28",
+    "lastUpdated": "2026-10-02",
     "socialProfiles": {
       "x": "https://x.com/grand_godwin",
       "linkedin": "https://www.linkedin.com/company/hotel-grand-godwin/",
@@ -46,7 +46,8 @@
         "addressCountry": "IN"
       },
       "telephone": "+91-88600-81994, +91-88600-81992",
-      "landline": "+91-11-45094949",
+      "receptionPhone": "+91-88600-81999",
+      "landline": "+91-11-45304480",
       "email": "book@godwinhotels.com",
       "geo": {
         "latitude": 28.6437,
@@ -137,6 +138,7 @@
         "addressCountry": "IN"
       },
       "telephone": "+91-88600-81994, +91-88600-81992",
+      "receptionPhone": "+91-88600-81992",
       "landline": "+91-11-45094949",
       "restaurantPhone": "+91-88600-81991 (The Indian Grill)",
       "email": "book@godwinhotels.com",
