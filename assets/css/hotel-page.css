@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 76px;
+  height: 64px;
   gap: 1.25rem;
 }
 
@@ -128,6 +128,37 @@
 .grand-site-header .nav-link:hover,
 .grand-site-header .nav-link:focus {
   color: var(--gold-300) !important;
+}
+
+/* ─── Phone link in navbar ─── */
+.grand-site-header .nav-phone-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--gold-300);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid rgba(217,169,74,0.35);
+  border-radius: 999px;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.grand-site-header .nav-phone-link:hover {
+  background: rgba(217,169,74,0.1);
+  border-color: rgba(217,169,74,0.65);
+}
+@media (max-width: 900px) {
+  .grand-site-header .nav-phone-link .nav-phone-text {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .grand-site-header .nav-phone-link {
+    display: none;
+  }
 }
 
 .grand-site-header .nav-link i {
