@@ -176,7 +176,7 @@
     /* Cards grid */
     .sight-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
       gap: 2rem;
       margin-top: 2.5rem;
     }
@@ -248,11 +248,18 @@
     .sight-meta {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      flex-wrap: wrap;
+      gap: 0.4rem 1rem;
       font-size: 0.8rem;
       color: var(--gold-700);
       font-weight: 600;
       margin-bottom: 0.5rem;
+    }
+    .sight-meta span {
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
     }
     .sight-card-title {
       font-family: var(--font-display);
@@ -283,6 +290,10 @@
       display: flex;
       align-items: flex-start;
       gap: 0.5rem;
+    }
+    .sight-features-list li strong {
+      white-space: nowrap;
+      color: var(--navy-950);
     }
     .sight-features-list li i {
       color: var(--gold-600);
