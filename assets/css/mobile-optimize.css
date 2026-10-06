@@ -125,23 +125,50 @@ input::placeholder, textarea::placeholder {
   opacity: 1;
 }
 
-/* ── 3. ELIMINATE HORIZONTAL OVERFLOW & UNWANTED WOBBLE ── */
+/* ── 3. ELIMINATE HORIZONTAL OVERFLOW & SAFE BOX SIZING ── */
 html, body {
   overflow-x: hidden;
   max-width: 100vw;
   scroll-behavior: smooth;
 }
 
-.container, .container-wide, section, footer, header, main,
-.hero-content-wrap, .hotels-duo, .rooms-grid, .dining-grid,
-.facts-table-wrap, .quick-jump-nav {
-  max-width: 100% !important;
+*, *::before, *::after {
   box-sizing: border-box;
+}
+
+/* On Desktop: Maintain elegant, centered, boutique luxury container widths */
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.container-wide {
+  width: 100%;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.hero-content {
+  max-width: 760px;
 }
 
 /* ── 4. RESPONSIVE REFINEMENT: TABLETS & MOBILE (<= 768px) ── */
 
 @media (max-width: 768px) {
+
+  /* Mobile container width */
+  .container, .container-wide {
+    max-width: 100% !important;
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
 
   /* ── Reduce Bloated Blank Section Padding ("Faltu ki scrolling") ── */
   .about-section, .hotels-section, .rooms-section, .facts-section,
