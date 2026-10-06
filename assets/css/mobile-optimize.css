@@ -1,0 +1,581 @@
+/* ==========================================================================
+   GODWIN HOTELS — LUXURY MOBILE OPTIMIZATION & RESPONSIVE REFINEMENT 2026
+   Clean Alignment · Daylight & Darkness Legibility · Zero Bloat · Rapid Load
+   ========================================================================== */
+
+/* ── 1. GLOBAL ICON ALIGNMENT & PRECISION ── */
+i.fa-solid, i.fa-regular, i.fa-brands, i.fas, i.far, i.fab {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  vertical-align: middle !important;
+  line-height: 1 !important;
+  flex-shrink: 0 !important;
+}
+
+.nav-link i, .chip i, .room-meta-item i, .pillar-icon i, .dining-feat-icon i,
+.review-platform i, .social-btn i, .footer-contact-row .f-icon,
+.top-phone-badge i, .top-wa-badge i, .btn-gold i, .btn-wa i, .btn-outline i,
+.btn-ghost-gold i, .nav-cta i, .concierge-pill i, .faq-question-btn i, .hero-badge i,
+.hero-badge-pill i, .jump-pill i, .sight-tag i, .sight-distance i {
+  line-height: 1 !important;
+  vertical-align: middle !important;
+}
+
+/* Room meta icon consistency */
+.room-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  line-height: 1.3;
+}
+.room-meta-item i {
+  width: 15px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* Feature & pillar alignment */
+.pillar {
+  align-items: flex-start;
+}
+.pillar-icon {
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+.dining-feat {
+  align-items: flex-start;
+}
+.dining-feat-icon {
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+/* ── 2. DAYLIGHT & DARKNESS HIGH-CONTRAST LEGIBILITY ── */
+
+/* Light sections: Crisp, deep, readable under direct sunlight */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.about-section, .hotels-section, .facts-section,
+.reviews-section, .faq-section, #monuments, #sightseeing, #bazaars {
+  color: #1e293b;
+}
+
+.about-section .section-title,
+.hotels-section .section-title,
+.facts-section .section-title,
+.reviews-section .section-title,
+.faq-section .section-title,
+.hotel-card-name, .pillar-title, .facts-table th {
+  color: #080f1d !important;
+  font-weight: 700;
+}
+
+.about-body, .about-intro, .hotel-card-desc, .pillar-desc, .review-text,
+.sight-card-desc, .faq-answer-inner, .section-lead {
+  color: #1e293b !important;
+  line-height: 1.7;
+}
+
+/* Dark sections: Solid, glowing, anti-glare readability */
+.hero, .rooms-section, .dining-section, .rooftop-section,
+.grand-hero, .sight-hero, #agra-tour, #places, .site-footer {
+  color: #f1f5f9;
+}
+
+.hero-title, .grand-hero h1, .sight-hero .hero-title,
+.rooms-section .section-title, .dining-section .section-title,
+.rooftop-section .section-title, #agra-tour h2, #places h2,
+.room-name, .rooftop-card-name, .dining-feat-title {
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+.hero-desc, .grand-hero p, .sight-hero .hero-lead,
+.rooms-section .room-desc, .dining-section .dining-feat-desc,
+.rooftop-card-desc, #agra-tour p, #places p {
+  color: #f1f5f9 !important;
+  opacity: 0.95;
+  line-height: 1.7;
+}
+
+/* Vibrant gold accents with high contrast against dark & light backgrounds */
+.hero span, .section-eyebrow, .room-price-val, .hotel-price-value span:first-child,
+.sight-hero .hero-title span, .gb-badge-pill, .hero-badge-pill {
+  color: #d49b29;
+}
+.rooms-section .section-eyebrow, .dining-section .section-eyebrow,
+.grand-hero .hero-stat-val, .sight-hero .hero-badge-pill {
+  color: #f6cf70 !important;
+}
+
+/* Input & Form legibility in bright sunlight */
+input, select, textarea {
+  font-size: 16px !important; /* Prevents auto-zoom on iOS */
+  color: #0f172a !important;
+  background-color: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+}
+input::placeholder, textarea::placeholder {
+  color: #64748b !important;
+  opacity: 1;
+}
+
+/* ── 3. ELIMINATE HORIZONTAL OVERFLOW & UNWANTED WOBBLE ── */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  scroll-behavior: smooth;
+}
+
+.container, .container-wide, section, footer, header, main,
+.hero-content-wrap, .hotels-duo, .rooms-grid, .dining-grid,
+.facts-table-wrap, .quick-jump-nav {
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+
+/* ── 4. RESPONSIVE REFINEMENT: TABLETS & MOBILE (<= 768px) ── */
+
+@media (max-width: 768px) {
+
+  /* ── Reduce Bloated Blank Section Padding ("Faltu ki scrolling") ── */
+  .about-section, .hotels-section, .rooms-section, .facts-section,
+  .dining-section, .rooftop-section, .reviews-section, .faq-section,
+  .section, section[id] {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  /* Override inline padding:5rem on Delhi sightseeing sections */
+  section[style*="padding:5rem"],
+  section[style*="padding: 5rem"],
+  section[style*="padding:5.5rem"],
+  section[style*="padding: 5.5rem"] {
+    padding-top: 2.75rem !important;
+    padding-bottom: 2.75rem !important;
+  }
+
+  .section-header-center {
+    margin-bottom: 2rem !important;
+  }
+  .section-title {
+    font-size: clamp(1.8rem, 6vw, 2.5rem) !important;
+    line-height: 1.18 !important;
+    margin-bottom: 0.75rem !important;
+  }
+  .section-lead {
+    font-size: 0.95rem !important;
+    line-height: 1.65 !important;
+  }
+
+  /* ── Homepage Hero Mobile ── */
+  .hero {
+    min-height: auto !important;
+    padding-top: 4.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+  .hero-content-wrap {
+    padding: 2.5rem 0 2rem !important;
+    align-items: flex-end;
+  }
+  .hero-title {
+    font-size: clamp(2.1rem, 7.5vw, 3rem) !important;
+    line-height: 1.12 !important;
+    margin-bottom: 0.85rem !important;
+  }
+  .hero-desc {
+    font-size: 0.94rem !important;
+    line-height: 1.65 !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .hero-stats {
+    gap: 1.25rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .hero-stat-num {
+    font-size: 1.7rem !important;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.65rem !important;
+  }
+  .hero-actions .btn-gold,
+  .hero-actions .btn-outline {
+    width: 100% !important;
+    justify-content: center;
+    padding: 0.85rem 1.25rem !important;
+    font-size: 0.88rem !important;
+  }
+  .hero-scroll-hint {
+    display: none !important;
+  }
+
+  /* ── Quick Booking Bar ── */
+  .booking-bar-section {
+    padding: 0 1rem;
+    margin-top: -1.5rem !important;
+  }
+  .booking-bar-header {
+    padding: 0.65rem 1rem !important;
+  }
+  .booking-bar-title {
+    font-size: 0.85rem !important;
+  }
+  .booking-bar-body {
+    padding: 1rem !important;
+    gap: 0.75rem !important;
+  }
+  .booking-submit {
+    min-height: 48px;
+    font-size: 0.86rem !important;
+  }
+
+  /* ── Hotel Pages Hero: Remove Duplicate CTA clutter ── */
+  .grand-hero {
+    min-height: auto !important;
+    padding: 5rem 0 3rem !important;
+  }
+  .grand-hero h1 {
+    font-size: clamp(2rem, 6.5vw, 2.85rem) !important;
+    line-height: 1.15 !important;
+  }
+  
+  /* On mobile, the bottom floating bar provides instant WhatsApp & Call.
+     Keep primary Reserve CTA prominent, hide duplicate phone & WA in hero */
+  .grand-hero .hero-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    margin-bottom: 1.5rem !important;
+    gap: 0.65rem !important;
+  }
+  .grand-hero .hero-actions a.btn-ghost-gold,
+  .grand-hero .hero-actions a[href^="tel:"],
+  .grand-hero .hero-actions a[href*="wa.me"],
+  .grand-hero .hero-actions a.btn-outline,
+  .grand-hero .hero-actions a.btn-wa {
+    display: none !important;
+  }
+  .grand-hero .hero-actions .btn-gold {
+    display: inline-flex !important;
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0.85rem 1.5rem !important;
+    font-size: 0.9rem !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .hero-stats-strip {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.65rem !important;
+    padding: 0.85rem 1rem !important;
+    margin-top: 1.5rem !important;
+  }
+  .hero-stats-strip .hero-stat-item:last-child {
+    grid-column: span 2;
+  }
+
+  /* ── Delhi Sightseeing Hero & Badges Grid ── */
+  .sight-hero {
+    min-height: auto !important;
+    padding: 5rem 0 3rem !important;
+  }
+  .sight-hero .hero-title {
+    font-size: clamp(2rem, 7vw, 2.8rem) !important;
+    line-height: 1.12 !important;
+  }
+  .sight-hero .hero-lead {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* Badges: Transform 5 full-width stacked boxes into a neat 2-col grid */
+  .hero-badges-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .hero-badge-item {
+    font-size: 0.74rem !important;
+    padding: 0.45rem 0.65rem !important;
+    line-height: 1.35 !important;
+    border-radius: var(--radius-sm) !important;
+  }
+  .hero-badge-item:nth-child(5) {
+    grid-column: span 2 !important;
+  }
+  .hero-badge-item i {
+    font-size: 0.85rem !important;
+  }
+
+  /* Delhi sightseeing hero CTA buttons on mobile */
+  .sight-hero a.btn-gold,
+  .sight-hero a.btn-wa {
+    width: 100% !important;
+    justify-content: center;
+    padding: 0.8rem 1.25rem !important;
+    font-size: 0.88rem !important;
+  }
+
+  /* ── Delhi Sightseeing Cards Optimization ── */
+  .sight-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+    margin-top: 1.75rem !important;
+  }
+  .sight-card-media {
+    height: 190px !important;
+  }
+  .sight-card-body {
+    padding: 1.25rem !important;
+  }
+  .sight-card-title {
+    font-size: 1.25rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+  .sight-card-desc {
+    font-size: 0.86rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 0.85rem !important;
+  }
+  .sight-features-list {
+    margin-bottom: 1rem !important;
+    gap: 0.4rem !important;
+  }
+  .sight-features-list li {
+    font-size: 0.8rem !important;
+    line-height: 1.45 !important;
+  }
+
+  /* ── Quick Jump Pills Sub-nav ── */
+  .quick-jump-nav {
+    padding: 0.45rem 0 !important;
+  }
+  .quick-jump-inner {
+    gap: 0.45rem !important;
+    padding: 0 0.75rem !important;
+  }
+  .jump-pill {
+    padding: 0.35rem 0.75rem !important;
+    font-size: 0.75rem !important;
+  }
+  .jump-pill i {
+    font-size: 0.7rem !important;
+  }
+
+  /* ── Delhi Sightseeing Sleek Docked Bottom Bar (Replaces messy floaters) ── */
+  .sight-floating-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(8, 15, 29, 0.97);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid rgba(217, 169, 74, 0.35);
+    padding: 0.65rem 0.85rem;
+    padding-bottom: max(0.65rem, env(safe-area-inset-bottom));
+    padding-left: max(0.85rem, env(safe-area-inset-left));
+    padding-right: max(0.85rem, env(safe-area-inset-right));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.45rem;
+    z-index: 990;
+    box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.4);
+  }
+  .btn-sight-wa {
+    background: #25d366;
+    color: #fff;
+    padding: 0.6rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    text-decoration: none;
+    flex: 1.2;
+    touch-action: manipulation;
+  }
+  .btn-sight-call {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    padding: 0.6rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    text-decoration: none;
+    flex: 0.9;
+    touch-action: manipulation;
+  }
+  .btn-sight-book {
+    background: linear-gradient(135deg, #d9a94a 0%, #c8922e 100%);
+    color: #080f1d;
+    padding: 0.6rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    text-decoration: none;
+    flex: 1.1;
+    touch-action: manipulation;
+  }
+
+  /* Page bottom cushion so docked bar never covers content */
+  body.has-docked-bar main,
+  body.has-docked-bar .site-footer,
+  body.has-floating-bar main,
+  body.has-floating-bar .site-footer {
+    padding-bottom: 5.5rem !important;
+  }
+
+  /* ── Homepage Floating Concierge Fix (Sleek Circle, Never covers forms) ── */
+  .floating-concierge {
+    bottom: max(1.25rem, calc(0.75rem + env(safe-area-inset-bottom))) !important;
+    right: max(1rem, env(safe-area-inset-right)) !important;
+    z-index: 850 !important;
+  }
+  .concierge-pill {
+    width: 48px !important;
+    height: 48px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45) !important;
+  }
+  .concierge-pill span {
+    display: none !important;
+  }
+  .concierge-pill i {
+    font-size: 1.45rem !important;
+    margin: 0 !important;
+  }
+
+  /* ── Hotel Cards & Room Cards Mobile Polish ── */
+  .hotel-card-body {
+    padding: 1.35rem !important;
+  }
+  .hotel-card-name {
+    font-size: 1.4rem !important;
+  }
+  .hotel-amenity-chips {
+    gap: 0.35rem !important;
+    margin: 1rem 0 !important;
+  }
+  .chip {
+    font-size: 0.7rem !important;
+    padding: 0.28rem 0.65rem !important;
+  }
+  .hotel-card-footer {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.85rem !important;
+  }
+  .hotel-card-footer > div:last-child {
+    width: 100% !important;
+    display: flex !important;
+    gap: 0.5rem !important;
+  }
+  .hotel-card-footer > div:last-child button,
+  .hotel-card-footer > div:last-child a {
+    flex: 1 !important;
+    justify-content: center !important;
+  }
+
+  /* Room categories on hotel pages */
+  .room-cat-body {
+    padding: 1.25rem !important;
+  }
+  .room-cat-footer {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.75rem !important;
+  }
+  .room-cat-footer .btn-gold {
+    width: 100% !important;
+    justify-content: center;
+  }
+
+  /* ── Touch Target & Tactile Experience ── */
+  button, .btn-gold, .btn-wa, .btn-outline, .btn-ghost-gold,
+  .nav-cta, .booking-submit, .faq-question-btn {
+    min-height: 44px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* ── Footer Compactness ── */
+  .footer-main {
+    padding: 2.75rem 0 1.75rem !important;
+  }
+  .footer-bottom-links {
+    gap: 0.5rem 1rem !important;
+    justify-content: center !important;
+  }
+}
+
+/* ── 5. ULTRA-COMPACT MOBILE SCREENS (<= 480px) ── */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: clamp(1.85rem, 7vw, 2.35rem) !important;
+  }
+  .hero-stats {
+    gap: 1rem !important;
+  }
+  .hero-stat-num {
+    font-size: 1.45rem !important;
+  }
+  .hero-stat-label {
+    font-size: 0.62rem !important;
+  }
+
+  .section-eyebrow {
+    font-size: 0.65rem !important;
+    letter-spacing: 0.12em !important;
+  }
+  .section-title {
+    font-size: clamp(1.6rem, 5.5vw, 2.1rem) !important;
+  }
+
+  /* Itinerary & Tour Highlight Boxes */
+  .itinerary-highlights-box, .tour-package-hero {
+    padding: 1.15rem 1rem !important;
+    border-radius: var(--radius-md) !important;
+  }
+
+  .facts-table td, .facts-table th {
+    padding: 0.65rem 0.75rem !important;
+    font-size: 0.78rem !important;
+  }
+}
+
+/* ── 6. PRINT ACCESSIBILITY ── */
+@media print {
+  .floating-concierge, .floating-action-bar, .sight-floating-bar,
+  .mobile-toggle, .hero-nav, .booking-bar-section {
+    display: none !important;
+  }
+}
