@@ -76,7 +76,17 @@ body {
 }
 
 .about-body, .about-intro, .hotel-card-desc, .pillar-desc, .review-text,
-.sight-card-desc, .faq-answer-inner, .section-lead {
+.sight-card-desc, .faq-answer-inner {
+  color: #1e293b !important;
+  line-height: 1.7;
+}
+
+/* Light section leads specifically */
+.about-section .section-lead,
+.hotels-section .section-lead,
+.facts-section .section-lead,
+.reviews-section .section-lead,
+.faq-section .section-lead {
   color: #1e293b !important;
   line-height: 1.7;
 }
@@ -97,9 +107,15 @@ body {
 
 .hero-desc, .grand-hero p, .sight-hero .hero-lead,
 .rooms-section .room-desc, .dining-section .dining-feat-desc,
-.rooftop-card-desc, #agra-tour p, #places p {
-  color: #f1f5f9 !important;
-  opacity: 0.95;
+.rooftop-card-desc, #agra-tour p, #places p,
+.rooms-section .section-lead,
+.dining-section .section-lead,
+.rooftop-section .section-lead,
+.rooms-section p,
+.dining-section p,
+.rooftop-section p {
+  color: #e2e8f0 !important;
+  opacity: 1 !important;
   line-height: 1.7;
 }
 
