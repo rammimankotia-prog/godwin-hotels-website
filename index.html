@@ -154,6 +154,14 @@
         "containedInPlace": { "@id": "https://godwinhotels.com/#hotel-godwin-deluxe" },
         "description": "Multi-cuisine restaurant at Hotel Godwin Deluxe, New Delhi. Tandoori specialties, North Indian cuisine, Chinese and Continental favorites.",
         "url": "https://godwinhotels.com/#dining",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://godwinhotels.com/assets/images/the_indian_grill_dining_1024x682.jpg",
+          "contentUrl": "https://godwinhotels.com/assets/images/the_indian_grill_dining_1024x682.webp",
+          "width": 1024,
+          "height": 682,
+          "caption": "The Indian Grill Restaurant interior at Hotel Godwin Deluxe with modern banquette seating, ambient lighting, and live kitchen"
+        },
         "telephone": "+91-88600-81991",
         "address": {
           "@type": "PostalAddress",
@@ -826,9 +834,29 @@
 
         <div class="dining-grid">
           <div class="dining-image-frame reveal reveal-delay-1">
-            <img src="assets/images/dining.jpg"
-                 alt="The Indian Grill restaurant interior — candlelit tables, tandoor oven, and authentic North Indian cuisine"
-                 loading="lazy" width="900" height="675">
+            <picture>
+              <!-- Mobile viewports (<= 640px) -->
+              <source type="image/avif" media="(max-width: 640px)"
+                      srcset="assets/images/the_indian_grill_dining_wide_640x360.avif 1x, assets/images/the_indian_grill_dining_wide_1024x576.avif 2x">
+              <source type="image/webp" media="(max-width: 640px)"
+                      srcset="assets/images/the_indian_grill_dining_wide_640x360.webp 1x, assets/images/the_indian_grill_dining_wide_1024x576.webp 2x">
+              <source type="image/jpeg" media="(max-width: 640px)"
+                      srcset="assets/images/the_indian_grill_dining_wide_640x360.jpg 1x, assets/images/the_indian_grill_dining_wide_1024x576.jpg 2x">
+
+              <!-- Desktop & Tablet viewports (> 640px) -->
+              <source type="image/avif"
+                      srcset="assets/images/the_indian_grill_dining_1024x682.avif 1024w, assets/images/the_indian_grill_dining_640x427.avif 640w"
+                      sizes="(max-width: 1024px) 100vw, 600px">
+              <source type="image/webp"
+                      srcset="assets/images/the_indian_grill_dining_1024x682.webp 1024w, assets/images/the_indian_grill_dining_640x427.webp 640w"
+                      sizes="(max-width: 1024px) 100vw, 600px">
+              <img src="assets/images/dining.jpg"
+                   srcset="assets/images/the_indian_grill_dining_1024x682.jpg 1024w, assets/images/the_indian_grill_dining_640x427.jpg 640w"
+                   sizes="(max-width: 1024px) 100vw, 600px"
+                   alt="The Indian Grill restaurant interior at Hotel Godwin Deluxe — elegant banquette seating, ambient lighting, folded napkins, and open live kitchen"
+                   loading="lazy" decoding="async" width="1024" height="682"
+                   class="dining-img-cover">
+            </picture>
             <div class="dining-tag-overlay">
               <div class="dining-tag-title">The Indian Grill</div>
               <div class="dining-tag-sub">Multi-cuisine Restaurant &bull; Hotel Godwin Deluxe</div>

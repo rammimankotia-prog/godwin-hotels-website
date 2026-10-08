@@ -82,8 +82,11 @@
           },
           {
             "@type": "ImageObject",
-            "url": "https://godwinhotels.com/assets/images/dining.jpg",
-            "caption": "The Indian Grill Restaurant at Hotel Godwin Deluxe"
+            "url": "https://godwinhotels.com/assets/images/the_indian_grill_dining_1024x682.jpg",
+            "contentUrl": "https://godwinhotels.com/assets/images/the_indian_grill_dining_1024x682.webp",
+            "width": 1024,
+            "height": 682,
+            "caption": "The Indian Grill Restaurant interior at Hotel Godwin Deluxe with modern banquette seating, ambient lighting, and live kitchen"
           }
         ],
         "numberOfRooms": 26,
@@ -748,7 +751,19 @@
           <!-- The Indian Grill -->
           <div class="facility-card">
             <div class="facility-img-wrap">
-              <img src="../assets/images/dining.jpg" alt="The Indian Grill Multi-Cuisine Dining at Hotel Godwin Deluxe" loading="lazy">
+              <picture>
+                <source type="image/avif"
+                        srcset="../assets/images/the_indian_grill_dining_card_800x600.avif 800w, ../assets/images/the_indian_grill_dining_card_400x300.avif 400w"
+                        sizes="(max-width: 768px) 100vw, 380px">
+                <source type="image/webp"
+                        srcset="../assets/images/the_indian_grill_dining_card_800x600.webp 800w, ../assets/images/the_indian_grill_dining_card_400x300.webp 400w"
+                        sizes="(max-width: 768px) 100vw, 380px">
+                <img src="../assets/images/the_indian_grill_dining_card_800x600.jpg"
+                     srcset="../assets/images/the_indian_grill_dining_card_800x600.jpg 800w, ../assets/images/the_indian_grill_dining_card_400x300.jpg 400w"
+                     sizes="(max-width: 768px) 100vw, 380px"
+                     alt="The Indian Grill Multi-Cuisine Dining at Hotel Godwin Deluxe — signature dining experience"
+                     loading="lazy" decoding="async" width="800" height="600">
+              </picture>
               <span class="facility-badge"><i class="fa-solid fa-clock"></i> 7:30 AM – 11:00 PM</span>
             </div>
             <div class="facility-body">

@@ -1113,6 +1113,12 @@
   position: relative;
 }
 
+.facility-img-wrap picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .facility-img-wrap img {
   width: 100%;
   height: 100%;
