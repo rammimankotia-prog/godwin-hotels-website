@@ -82,8 +82,11 @@
           },
           {
             "@type": "ImageObject",
-            "url": "https://godwinhotels.com/assets/images/hero_lobby.jpg",
-            "caption": "Hotel Grand Godwin Lobby Lounge"
+            "url": "https://godwinhotels.com/assets/images/godwin_reception_lobby.jpg",
+            "caption": "Hotel Grand Godwin New Delhi luxury reception lobby with professional receptionist at illuminated marble front desk, crystal chandelier, golden Buddha statue, and palm plants",
+            "width": 1200,
+            "height": 896,
+            "representativeOfPage": true
           }
         ],
         "numberOfRooms": 39,
@@ -415,9 +418,18 @@
               </figcaption>
             </figure>
             <div class="about-img-accent">
-              <img src="../assets/images/hero_lobby.jpg"
-                   alt="Grand Godwin elegant reception and lobby lounge"
-                   loading="lazy" width="600" height="450" style="border-radius:var(--radius-md);">
+              <picture class="responsive-picture">
+                <source type="image/webp"
+                        srcset="../assets/images/godwin_reception_lobby_card_400x300.webp 400w,
+                                ../assets/images/godwin_reception_lobby_card_800x600.webp 800w"
+                        sizes="(max-width: 640px) 100vw, 600px">
+                <img src="../assets/images/godwin_reception_lobby_card_800x600.jpg"
+                     srcset="../assets/images/godwin_reception_lobby_card_400x300.jpg 400w,
+                             ../assets/images/godwin_reception_lobby_card_800x600.jpg 800w"
+                     sizes="(max-width: 640px) 100vw, 600px"
+                     alt="Hotel Grand Godwin New Delhi luxury reception lobby — professional receptionist at marble desk with golden Buddha and crystal chandelier"
+                     loading="lazy" decoding="async" width="600" height="450" style="border-radius:var(--radius-md);">
+              </picture>
             </div>
             <div class="about-badge" style="background:var(--navy-900);border:2px solid var(--gold-400);">
               <span class="about-badge-num" style="color:var(--gold-300);">39</span>

@@ -1674,3 +1674,85 @@ figure.semantic-figure figcaption {
 figure.semantic-figure figcaption strong {
   color: var(--navy-900, #0a1128);
 }
+
+/* ==========================================================================
+   GLOBAL RESPONSIVE IMAGE UTILITY SYSTEM
+   Performance-first, AI-ready, accessibility-optimised picture classes
+   ========================================================================== */
+
+/* ── Core Picture Container ── */
+.responsive-picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.responsive-picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 0.4s ease, transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+/* ── Aspect Ratio Wrappers ── */
+.img-ratio-16x9 { aspect-ratio: 16 / 9; }
+.img-ratio-4x3  { aspect-ratio: 4  / 3; }
+.img-ratio-1x1  { aspect-ratio: 1  / 1; }
+.img-ratio-3x2  { aspect-ratio: 3  / 2; }
+
+/* ── Border Radius Helpers ── */
+.img-rounded-sm { border-radius: var(--radius-sm, 6px);  overflow: hidden; }
+.img-rounded-md { border-radius: var(--radius-md, 14px); overflow: hidden; }
+.img-rounded-lg { border-radius: var(--radius-lg, 24px); overflow: hidden; }
+
+/* ── Fluid Cover ── */
+.img-fluid-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* ── Hover Zoom Effect ── */
+.img-hover-zoom:hover img,
+.img-hover-zoom:focus-within img {
+  transform: scale(1.04);
+}
+
+/* ── Shimmer Loading Placeholder ── */
+@keyframes img-shimmer {
+  0%   { background-position: -600px 0; }
+  100% { background-position:  600px 0; }
+}
+.img-loading-shimmer {
+  background: linear-gradient(90deg,
+    var(--ivory-100, #f4ede0) 25%,
+    var(--cream, #f0e8d8)     50%,
+    var(--ivory-100, #f4ede0) 75%);
+  background-size: 600px 100%;
+  animation: img-shimmer 1.4s infinite linear;
+}
+
+/* ── About Section Picture Fixes ── */
+.about-img-main picture img,
+.about-img-accent picture img {
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Responsive Breakpoints for Reception Image ── */
+@media (max-width: 480px) {
+  .responsive-picture.mobile-portrait { aspect-ratio: 4 / 3; }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .responsive-picture.tablet-landscape { aspect-ratio: 4 / 3; }
+}
+@media (min-width: 1025px) {
+  .responsive-picture.desktop-hero { aspect-ratio: 16 / 9; }
+}
+
