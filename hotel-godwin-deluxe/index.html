@@ -140,6 +140,14 @@
             "@type": "HotelRoom",
             "name": "Standard ( Ground Floor )",
             "description": "Accessible ground floor 180 sq.ft (17 sq.mt) room with double bed, modern marble shower, warmer, and quiet ambience.",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://godwinhotels.com/assets/images/deluxe_standard_1024x682.jpg",
+              "contentUrl": "https://godwinhotels.com/assets/images/deluxe_standard_1024x682.webp",
+              "width": 1024,
+              "height": 682,
+              "caption": "Standard Ground Floor Room at Hotel Godwin Deluxe featuring plush double bed, red runner, armchair, and tea amenities"
+            },
             "occupancy": { "@type": "QuantitativeValue", "maxValue": 2 }
           },
           {
@@ -556,7 +564,23 @@
           <article class="room-cat-card" id="cat-standard">
             <div class="room-cat-badge">Ground Floor Ease</div>
             <div class="room-cat-img-box">
-              <img src="../assets/images/deluxe_standard.jpg" alt="Standard Room Ground Floor at Hotel Godwin Deluxe" loading="lazy">
+              <picture>
+                <source type="image/avif" media="(max-width: 640px)"
+                        srcset="../assets/images/deluxe_standard_card_400x300.avif 1x, ../assets/images/deluxe_standard_card_800x600.avif 2x">
+                <source type="image/webp" media="(max-width: 640px)"
+                        srcset="../assets/images/deluxe_standard_card_400x300.webp 1x, ../assets/images/deluxe_standard_card_800x600.webp 2x">
+                <source type="image/avif"
+                        srcset="../assets/images/deluxe_standard_card_800x600.avif 800w, ../assets/images/deluxe_standard_card_400x300.avif 400w"
+                        sizes="(max-width: 768px) 100vw, 420px">
+                <source type="image/webp"
+                        srcset="../assets/images/deluxe_standard_card_800x600.webp 800w, ../assets/images/deluxe_standard_card_400x300.webp 400w"
+                        sizes="(max-width: 768px) 100vw, 420px">
+                <img src="../assets/images/deluxe_standard.jpg"
+                     srcset="../assets/images/deluxe_standard_card_800x600.jpg 800w, ../assets/images/deluxe_standard_card_400x300.jpg 400w"
+                     sizes="(max-width: 768px) 100vw, 420px"
+                     alt="Standard Ground Floor Room at Hotel Godwin Deluxe — plush double bed, red runner, armchair, and tea amenities"
+                     loading="lazy" decoding="async" width="800" height="600">
+              </picture>
             </div>
             <div class="room-cat-body">
               <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.25rem;">
