@@ -146,6 +146,14 @@
             "@type": "HotelRoom",
             "name": "Premier King Room with Air-Purifier",
             "description": "Designer 250 sq.ft (23 sq.mt) room with double bed, soundproof windows, air purifier, rain shower, and minibar.",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://godwinhotels.com/assets/images/deluxe_premier_king_1024x682.jpg",
+              "contentUrl": "https://godwinhotels.com/assets/images/deluxe_premier_king_1024x682.webp",
+              "width": 1024,
+              "height": 682,
+              "caption": "Premier King Room with Air-Purifier at Hotel Godwin Deluxe featuring plush king bed, hardwood flooring, and architectural cove ceiling"
+            },
             "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 }
           },
           {
@@ -419,9 +427,19 @@
               </figcaption>
             </figure>
             <div class="about-img-accent">
-              <img src="../assets/images/deluxe_premier_king.jpg"
-                   alt="Contemporary Premier King Room at Hotel Godwin Deluxe"
-                   loading="lazy" width="600" height="450" style="border-radius:var(--radius-md);">
+              <picture>
+                <source type="image/avif"
+                        srcset="../assets/images/deluxe_premier_king_card_400x300.avif 400w, ../assets/images/deluxe_premier_king_card_800x600.avif 800w"
+                        sizes="(max-width: 768px) 160px, 280px">
+                <source type="image/webp"
+                        srcset="../assets/images/deluxe_premier_king_card_400x300.webp 400w, ../assets/images/deluxe_premier_king_card_800x600.webp 800w"
+                        sizes="(max-width: 768px) 160px, 280px">
+                <img src="../assets/images/deluxe_premier_king.jpg"
+                     srcset="../assets/images/deluxe_premier_king_card_800x600.jpg 800w, ../assets/images/deluxe_premier_king_card_400x300.jpg 400w"
+                     sizes="(max-width: 768px) 160px, 280px"
+                     alt="Contemporary Premier King Room at Hotel Godwin Deluxe"
+                     loading="lazy" decoding="async" width="600" height="450" style="border-radius:var(--radius-md);">
+              </picture>
             </div>
             <div class="about-badge" style="background:var(--navy-900);border:2px solid var(--gold-400);">
               <span class="about-badge-num" style="color:var(--gold-300);">26</span>
@@ -561,7 +579,23 @@
           <article class="room-cat-card" id="cat-premier-king">
             <div class="room-cat-badge" style="background:#1b263b;">Guest Favorite</div>
             <div class="room-cat-img-box">
-              <img src="../assets/images/deluxe_premier_king.jpg" alt="Premier King Room with Air-Purifier at Hotel Godwin Deluxe" loading="lazy">
+              <picture>
+                <source type="image/avif" media="(max-width: 640px)"
+                        srcset="../assets/images/deluxe_premier_king_card_400x300.avif 1x, ../assets/images/deluxe_premier_king_card_800x600.avif 2x">
+                <source type="image/webp" media="(max-width: 640px)"
+                        srcset="../assets/images/deluxe_premier_king_card_400x300.webp 1x, ../assets/images/deluxe_premier_king_card_800x600.webp 2x">
+                <source type="image/avif"
+                        srcset="../assets/images/deluxe_premier_king_card_800x600.avif 800w, ../assets/images/deluxe_premier_king_card_400x300.avif 400w"
+                        sizes="(max-width: 768px) 100vw, 420px">
+                <source type="image/webp"
+                        srcset="../assets/images/deluxe_premier_king_card_800x600.webp 800w, ../assets/images/deluxe_premier_king_card_400x300.webp 400w"
+                        sizes="(max-width: 768px) 100vw, 420px">
+                <img src="../assets/images/deluxe_premier_king.jpg"
+                     srcset="../assets/images/deluxe_premier_king_card_800x600.jpg 800w, ../assets/images/deluxe_premier_king_card_400x300.jpg 400w"
+                     sizes="(max-width: 768px) 100vw, 420px"
+                     alt="Premier King Room with Air-Purifier at Hotel Godwin Deluxe — master king bed, wooden architectural canopy, and warm ambient lighting"
+                     loading="lazy" decoding="async" width="800" height="600">
+              </picture>
             </div>
             <div class="room-cat-body">
               <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.25rem;">
