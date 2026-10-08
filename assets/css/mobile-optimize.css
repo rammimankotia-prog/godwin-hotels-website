@@ -71,10 +71,18 @@ body {
 .facts-section .section-title,
 .reviews-section .section-title,
 .faq-section .section-title,
-.hotel-card-name, .pillar-title, .facts-table th {
+.hotel-card-name, .pillar-title, .facts-table tbody th {
   color: #080f1d !important;
   font-weight: 700;
   text-shadow: none !important;
+}
+
+.facts-table thead th {
+  color: #efdba5 !important;
+}
+
+.facts-table thead th:first-child {
+  color: rgba(255, 255, 255, 0.85) !important;
 }
 
 .about-body, .about-intro, .hotel-card-desc, .pillar-desc, .review-text,
