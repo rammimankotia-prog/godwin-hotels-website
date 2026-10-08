@@ -39,6 +39,8 @@
       "name": "Hotel Grand Godwin, New Delhi",
       "totalRooms": 39,
       "url": "https://godwinhotels.com/hotel-grand-godwin/",
+      "image": "https://godwinhotels.com/assets/images/hotel_grand_godwin_exterior.jpg",
+      "exteriorImage": "https://godwinhotels.com/assets/images/hotel_grand_godwin_exterior.jpg",
       "address": {
         "streetAddress": "8502/41, Arakashan Road, Ram Nagar, Paharganj",
         "addressLocality": "Central Delhi, New Delhi",

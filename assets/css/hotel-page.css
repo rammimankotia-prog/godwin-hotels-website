@@ -266,10 +266,35 @@
   display: flex;
   align-items: center;
   padding: 8rem 0 5rem;
-  background: linear-gradient(135deg, rgba(8, 15, 29, 0.94) 0%, rgba(13, 24, 41, 0.85) 50%, rgba(4, 8, 15, 0.96) 100%),
-              url('../images/hero_lobby.jpg') center/cover no-repeat;
+  background: linear-gradient(135deg, rgba(8, 15, 29, 0.92) 0%, rgba(13, 24, 41, 0.84) 50%, rgba(4, 8, 15, 0.95) 100%),
+              url('../images/hotel_grand_godwin_exterior_16x9_1200.jpg') center/cover no-repeat;
+  background-image: linear-gradient(135deg, rgba(8, 15, 29, 0.92) 0%, rgba(13, 24, 41, 0.84) 50%, rgba(4, 8, 15, 0.95) 100%),
+                    -webkit-image-set(
+                      url('../images/hotel_grand_godwin_exterior_16x9_1200.avif') type('image/avif'),
+                      url('../images/hotel_grand_godwin_exterior_16x9_1200.webp') type('image/webp'),
+                      url('../images/hotel_grand_godwin_exterior_16x9_1200.jpg') type('image/jpeg')
+                    );
+  background-image: linear-gradient(135deg, rgba(8, 15, 29, 0.92) 0%, rgba(13, 24, 41, 0.84) 50%, rgba(4, 8, 15, 0.95) 100%),
+                    image-set(
+                      url('../images/hotel_grand_godwin_exterior_16x9_1200.avif') type('image/avif'),
+                      url('../images/hotel_grand_godwin_exterior_16x9_1200.webp') type('image/webp'),
+                      url('../images/hotel_grand_godwin_exterior_16x9_1200.jpg') type('image/jpeg')
+                    );
   color: var(--white);
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .grand-hero {
+    background: linear-gradient(135deg, rgba(8, 15, 29, 0.93) 0%, rgba(13, 24, 41, 0.86) 60%, rgba(4, 8, 15, 0.96) 100%),
+                url('../images/hotel_grand_godwin_exterior_16x9_800.jpg') center/cover no-repeat;
+    background-image: linear-gradient(135deg, rgba(8, 15, 29, 0.93) 0%, rgba(13, 24, 41, 0.86) 60%, rgba(4, 8, 15, 0.96) 100%),
+                      image-set(
+                        url('../images/hotel_grand_godwin_exterior_16x9_800.avif') type('image/avif'),
+                        url('../images/hotel_grand_godwin_exterior_16x9_800.webp') type('image/webp'),
+                        url('../images/hotel_grand_godwin_exterior_16x9_800.jpg') type('image/jpeg')
+                      );
+  }
 }
 
 .grand-hero::after {

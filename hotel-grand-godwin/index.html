@@ -26,22 +26,25 @@
   <meta property="og:description" content="Stay at Hotel Grand Godwin on Arakashan Road, Paharganj. 39 thoughtfully appointed rooms, 5-minute walk to New Delhi Railway Station, Coffee Brownie café (open 8:00 AM – 10:00 PM), rooftop terrace & warm hospitality.">
   <meta property="og:type" content="hotel">
   <meta property="og:url" content="https://godwinhotels.com/hotel-grand-godwin/">
-  <meta property="og:image" content="https://godwinhotels.com/assets/images/hero_lobby.jpg">
+  <meta property="og:image" content="https://godwinhotels.com/assets/images/hotel_grand_godwin_exterior.jpg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="682">
   <meta property="og:site_name" content="Hotel Grand Godwin, New Delhi">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Hotel Grand Godwin New Delhi | 39 Boutique Rooms">
   <meta name="twitter:description" content="39 Boutique Rooms & Suites in Central Delhi, 500m to NDLS Railway Station. Coffee Brownie cafe (8 AM – 10 PM), elevator, room warmers, and rooftop views.">
-  <meta name="twitter:image" content="https://godwinhotels.com/assets/images/hero_lobby.jpg">
+  <meta name="twitter:image" content="https://godwinhotels.com/assets/images/hotel_grand_godwin_exterior.jpg">
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
 
-  <!-- Preconnect -->
+  <!-- Preconnect & Preload High-Priority Hero Asset -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preload" as="image" href="../assets/images/hotel_grand_godwin_exterior_16x9_1200.webp" type="image/webp" fetchpriority="high">
 
   <!-- FontAwesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -63,6 +66,26 @@
         "name": "Hotel Grand Godwin, New Delhi",
         "description": "Premier 39-room boutique hotel located at 8502/41 Arakashan Road, Ram Nagar, Paharganj, New Delhi. Situated 500 meters (5 minutes walk) from New Delhi Railway Station and 1.2 km from Connaught Place. Features Deluxe Rooms, Executive Rooms, Executive Twin Rooms, and Studio Rooms with Air-Purifier, Coffee Brownie café (open 8:00 AM – 10:00 PM), rooftop terrace lounge, elevator, and fully air-conditioned rooms with centralized warmer.",
         "url": "https://godwinhotels.com/hotel-grand-godwin/",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://godwinhotels.com/assets/images/hotel_grand_godwin_exterior.jpg",
+          "contentUrl": "https://godwinhotels.com/assets/images/hotel_grand_godwin_exterior.webp",
+          "width": 1024,
+          "height": 682,
+          "caption": "Hotel Grand Godwin exterior facade with illuminated neon signage, architectural glass elevator shaft, and Cafe Brownie in Paharganj New Delhi"
+        },
+        "photo": [
+          {
+            "@type": "ImageObject",
+            "url": "https://godwinhotels.com/assets/images/hotel_grand_godwin_exterior.jpg",
+            "caption": "Hotel Grand Godwin exterior facade at dusk"
+          },
+          {
+            "@type": "ImageObject",
+            "url": "https://godwinhotels.com/assets/images/hero_lobby.jpg",
+            "caption": "Hotel Grand Godwin Lobby Lounge"
+          }
+        ],
         "numberOfRooms": 39,
         "telephone": ["+91-88600-81994", "+91-88600-81999", "+91-11-45304480"],
         "email": "book@godwinhotels.com",
@@ -373,14 +396,27 @@
 
           <!-- Image Cluster -->
           <div class="about-image-cluster reveal">
-            <div class="about-img-main">
-              <img src="../assets/images/hero_lobby.jpg"
-                   alt="Elegant lobby and reception of Hotel Grand Godwin, New Delhi"
-                   loading="lazy" width="800" height="600" style="border-radius:var(--radius-lg);">
-            </div>
+            <figure class="about-img-main semantic-figure" style="margin:0;">
+              <picture class="responsive-picture ratio-4-3 img-rounded-lg">
+                <source type="image/avif"
+                        srcset="../assets/images/hotel_grand_godwin_exterior_4x3_800.avif 800w, ../assets/images/hotel_grand_godwin_exterior_4x3_480.avif 480w"
+                        sizes="(max-width: 768px) 100vw, 550px">
+                <source type="image/webp"
+                        srcset="../assets/images/hotel_grand_godwin_exterior_4x3_800.webp 800w, ../assets/images/hotel_grand_godwin_exterior_4x3_480.webp 480w"
+                        sizes="(max-width: 768px) 100vw, 550px">
+                <img src="../assets/images/hotel_grand_godwin_exterior_4x3_800.jpg"
+                     srcset="../assets/images/hotel_grand_godwin_exterior_4x3_800.jpg 800w, ../assets/images/hotel_grand_godwin_exterior_4x3_480.jpg 480w"
+                     sizes="(max-width: 768px) 100vw, 550px"
+                     alt="Hotel Grand Godwin building exterior facade illuminated at dusk with Cafe Brownie at 8502/41 Arakashan Road, Paharganj, New Delhi"
+                     loading="lazy" decoding="async" width="800" height="600" class="img-fluid-cover">
+              </picture>
+              <figcaption style="font-size:0.75rem;color:var(--text-muted);margin-top:0.4rem;display:flex;align-items:center;gap:0.4rem;">
+                <i class="fa-solid fa-camera" style="color:var(--gold-500);"></i> <strong>Official Facade:</strong> Hotel Grand Godwin &amp; Café Brownie at dusk
+              </figcaption>
+            </figure>
             <div class="about-img-accent">
-              <img src="../assets/images/room_grand.jpg"
-                   alt="Grand Room interior at Hotel Grand Godwin"
+              <img src="../assets/images/hero_lobby.jpg"
+                   alt="Grand Godwin elegant reception and lobby lounge"
                    loading="lazy" width="600" height="450" style="border-radius:var(--radius-md);">
             </div>
             <div class="about-badge" style="background:var(--navy-900);border:2px solid var(--gold-400);">

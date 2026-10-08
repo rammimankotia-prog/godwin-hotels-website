@@ -78,6 +78,14 @@
         "parentOrganization": { "@id": "https://godwinhotels.com/#organization" },
         "description": "Premier boutique hotel located at 8502/41 Arakashan Road, Paharganj, New Delhi. Situated 500 meters from New Delhi Railway Station and 1.2 km from Connaught Place. Features Coffee Brownie café, rooftop terrace, elevator, fully air-conditioned rooms with centralized warmer.",
         "url": "https://godwinhotels.com/hotel-grand-godwin/",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://godwinhotels.com/assets/images/hotel_grand_godwin_exterior.jpg",
+          "contentUrl": "https://godwinhotels.com/assets/images/hotel_grand_godwin_exterior.webp",
+          "width": 1024,
+          "height": 682,
+          "caption": "Hotel Grand Godwin exterior facade with illuminated neon signage and Cafe Brownie in Paharganj New Delhi"
+        },
         "numberOfRooms": 39,
         "sameAs": [
           "https://x.com/grand_godwin",
@@ -482,9 +490,19 @@
           <!-- Hotel Grand Godwin -->
           <article class="hotel-card reveal" data-hotel="grand-godwin">
             <div class="hotel-card-image">
-              <img src="assets/images/room_grand.jpg"
-                   alt="Warm classic room at Hotel Grand Godwin, New Delhi — king bed with Indian art and city view"
-                   loading="lazy" width="800" height="500">
+              <picture class="responsive-picture ratio-4-3">
+                <source type="image/avif"
+                        srcset="assets/images/hotel_grand_godwin_exterior_4x3_800.avif 800w, assets/images/hotel_grand_godwin_exterior_4x3_480.avif 480w"
+                        sizes="(max-width: 768px) 100vw, 560px">
+                <source type="image/webp"
+                        srcset="assets/images/hotel_grand_godwin_exterior_4x3_800.webp 800w, assets/images/hotel_grand_godwin_exterior_4x3_480.webp 480w"
+                        sizes="(max-width: 768px) 100vw, 560px">
+                <img src="assets/images/hotel_grand_godwin_exterior_4x3_800.jpg"
+                     srcset="assets/images/hotel_grand_godwin_exterior_4x3_800.jpg 800w, assets/images/hotel_grand_godwin_exterior_4x3_480.jpg 480w"
+                     sizes="(max-width: 768px) 100vw, 560px"
+                     alt="Hotel Grand Godwin building exterior facade illuminated at dusk with neon sign, Cafe Brownie, and entrance in Paharganj New Delhi"
+                     loading="lazy" decoding="async" width="800" height="600" class="img-fluid-cover">
+              </picture>
               <div class="hotel-img-overlay"></div>
               <div class="hotel-img-tags">
                 <div class="hotel-location-pill"><i class="fa-solid fa-location-dot"></i> 8502/41 Arakashan Road, Paharganj, New Delhi - 110055</div>
