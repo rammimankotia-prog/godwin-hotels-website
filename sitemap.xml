@@ -1,67 +1,201 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <!-- ─── PRIMARY CANONICAL PAGES ─── -->
   <url>
     <loc>https://godwinhotels.com/</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/hotel_grand_godwin_exterior.jpg</image:loc>
+      <image:title>Hotel Grand Godwin New Delhi</image:title>
+      <image:caption>Hotel Grand Godwin - 39 Boutique Rooms near New Delhi Railway Station</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/hotel_godwin_deluxe_exterior_16x9_800.jpg</image:loc>
+      <image:title>Hotel Godwin Deluxe New Delhi</image:title>
+      <image:caption>Hotel Godwin Deluxe - 26 Boutique Rooms with HEPA Air-Purifiers in Paharganj</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/the_indian_grill_dining_card_800x600.jpg</image:loc>
+      <image:title>The Indian Grill Multi-Cuisine Restaurant</image:title>
+      <image:caption>Authentic North Indian and multi-cuisine restaurant at Godwin Hotels</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/hero_rooftop.jpg</image:loc>
+      <image:title>Rooftop Terrace Lounge Godwin Hotels</image:title>
+      <image:caption>Panoramic rooftop terrace cafe and lounge overlooking Delhi skyline</image:caption>
+    </image:image>
   </url>
+
   <url>
     <loc>https://godwinhotels.com/hotel-grand-godwin/</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/hotel_grand_godwin_exterior.jpg</image:loc>
+      <image:title>Hotel Grand Godwin Boutique Facade</image:title>
+      <image:caption>Exterior facade of Hotel Grand Godwin, Paharganj, New Delhi</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/room_deluxe.jpg</image:loc>
+      <image:title>Deluxe Room Hotel Grand Godwin</image:title>
+      <image:caption>Deluxe Room with premium bedding and modern amenities at Hotel Grand Godwin</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/room_executive.jpg</image:loc>
+      <image:title>Executive Room Hotel Grand Godwin</image:title>
+      <image:caption>Executive Room with king bed, workspace and high-speed Wi-Fi</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/room_twin.jpg</image:loc>
+      <image:title>Executive Twin Room Hotel Grand Godwin</image:title>
+      <image:caption>Executive Twin Room featuring twin ergonomic posturepedic beds</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/room_studio.jpg</image:loc>
+      <image:title>Studio Room Hotel Grand Godwin</image:title>
+      <image:caption>Spacious Studio Room with living lounge corner at Hotel Grand Godwin</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/cafe_brownie.jpg</image:loc>
+      <image:title>Coffee Brownie Cafe</image:title>
+      <image:caption>On-site coffee shop and patisserie at Hotel Grand Godwin</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/the_indian_grill_dining_card_800x600.jpg</image:loc>
+      <image:title>The Indian Grill Restaurant</image:title>
+      <image:caption>The Indian Grill specialty restaurant at Hotel Grand Godwin</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/hero_rooftop.jpg</image:loc>
+      <image:title>Rooftop Terrace Lounge</image:title>
+      <image:caption>Rooftop terrace lounge and relaxation zone at Hotel Grand Godwin</image:caption>
+    </image:image>
   </url>
+
   <url>
     <loc>https://godwinhotels.com/hotel-godwin-deluxe/</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/deluxe_premier_king.jpg</image:loc>
+      <image:title>Premier King Room with Air-Purifier</image:title>
+      <image:caption>Premier King Room with dedicated medical-grade HEPA Air-Purifier at Hotel Godwin Deluxe</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/deluxe_premier_twin.jpg</image:loc>
+      <image:title>Premier Twin Bed Room with Air-Purifier</image:title>
+      <image:caption>Premier Twin Bed Room with HEPA Air-Purifier and soundproof glazing at Hotel Godwin Deluxe</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/deluxe_premier_studio.jpg</image:loc>
+      <image:title>Premier Studio King Room with Air-Purifier</image:title>
+      <image:caption>Spacious Premier Studio King Room with HEPA Air-Purifier and living space at Hotel Godwin Deluxe</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/deluxe_standard.jpg</image:loc>
+      <image:title>Standard Ground Floor Room</image:title>
+      <image:caption>Standard Room on Ground Floor at Hotel Godwin Deluxe</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/the_indian_grill_deluxe_800x600.jpg</image:loc>
+      <image:title>The Indian Grill Restaurant Godwin Deluxe</image:title>
+      <image:caption>The Indian Grill multi-cuisine fine dining restaurant at Hotel Godwin Deluxe</image:caption>
+    </image:image>
   </url>
+
   <url>
     <loc>https://godwinhotels.com/delhi-sightseeing/</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/delhi_hero.jpg</image:loc>
+      <image:title>Delhi Sightseeing Tour India Gate</image:title>
+      <image:caption>Full Day Private Delhi Sightseeing Tour covering India Gate and Kartavya Path</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/red_fort.jpg</image:loc>
+      <image:title>Red Fort Lal Qila Old Delhi</image:title>
+      <image:caption>UNESCO World Heritage Red Fort Mughal monument in Old Delhi</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/qutub_minar.jpg</image:loc>
+      <image:title>Qutub Minar Complex Delhi</image:title>
+      <image:caption>UNESCO World Heritage Qutub Minar historic victory tower</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/humayun_tomb.jpg</image:loc>
+      <image:title>Humayun's Tomb Mughal Monument</image:title>
+      <image:caption>UNESCO World Heritage Humayun's Tomb red sandstone and marble mausoleum</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/lotus_temple.jpg</image:loc>
+      <image:title>Lotus Temple Bahai House of Worship</image:title>
+      <image:caption>Iconic white marble Lotus Temple Bahai place of worship</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/chandni_chowk.jpg</image:loc>
+      <image:title>Chandni Chowk and Spice Market Old Delhi</image:title>
+      <image:caption>Historic Chandni Chowk bazaar and Asia's largest spice market Khari Baoli</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/taj_mahal.jpg</image:loc>
+      <image:title>Taj Mahal Agra Day Excursion</image:title>
+      <image:caption>Private Same Day Agra &amp; Taj Mahal Tour by Yamuna Expressway</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/agra_fort.jpg</image:loc>
+      <image:title>Agra Fort UNESCO World Heritage Site</image:title>
+      <image:caption>Majestic red sandstone Agra Fort imperial palace in Agra</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://godwinhotels.com/assets/images/tour_cab.jpg</image:loc>
+      <image:title>Private Sightseeing Tour Cab and Chauffeur</image:title>
+      <image:caption>Air-conditioned private sedan and professional chauffeur for Delhi and Agra tours</image:caption>
+    </image:image>
   </url>
 
   <!-- ─── DELHI & AGRA SIGHTSEEING TOURS ─── -->
   <url>
     <loc>https://godwinhotels.com/delhi-sightseeing/#day-tour</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/delhi-sightseeing/#agra-tour</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/delhi-sightseeing/#monuments</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/delhi-sightseeing/#bazaars</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/delhi-sightseeing/#agra-itinerary</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/delhi-sightseeing/#faq</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -69,37 +203,37 @@
   <!-- ─── HOTEL GRAND GODWIN SECTIONS ─── -->
   <url>
     <loc>https://godwinhotels.com/hotel-grand-godwin/#rooms-39</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/hotel-grand-godwin/#amenities</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/hotel-grand-godwin/#amenity-map</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/hotel-grand-godwin/#booking</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/hotel-grand-godwin/#faq</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/hotel-grand-godwin/#contact</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -107,37 +241,37 @@
   <!-- ─── HOTEL GODWIN DELUXE SECTIONS ─── -->
   <url>
     <loc>https://godwinhotels.com/hotel-godwin-deluxe/#rooms-26</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/hotel-godwin-deluxe/#amenities</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/hotel-godwin-deluxe/#amenity-map</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/hotel-godwin-deluxe/#booking</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/hotel-godwin-deluxe/#faq</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/hotel-godwin-deluxe/#contact</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -145,43 +279,43 @@
   <!-- ─── MAIN DOMAIN / GROUP SECTIONS ─── -->
   <url>
     <loc>https://godwinhotels.com/#destinations</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/#rooms</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/#dining</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/#rooftop</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/#facts</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/#faq</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://godwinhotels.com/#contact</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -189,9 +323,9 @@
   <!-- ─── DATA & AI ENGINE RESOURCE ─── -->
   <url>
     <loc>https://godwinhotels.com/facts-sheet.json</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.80</priority>
   </url>
 
 </urlset>
