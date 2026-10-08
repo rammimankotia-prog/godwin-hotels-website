@@ -60,19 +60,21 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-.about-section, .hotels-section, .facts-section,
+.about-section, .hotels-section, .rooftop-section, .facts-section,
 .reviews-section, .faq-section, #monuments, #sightseeing, #bazaars {
   color: #1e293b;
 }
 
 .about-section .section-title,
 .hotels-section .section-title,
+.rooftop-section .section-title,
 .facts-section .section-title,
 .reviews-section .section-title,
 .faq-section .section-title,
 .hotel-card-name, .pillar-title, .facts-table th {
   color: #080f1d !important;
   font-weight: 700;
+  text-shadow: none !important;
 }
 
 .about-body, .about-intro, .hotel-card-desc, .pillar-desc, .review-text,
@@ -84,6 +86,7 @@ body {
 /* Light section leads specifically */
 .about-section .section-lead,
 .hotels-section .section-lead,
+.rooftop-section .section-lead,
 .facts-section .section-lead,
 .reviews-section .section-lead,
 .faq-section .section-lead {
@@ -91,15 +94,19 @@ body {
   line-height: 1.7;
 }
 
+.rooftop-section .section-eyebrow {
+  color: #b45309 !important;
+}
+
 /* Dark sections: Solid, glowing, anti-glare readability */
-.hero, .rooms-section, .dining-section, .rooftop-section,
+.hero, .rooms-section, .dining-section,
 .grand-hero, .sight-hero, #agra-tour, #places, .site-footer {
   color: #f1f5f9;
 }
 
 .hero-title, .grand-hero h1, .sight-hero .hero-title,
 .rooms-section .section-title, .dining-section .section-title,
-.rooftop-section .section-title, #agra-tour h2, #places h2,
+#agra-tour h2, #places h2,
 .room-name, .rooftop-card-name, .dining-feat-title {
   color: #ffffff !important;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
@@ -110,10 +117,8 @@ body {
 .rooftop-card-desc, #agra-tour p, #places p,
 .rooms-section .section-lead,
 .dining-section .section-lead,
-.rooftop-section .section-lead,
 .rooms-section p,
-.dining-section p,
-.rooftop-section p {
+.dining-section p {
   color: #e2e8f0 !important;
   opacity: 1 !important;
   line-height: 1.7;
