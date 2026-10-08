@@ -26,22 +26,25 @@
   <meta property="og:description" content="Stay at Hotel Godwin Deluxe on Arakashan Road, Paharganj. 26 contemporary designer rooms, in-room air purifiers, 5-minute walk to New Delhi Railway Station, and The Indian Grill multi-cuisine restaurant.">
   <meta property="og:type" content="hotel">
   <meta property="og:url" content="https://godwinhotels.com/hotel-godwin-deluxe/">
-  <meta property="og:image" content="https://godwinhotels.com/assets/images/room_deluxe.jpg">
+  <meta property="og:image" content="https://godwinhotels.com/assets/images/hotel_godwin_deluxe_exterior.jpg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="736">
   <meta property="og:site_name" content="Hotel Godwin Deluxe, New Delhi">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Hotel Godwin Deluxe New Delhi | 26 Designer Rooms">
   <meta name="twitter:description" content="26 Contemporary Designer Rooms in Central Delhi, 500m to NDLS Railway Station. In-room air purifiers, soundproof windows, warmer, and The Indian Grill.">
-  <meta name="twitter:image" content="https://godwinhotels.com/assets/images/room_deluxe.jpg">
+  <meta name="twitter:image" content="https://godwinhotels.com/assets/images/hotel_godwin_deluxe_exterior.jpg">
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
 
-  <!-- Preconnect -->
+  <!-- Preconnect & Preload High-Priority Hero Asset -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preload" as="image" href="../assets/images/hotel_godwin_deluxe_exterior_16x9_1200.webp" type="image/webp" fetchpriority="high">
 
   <!-- FontAwesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -63,6 +66,26 @@
         "name": "Hotel Godwin Deluxe, New Delhi",
         "description": "Contemporary designer 26-room boutique hotel located at 8501/15 Arakashan Road, Ram Nagar, Paharganj, New Delhi. Situated 500 meters (5 minutes walk) from New Delhi Railway Station and 1.2 km from Connaught Place. Features Standard Rooms (Ground Floor), Premier King Rooms, Premier Twin Rooms, and Premier Studio King Rooms, in-room air purifiers, soundproof double-glazed windows, The Indian Grill restaurant, centralized warmer, and elevator access.",
         "url": "https://godwinhotels.com/hotel-godwin-deluxe/",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://godwinhotels.com/assets/images/hotel_godwin_deluxe_exterior.jpg",
+          "contentUrl": "https://godwinhotels.com/assets/images/hotel_godwin_deluxe_exterior.webp",
+          "width": 1024,
+          "height": 736,
+          "caption": "Hotel Godwin Deluxe building exterior facade at night with glowing neon sign, illuminated reception lobby, and The Indian Grill restaurant"
+        },
+        "photo": [
+          {
+            "@type": "ImageObject",
+            "url": "https://godwinhotels.com/assets/images/hotel_godwin_deluxe_exterior.jpg",
+            "caption": "Hotel Godwin Deluxe exterior facade at dusk"
+          },
+          {
+            "@type": "ImageObject",
+            "url": "https://godwinhotels.com/assets/images/dining.jpg",
+            "caption": "The Indian Grill Restaurant at Hotel Godwin Deluxe"
+          }
+        ],
         "numberOfRooms": 26,
         "telephone": ["+91-88600-81994", "+91-88600-81992", "+91-11-45094949"],
         "email": "book@godwinhotels.com",
@@ -267,7 +290,7 @@
 
   <main>
     <!-- ─── HERO SECTION ─── -->
-    <section class="grand-hero" style="background:linear-gradient(135deg, rgba(8, 15, 29, 0.94) 0%, rgba(13, 24, 41, 0.86) 50%, rgba(4, 8, 15, 0.96) 100%), url('../assets/images/deluxe_premier_king.jpg') center/cover no-repeat;">
+    <section class="grand-hero deluxe-hero">
       <div class="container" style="position:relative;z-index:2;max-width:1100px;">
         <div style="display:inline-flex;align-items:center;gap:0.6rem;background:rgba(217,169,74,0.18);border:1px solid rgba(217,169,74,0.4);border-radius:999px;padding:0.4rem 1.1rem;color:var(--gold-300);font-size:0.8rem;font-weight:600;margin-bottom:1.5rem;">
           <i class="fa-solid fa-gem"></i> Contemporary Designer Boutique · 26 Exclusive Rooms
@@ -374,14 +397,27 @@
 
           <!-- Image Cluster -->
           <div class="about-image-cluster reveal">
-            <div class="about-img-main">
-              <img src="../assets/images/deluxe_premier_king.jpg"
-                   alt="Contemporary Premier King Room at Hotel Godwin Deluxe, New Delhi"
-                   loading="lazy" width="800" height="600" style="border-radius:var(--radius-lg);">
-            </div>
+            <figure class="about-img-main semantic-figure" style="margin:0;">
+              <picture class="responsive-picture ratio-4-3 img-rounded-lg">
+                <source type="image/avif"
+                        srcset="../assets/images/hotel_godwin_deluxe_exterior_4x3_800.avif 800w, ../assets/images/hotel_godwin_deluxe_exterior_4x3_480.avif 480w"
+                        sizes="(max-width: 768px) 100vw, 550px">
+                <source type="image/webp"
+                        srcset="../assets/images/hotel_godwin_deluxe_exterior_4x3_800.webp 800w, ../assets/images/hotel_godwin_deluxe_exterior_4x3_480.webp 480w"
+                        sizes="(max-width: 768px) 100vw, 550px">
+                <img src="../assets/images/hotel_godwin_deluxe_exterior_4x3_800.jpg"
+                     srcset="../assets/images/hotel_godwin_deluxe_exterior_4x3_800.jpg 800w, ../assets/images/hotel_godwin_deluxe_exterior_4x3_480.jpg 480w"
+                     sizes="(max-width: 768px) 100vw, 550px"
+                     alt="Hotel Godwin Deluxe building exterior facade illuminated at night with neon sign, reception lobby, and The Indian Grill at 8501/15 Arakashan Road, Paharganj, New Delhi"
+                     loading="lazy" decoding="async" width="800" height="600" class="img-fluid-cover">
+              </picture>
+              <figcaption style="font-size:0.75rem;color:var(--text-muted);margin-top:0.4rem;display:flex;align-items:center;gap:0.4rem;">
+                <i class="fa-solid fa-camera" style="color:var(--gold-500);"></i> <strong>Official Facade:</strong> Hotel Godwin Deluxe &amp; The Indian Grill at night
+              </figcaption>
+            </figure>
             <div class="about-img-accent">
-              <img src="../assets/images/dining.jpg"
-                   alt="The Indian Grill dining at Hotel Godwin Deluxe"
+              <img src="../assets/images/deluxe_premier_king.jpg"
+                   alt="Contemporary Premier King Room at Hotel Godwin Deluxe"
                    loading="lazy" width="600" height="450" style="border-radius:var(--radius-md);">
             </div>
             <div class="about-badge" style="background:var(--navy-900);border:2px solid var(--gold-400);">

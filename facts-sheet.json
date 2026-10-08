@@ -134,6 +134,8 @@
       "name": "Hotel Godwin Deluxe, New Delhi",
       "totalRooms": 26,
       "url": "https://godwinhotels.com/hotel-godwin-deluxe/",
+      "image": "https://godwinhotels.com/assets/images/hotel_godwin_deluxe_exterior.jpg",
+      "exteriorImage": "https://godwinhotels.com/assets/images/hotel_godwin_deluxe_exterior.jpg",
       "address": {
         "streetAddress": "8501/15, Arakashan Road, Ram Nagar, Paharganj",
         "addressLocality": "Central Delhi, New Delhi",

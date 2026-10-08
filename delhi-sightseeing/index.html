@@ -2099,7 +2099,19 @@
 
           <!-- Godwin Deluxe Card -->
           <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(217,169,74,0.3);border-radius:var(--radius-md);overflow:hidden;display:flex;flex-direction:column;">
-            <img src="../assets/images/room_deluxe.jpg" alt="Hotel Godwin Deluxe Designer Room" loading="lazy" decoding="async" style="height:190px;width:100%;object-fit:cover;">
+            <picture style="display:block;height:190px;width:100%;overflow:hidden;">
+              <source type="image/avif"
+                      srcset="../assets/images/hotel_godwin_deluxe_exterior_16x9_480.avif 480w, ../assets/images/hotel_godwin_deluxe_exterior_16x9_800.avif 800w"
+                      sizes="(max-width: 600px) 100vw, 400px">
+              <source type="image/webp"
+                      srcset="../assets/images/hotel_godwin_deluxe_exterior_16x9_480.webp 480w, ../assets/images/hotel_godwin_deluxe_exterior_16x9_800.webp 800w"
+                      sizes="(max-width: 600px) 100vw, 400px">
+              <img src="../assets/images/hotel_godwin_deluxe_exterior_16x9_480.jpg"
+                   srcset="../assets/images/hotel_godwin_deluxe_exterior_16x9_480.jpg 480w, ../assets/images/hotel_godwin_deluxe_exterior_16x9_800.jpg 800w"
+                   sizes="(max-width: 600px) 100vw, 400px"
+                   alt="Hotel Godwin Deluxe exterior facade illuminated at night with neon sign, reception lobby, and The Indian Grill in Paharganj New Delhi"
+                   loading="lazy" decoding="async" width="480" height="270" style="height:190px;width:100%;object-fit:cover;display:block;">
+            </picture>
             <div style="padding:1.5rem;flex-grow:1;display:flex;flex-direction:column;">
               <span style="font-size:0.75rem;background:rgba(217,169,74,0.2);color:var(--gold-300);padding:0.15rem 0.5rem;border-radius:4px;font-weight:700;display:inline-block;margin-bottom:0.5rem;width:fit-content;">26 DESIGNER ROOMS &bull; AIR PURIFIERS</span>
               <h4 style="font-family:var(--font-display);font-size:1.4rem;color:#fff;margin-bottom:0.5rem;">Hotel Godwin Deluxe</h4>

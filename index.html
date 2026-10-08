@@ -119,6 +119,14 @@
         "parentOrganization": { "@id": "https://godwinhotels.com/#organization" },
         "description": "Contemporary designer boutique hotel at 8501/15 Arakashan Road, Paharganj, New Delhi. Located 500 meters from New Delhi Railway Station and near Connaught Place. Features The Indian Grill multi-cuisine restaurant, modern marble bathrooms, soundproof double-glazed windows, fully air-conditioned rooms with centralized warmer, and air purifiers installed in all rooms.",
         "url": "https://godwinhotels.com/#destinations",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://godwinhotels.com/assets/images/hotel_godwin_deluxe_exterior.jpg",
+          "contentUrl": "https://godwinhotels.com/assets/images/hotel_godwin_deluxe_exterior.webp",
+          "width": 1024,
+          "height": 736,
+          "caption": "Hotel Godwin Deluxe building exterior facade at night with glowing neon sign, illuminated reception lobby, and The Indian Grill restaurant"
+        },
         "telephone": ["+91-88600-81994", "+91-88600-81992", "+91-11-45094949"],
         "email": "book@godwinhotels.com",
         "priceRange": "₹3,200 - ₹6,500 INR",
@@ -546,9 +554,19 @@
           <!-- Hotel Godwin Deluxe -->
           <article class="hotel-card reveal reveal-delay-2" data-hotel="godwin-deluxe">
             <div class="hotel-card-image">
-              <img src="assets/images/room_deluxe.jpg"
-                   alt="Contemporary designer room at Hotel Godwin Deluxe with glass rain shower and city view"
-                   loading="lazy" width="800" height="500">
+              <picture class="responsive-picture ratio-4-3">
+                <source type="image/avif"
+                        srcset="assets/images/hotel_godwin_deluxe_exterior_4x3_800.avif 800w, assets/images/hotel_godwin_deluxe_exterior_4x3_480.avif 480w"
+                        sizes="(max-width: 768px) 100vw, 560px">
+                <source type="image/webp"
+                        srcset="assets/images/hotel_godwin_deluxe_exterior_4x3_800.webp 800w, assets/images/hotel_godwin_deluxe_exterior_4x3_480.webp 480w"
+                        sizes="(max-width: 768px) 100vw, 560px">
+                <img src="assets/images/hotel_godwin_deluxe_exterior_4x3_800.jpg"
+                     srcset="assets/images/hotel_godwin_deluxe_exterior_4x3_800.jpg 800w, assets/images/hotel_godwin_deluxe_exterior_4x3_480.jpg 480w"
+                     sizes="(max-width: 768px) 100vw, 560px"
+                     alt="Hotel Godwin Deluxe building exterior facade illuminated at night with neon sign, reception lobby, and The Indian Grill in Paharganj New Delhi"
+                     loading="lazy" decoding="async" width="800" height="600" class="img-fluid-cover">
+              </picture>
               <div class="hotel-img-overlay"></div>
               <div class="hotel-img-tags">
                 <div class="hotel-location-pill"><i class="fa-solid fa-location-dot"></i> 8501/15 Arakashan Road, Paharganj, New Delhi - 110055</div>
